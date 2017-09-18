@@ -1,0 +1,94 @@
+\begin{thebibliography}{10}
+
+\bibitem{HanngiFM}
+Sigmund Kohler{,} Thomas Dittrich† {,}~Peter H\"{a}nggi.
+\newblock Floquet-markov description of the parametrically driven, dissipative
+  harmonic quantum oscillator.
+\newblock {\em Phys.Rev. E55}, 30 Sep 1998.
+
+\bibitem{YanesOC}
+Pablo Yanes-Thomas {,}~Pablo Barberis-Blostein.
+\newblock Optomechanical cooling with time dependent parameters.
+\newblock {\em TBD}, 2017.
+
+\bibitem{KippenberCO}
+Thomas J. Kippenberg{,} Thomas Marquardt{,}~Markus Aspelmeyer.
+\newblock Cavity optomechanics.
+\newblock {\em Review of Modern Physics}, 2013.
+
+\bibitem{AbramoviciLIGO}
+Alex Abramovici{,} William E.~Althouse{,} et~al.
+\newblock Ligo: The laser interferometer gravitational-wave observatory.
+\newblock {\em Science}, 1992.
+
+\bibitem{CavesIF}
+Carlton~M. Caves.
+\newblock Quantum-mechanical radiation-pressure fluctuations in an
+  interferometer.
+\newblock {\em Physical Review Letters}, 1980.
+
+\bibitem{CorbittOC}
+Thomas Corbitt{,} Christopher~Wipf{,} et~al.
+\newblock Optical dilution and feedback cooling of a gram-scale oscillator to
+  6.9 mk.
+\newblock {\em Physical Review Letters}, 2007.
+
+\bibitem{ChenED}
+Zhi~Xin Chen.
+\newblock Entanglement dynamics in double-cavity optomechanical systems.
+\newblock {\em Optics Express}, 2017.
+
+\bibitem{VahalaOM}
+Kerry~J. Vahala.
+\newblock Optical microcavities.
+\newblock {\em Nature}, 2003.
+
+\bibitem{EuroSensors2017}
+{\em 1 Million-Q Optomechanical Microdisk Resonators with Very Large Scale
+  Integration}, 2017.
+
+\bibitem{VerhagenMOC}
+E.~Verhagen{,} et~al.
+\newblock Quantum-coherent coupling of a mechanical oscillator to an optical
+  cavity mode.
+\newblock {\em Nature}, 2012.
+
+\bibitem{SankeyMC}
+J.~C.~Sankey{,} et~al.
+\newblock Strong and tunable nonlinear optomechanical coupling in a low-loss
+  system.
+\newblock {\em Nature Physics}, 2010.
+
+\bibitem{ChildressLD}
+L.~Childress.
+\newblock Cavity optomechanics in a levitated helium drop.
+\newblock {\em arXiv:1708.01803}, 2017.
+
+\bibitem{FaveroCR}
+Ivan~Favero{,} et~al.
+\newblock Fluctuating nanomechanical system in a high finesse optical
+  microcavity.
+\newblock {\em Optics Express}, 2009.
+
+\bibitem{EichenfieldOC}
+Matt Eichenfield.
+\newblock Optomechanical crystals.
+\newblock {\em Nature}, 2009.
+
+\bibitem{BurekDO}
+Michael~J. Burek.
+\newblock Diamond optomechanical crystals.
+\newblock {\em Optica}, 2016.
+
+\bibitem{BraginskyPE}
+V.~B. Braginsky.
+\newblock Pondermotive effects of electromagnetic radiation.
+\newblock {\em Soviet Physics JEPT}, 1968.
+
+\bibitem{DorselOB}
+A.~Dorsel.
+\newblock Optical bistability and mirror confinement induced by radiation
+  pressure.
+\newblock {\em Physical Review Letters}, 1983.
+
+\end{thebibliography}

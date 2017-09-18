@@ -1,0 +1,68 @@
+\documentclass[10pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\author{Pablo Enrique Yanes Thomas}
+\title{Candidatura}
+\makeindex
+
+\begin{document}
+
+\tableofcontents
+\chapter*{Objetivo General}
+
+Se busca modelar un sistema optomecánico con parámetros dependientes del tiempo. El sistema es una cavidad de Fabry-Perot donde uno de los dos espejos es un resonador armónico cuya frecuencia natural depende del tiempo de manera periódica. Se ha demostradon que utilizar un formalismo que toma en cuenta la dependencia temporal de la frecuencia natural del oscilador llevan a un mejor modelo teórico para el sistema\cite{HanngiFM}. En un trabajo anterior donde se utiliza este formalismo para estudiar el enfriamiento del oscilador mecánico se encontró que la predicción para el enfriamiento es cualitativamente distinta aún a primer orden de perturbación para la dependencia temporal\cite{YanesOC}. Esto motiva la pregunta: ¿Qué sucede al tomar en cuenta el efecto de la variación de la longitud de la cavidad sobre la frecuencia de resonancia de la cavidad? En este trabajo se investiga este efecto. 
+
+
+\chapter{Introducción}
+
+La optomecánica es el estudio de la interacción entre elementos ópticos y elementos mecánicos. En este capítulo se dará una breve introducción al tipo de sistemas y de efectos que se consideran parte de la optomecánica. 
+
+
+\section{Posibles Sistemas Optomecánicos}
+
+Existen muchas implementaciones posibles de acoplamientos entre elementos ópticos y elementos mecánicos \cite{KippenberCO}. En esta sección se detallan algunas de las posibilidades.
+
+\subsection{Espejos Suspendidos}
+
+Estos sistemas consisten en cavidades ópticas donde uno o más de los espejos pueden cambiar de posición y así alteran la longitud de la cavidad. La primera realización experimental de este tipo de sistemas se debe a los primeros esfuerzos para detectar ondas gravitacionales \cite{AbramoviciLIGO}. El sistema consiste en un interferómetro con los espejos fijos en masas suspendidas, a manera que una onda gravitacional, al interactuar con las masas cambiaría la posición de los espejos y así la longitud de camino óptico. El propósito de suspender las masas no es optomecánico, sin embargo, las fluctuaciones en la potencia del láser, debido a la incertidumbre en el número de fotones, son un efecto cuántico que impone un límite a la precisión de las mediciones \cite{CavesIF}. Experimentos en este tipo de sistemas han demostrado varios efectos, entre ellos el enfriamiento mediante presión de radiación \cite{CorbittOC}. También es posible utilizar este tipo de sistemas para estudiar el entrelazamiento cuántico\cite{ChenED} al acoplar dos cavidades al mismo espejo y así lograr entrelazamiento entre los modos de ambos campos.
+
+\subsection{Microresonadores}
+
+Otro tipo posible de sistema son los microresonador o microcavidades. En este tipo de sistemas, es posible confinar a la luz a viajar en modos \textit{whispering gallery}, los cuales implican que la luz es guiada a lo largo del perímetro del resonador,el cual puede tener forma esférica, circular, o toroidal\cite{VahalaOM}. Si este vibra, esto puede alterar el camino óptico de la luz y se logra un acoplamiento optomecánico. Es posible fabricar resonadores de este tipo con un factor de calidad de $10^6$ \cite{EuroSensors2017}. Debido a su tamaño, es posible obtener acoplamiento fuerte entre sistemas cuánticos y el resonador\cite{VerhagenMOC}.
+
+\subsection{Objetos Suspendidos o Levitados}
+
+En este tipo de sistemas, se considera una cavidad óptica rígida donde se coloca un objeto mecánico dentro de la cavidad. Este esquema permite el acoplamiento de objetos mecánicos de tamaños inferiores a la longitud de onda de la luz \cite{KippenberCO}, como por ejemplo una membrana dieléctrica de $SI_3N_4$ de  $1mm \times 1mm \times 50nm$
+de dimensión\cite{SankeyMC}. En ese caso, se puede observar que parámetros de la cavidad como la sintonización y la finesa dependen del desplazamiento de la membrana. Otra posibilidad consiste en un nano cable de carbón, de aproximadamente $10^9$ átomos, el cual se coloca dentro de una micro cavidad de Fabri-Perot. Así mismo, se han realizado experimentos donde se levita una gota de Helio líquido dentro de la cavidad\cite{ChildressLD}. Las propiedades de la cavidad cambian no solo dependiendo de la posición del objeto, sino también de sus modos vibracionales\cite{FaveroCR}.  
+
+\subsection{Cristales Optomecánicos}
+
+Este tipo de sistema es más reciente que los demás y se basa en redes cristalinas donde se logra acoplar fotones y fonones. En primera instancia se fabricó una nano viga de silicio  \cite{EichenfieldOC}. El sistema consiste en una nano viga con agujeros espaciados regularmente, lo cual forma una red. Se introduce un defecto mediante una reducción cuadrática en la constante de red, de manera simétrica al centro de la viga. Esto genera un potencial efectivo para los modos ópticos y uno análogo para los modos mecánicos. Las vibraciones ocasionan un cierto desplazamiento en la estructura lo cual afecta el potencial efectivo para los modos ópticos y se obtiene el acoplamiento. Una implementación reciente de este tipo de sistemas involucra usar redes cristalinas semi periódicas de diamante para implementar el resonador\cite{BurekDO}.
+
+\section{Efectos Optomecánicos}
+
+En esta sección se da un pequeño resumen de los efectos optomecánicos más conocidos y utilizados. Frecuentemente estos efectos de deben a la interacción entre la presión de radiación que la luz incidente aplica sobre los elemento mecánicos y la reacción retardada de la cavidad a los cambios en su estructura. Algunos de estos efectos son:
+
+
+\begin{itemize}
+\item \textbf{Efecto de Resorte Óptico (optical spring effect)} La presión de radiación depende la posición del objeto, por lo que esta cambia cuando el objeto se mueve. En particular, en el caso de cavidades con espejos suspendidos, la presión de radiación afecta la constante del resorte ya que genera un desplazamiento en la resonancia de la frecuencia mecánica, el cual se puede utilizar para aumentar o disminuir la frecuencia natural del resorte.\cite{BraginskyPE}
+
+\item \textbf{Bi-Estabilidad Óptica (optical bi-stability)} La presión de radiación puede desplazar al objeto mecánico y se espera que se llegue a una posición de equilibrio. Sin embargo, la dependencia del potencial efectivo sobre la posición es no lineal, lo cual lleva a que se generen dos posiciones de equilibrio. Para una presión lo suficientemente fuerte, este efecto se borra y se llega a una posición altamente estable\cite{DorselOB}.
+\end{itemize}
+
+
+ 
+
+\chapter{Antecedentes}
+\chapter{Objetivos Generales}
+\chapter{Metodologías y Técnicas Requeridas}
+\chapter{Avances Logrados en el Proyecto de Investigación}
+\chapter{Plan de Trabajo}
+
+\bibliographystyle{unsrt}
+\bibliography{Bib}
+
+\end{document}
