@@ -3,54 +3,50 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Candidatura.aux
 The style file: unsrt.bst
 Database file #1: Bib.bib
-Repeated entry---line 588 of file Bib.bib
- : @book{BlumDM
- :             ,
-I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "TesisMaestria"
-Warning--empty author and editor in BlumDM
+Warning--I didn't find a database entry for "PiatekME"
 Warning--empty publisher in WardFT
 Warning--empty year in WardFT
 Warning--can't use both author and editor fields in HanngiDQS
-You've used 37 entries,
+You've used 35 entries,
             1791 wiz_defined-function locations,
-            641 strings with 7778 characters,
-and the built_in function-call counts, 4862 in all, are:
-= -- 404
-> -- 142
+            634 strings with 7647 characters,
+and the built_in function-call counts, 4591 in all, are:
+= -- 382
+> -- 137
 < -- 0
-+ -- 72
-- -- 35
-* -- 124
-:= -- 865
-add.period$ -- 107
-call.type$ -- 37
++ -- 69
+- -- 34
+* -- 115
+:= -- 828
+add.period$ -- 102
+call.type$ -- 35
 change.case$ -- 29
 chr.to.int$ -- 0
-cite$ -- 41
-duplicate$ -- 312
-empty$ -- 558
-format.name$ -- 35
-if$ -- 1076
+cite$ -- 38
+duplicate$ -- 291
+empty$ -- 520
+format.name$ -- 34
+if$ -- 1010
 int.to.chr$ -- 0
-int.to.str$ -- 37
-missing$ -- 42
-newline$ -- 184
-num.names$ -- 35
-pop$ -- 143
+int.to.str$ -- 35
+missing$ -- 39
+newline$ -- 175
+num.names$ -- 34
+pop$ -- 129
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 104
+skip$ -- 99
 stack$ -- 0
 substring$ -- 0
-swap$ -- 38
+swap$ -- 36
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 4
-while$ -- 35
-width$ -- 39
-write$ -- 363
-(There was 1 error message)
+warning$ -- 3
+while$ -- 34
+width$ -- 37
+write$ -- 345
+(There were 5 warnings)
