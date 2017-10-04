@@ -20,7 +20,9 @@
 \contentsline {section}{\numberline {3.1}Hamiltoniano para Enfriamiento Optomec\IeC {\'a}nico con Par\IeC {\'a}metros Dependientes del Tiempo}{15}
 \contentsline {section}{\numberline {3.2}Transformaci\IeC {\'o}n Mediante Operador de Desplazamiento}{17}
 \contentsline {section}{\numberline {3.3}Soluci\IeC {\'o}n para Oscilaciones Peque\IeC {\~n}as}{21}
-\contentsline {subsection}{\numberline {3.3.1}Explicit Expressions for Small Oscillations}{21}
-\contentsline {subsection}{\numberline {3.3.2}Laser Cooling Hamiltonian}{22}
+\contentsline {subsection}{\numberline {3.3.1}Soluci\IeC {\'o}n Expl\IeC {\'\i }cita para Peque\IeC {\~n}as Oscilaciones }{21}
+\contentsline {subsection}{\numberline {3.3.2}Hamiltoniano para Enfriamiento Laser}{22}
 \contentsline {subsection}{\numberline {3.3.3}Base de Decaimiento}{23}
 \contentsline {section}{\numberline {3.4}Enfriamiento Laser}{24}
+\contentsline {section}{\numberline {3.5}An\IeC {\'a}lisis Num\IeC {\'e}rico}{25}
+\contentsline {chapter}{\numberline {4}Dependencia Temporal en la Frecuencia de la Cavidad}{27}

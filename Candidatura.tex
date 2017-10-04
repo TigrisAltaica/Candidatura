@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{amsmath}
+\usepackage{graphicx}
 \usepackage{braket}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -602,7 +603,7 @@ con $n \in \mathbb{Z}^+$ ya que como se vió esto es necesario para tener soluci
 f(t)=  e^{i\omega t} + \frac{\epsilon}{16} e^{3i\omega t},
 \end{equation} y su complejo conjugado es $f(-t)$.
 
-\subsection{Explicit Expressions for Small Oscillations}
+\subsection{Solución Explícita para Pequeñas Oscilaciones }
 
 Con una solución para \ref{SmallOscillationsTDHO} en mano, podemos calcular soluciones explícitas para todos los términos que se han obtenido. Estos resultan ser\cite{TesisMaestria}
 
@@ -638,7 +639,7 @@ Y se puede obtener expresiones explícitas para los coeficientes $\alpha(t)$ y $
 \beta_0 =& 0.
 \end{align} El subíndice 0 muestra que las soluciones son válidas a orden cero en el acoplamiento.
 
-\subsection{Laser Cooling Hamiltonian}
+\subsection{Hamiltoniano para Enfriamiento Laser}
 
 Bajo estás condiciones se anulan todos los términos de conmutadores y las derivadas y el Hamiltoniano resulta
 
@@ -756,6 +757,56 @@ A_{\pm \nu}(n_p) = g^2Real(G(\mp \nu,n_p)).
 \begin{equation}
 <m> = \frac{A_+}{A_- - A_+}
 \end{equation}
+
+\section{Análisis Numérico}
+
+Se utiliza el desarrollo en serie de potencia de \eqref{CavityQuadrature} hasta primer orden en $\epsilon$ para realizar cálculos numéricos. Se asume que la cavidad se encuentra a temperatura cero ($n_p=0$). Los eigenvalores de la cavidad se denotan por $\lambda_c$. El resultado de la traza es fácil de calcular y queda calcular la integral
+
+
+\begin{align}
+G(\nu,0)=&\int_0^\infty dt e^{(i\nu(t)+\lambda_c) t}Tr[]\\
+&= \int_0^\infty e^{i \nu = \nu_0 + \epsilon cos(2\omega t) t + \lambda t} Tr[...]dt, \\
+&=\int_0^\infty e^{i \nu_0 t + \lambda t}e^{i \epsilon cos(2\omega t)t} Tr[...]dt, \\
+&=\int_0^\infty e^{i \nu_0 t + \lambda t}(1+i \epsilon cos(2\omega t)t) Tr[...]dt, \\
+&=\int_0^\infty e^{i \nu_0 t + \lambda t}Tr[...]dt\\
+&+i\epsilon\int_0^\infty cos(2\omega t)t e^{i \nu_0 t + \lambda t}Tr[...]dt.
+\end{align}
+
+Esto lleva a la expresión usual para \ref{CavityQuadrature} más un término proporcional a $\epsilon$ que contiene el efecto de la dependencia temporal de la frecuencia
+
+\begin{equation}
+ \frac{\chi^2}{-k + 2i(\delta + \nu_0)} +i\epsilon\frac{(-k + i(\nu_0 + \delta))^2 - 4\omega^2}{(-k + i(\nu_0 + \delta)^2 + 4\omega^2)^2},
+\end{equation} donde $\chi = g \qquad E_0 = g \sqrt{\frac{\hbar}{2m\nu_0}}$.
+
+La parte real de esta expresión no es fácil de obtener de manera analítica, pero se puede analizar numéricamente de forma extremadamente sencilla. A fin de que sea válida la aproximación adiabática, las variaciones de la frecuencia natural del oscilador deben ser mucho menores que la frecuencia promedio, lo que pide soluciones con  $\omega \ll \nu_0$ y $1 \ll n$.
+
+Debido a \ref{scattering}, y asumiendo originalmente que $\epsilon = \frac{\nu_0}{10}$ se tiene la condición $\epsilon = \frac{n^2}{5}$. Dado que se desea que $n$ sea grande se elige $n=\sqrt{\frac{\nu_0}{2}}$ redondeada al entero más cercano.
+
+El cálculo utiliza la proporción entre la frecuencia promedio $nu_0$ y el desfazamiento $\delta$ en el rango $\frac{\nu_0}{\delta} \in [-2,2]$
+
+\begin{figure}
+\includegraphics[scale=.55]{GraficaTemp.pdf} 
+\caption{\textit{Comparación entre predicciones con y sin el término $\epsilon$} La línea puntuada representa la predicción sin dependencia temporal y la línea sólida representa la predicción con el término adicional. Esta resulta en un mínimo más pequeño de excitaciones posibles y en un corrimiento en el punto donde se espera encontrar este mínimo. Se utiliza $\kappa \ll \nu_0$}
+\end{figure}
+
+\chapter{Dependencia Temporal en la Frecuencia de la Cavidad}
+
+Como se puede observar en el capítulo anterior, el cambio en el comportamiento predicho por el modelo con dependencia temporal es notorio. Sin embargo, durante todas las derivaciones se asume que la cavidad tiene un solo modo de frecuencia constante $\omega_c$. La frecuencia de resonancia de una cavidad de Fabry-Perot, asumiendo que su interior se encuentre en el vacío, está dada por
+
+\begin{equation}
+\omega_c = \frac{mc}{2L},
+\end{equation} donde $c$ es la velocidad de la luz en el vacío, $m$ es algún entero y $L$ es la longitud de la cavidad. Al emplear un montaje optomecánico como el que se lleva a los resultados del capítulo anterior, $L$ deja de ser constante. Si el oscilador mecánico tiene oscilaciones de amplitud $A$ y se toma a $L_0$ como la longitud promedio de la cavidad, la longitud de la cavidad como función del tiempo viene dada por
+
+\begin{equation}
+L(t) = L_0 + A\nu(t)t
+\end{equation} lo cual lleva a la frecuencia 
+
+\begin{align}
+\omega_c(t) =& \frac{mc}{2(L + A\nu(t)t)},\\
+=& \frac{mc}{2L + 2A(\nu_0 + \epsilon cos(2\omega t))t)}
+\end{align}
+
+
 
 \bibliographystyle{unsrt}
 \bibliography{Bib}
