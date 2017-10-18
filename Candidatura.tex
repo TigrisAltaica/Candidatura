@@ -794,17 +794,74 @@ El cálculo utiliza la proporción entre la frecuencia promedio $nu_0$ y el desf
 Como se puede observar en el capítulo anterior, el cambio en el comportamiento predicho por el modelo con dependencia temporal es notorio. Sin embargo, durante todas las derivaciones se asume que la cavidad tiene un solo modo de frecuencia constante $\omega_c$. La frecuencia de resonancia de una cavidad de Fabry-Perot, asumiendo que su interior se encuentre en el vacío, está dada por
 
 \begin{equation}
-\omega_c = \frac{mc}{2L},
-\end{equation} donde $c$ es la velocidad de la luz en el vacío, $m$ es algún entero y $L$ es la longitud de la cavidad. Al emplear un montaje optomecánico como el que se lleva a los resultados del capítulo anterior, $L$ deja de ser constante. Si el oscilador mecánico tiene oscilaciones de amplitud $A$ y se toma a $L_0$ como la longitud promedio de la cavidad, la longitud de la cavidad como función del tiempo viene dada por
+\omega_c = \frac{nc}{2L},
+\end{equation} donde $c$ es la velocidad de la luz en el vacío, $n$ es algún entero y $L$ es la longitud de la cavidad. Al emplear un montaje optomecánico como el que se lleva a los resultados del capítulo anterior, $L$ deja de ser constante. Si el oscilador mecánico tiene oscilaciones de amplitud $A$ y se toma a $L_0$ como la longitud promedio de la cavidad, la longitud de la cavidad como función del tiempo viene dada por
 
 \begin{equation}
-L(t) = L_0 + A\nu(t)t
+l(t) = l_0 + A cos(\omega t)
 \end{equation} lo cual lleva a la frecuencia 
 
 \begin{align}
-\omega_c(t) =& \frac{mc}{2(L + A\nu(t)t)},\\
-=& \frac{mc}{2L + 2A(\nu_0 + \epsilon cos(2\omega t))t)}
-\end{align}
+\nu(t) =& \frac{nc}{2l_0+2Acos(\omega t)}, \\
+\approx& \frac{nc}{2l_0} - \frac{nc Acos(\omega t)}{4l_0^2}, \\
+=& \frac{nc}{2l_0} - \frac{nc}{2l_0}(\frac{A}{l_0})cos(\omega t), \\
+=& \omega_0 - \epsilon\omega_0 cos(\omega t), \\
+=& \omega_0(1-\epsilon\ cos(\omega t)).
+\end{align} donde la expresión se deja en primer orden del parámetro de perturbación $\epsilon = \frac{A}{l_0}$. Bajo estas restricciones se tiene un sistema de oscilador armónico donde la frecuencia natural es una función periódica del tiempo. Esto permite el uso de los operadores de Floquet vistos en el capítulo anterior. Se busca un Hamiltoniano optomecánico expresado en términos de estos operadores. Para este fin se hace referencia a la derivación del Hamiltoniano optomecánico general en \cite{LawOH}. Reduciendo la expresión a un solo modo para la cavidad, se tiene la expresión
+
+\begin{equation}
+H = \frac{1}{2m}(p + \frac{g}{q} PQ)^2 + v(q) + \frac{1}{2}[P^2+\nu^2 (t)Q^2].
+\end{equation} Los operadores $p$ y $q$ corresponden al oscilador mecánico y $P$ y $Q$ al campo dentro de la cavidad. $g$ es una constante. En el trabajo original la dependencia de la frecuencia es sobre la variable $q$ y no precisamente $t$. El teorema de Floquet permite obtener las soluciones de la ecuación
+
+\begin{equation}
+\ddot{q} + \nu^2(t)q=0,
+\end{equation} y se les llama $f(t)$ y $f(t)^*$. De acuerdo con \cite{HanngiFM} los operadores de Floquet se pueden expresar como
+
+\begin{equation}
+\Gamma(t) = \frac{1}{2i}(Q\sqrt{\frac{2m}{\hbar}}\dot{f}(t)-P\sqrt{\frac{2}{m\hbar}}f(t))
+\end{equation} y
+
+\begin{equation}
+\Gamma(t)^\dagger = \frac{-1}{2i}(Q\sqrt{\frac{2m}{\hbar}}\dot{f}^*(t)-P\sqrt{\frac{2}{m\hbar}}f^*(t)).
+\end{equation} A futuro se omite la dependencia temporal de los operadores $\Gamma$ al darse por entendida. Se puede invertir el sistema de ecuaciones y obtener
+
+\begin{align}
+Q =& \frac{b^* \Gamma - b \Gamma^\dagger}{(b^* a - a^*b)},\\
+P =& \frac{a^* \Gamma - a \Gamma^\dagger}{(b^* a - a^*b)}.
+\end{align} donde
+
+\begin{align}
+a =& \frac{1}{2i}\sqrt{\frac{2m}{\hbar}} \dot{f}(t),\\
+b =& \frac{1}{2i}\sqrt{\frac{2}{m\hbar}} f(t).
+\end{align} Esto se sustituye en el término $PQ$ del Hamiltoniano y se obtiene
+
+\begin{equation}
+H = \frac{1}{2m}(p + \frac{g}{q} \gamma)^2 + v(q) + \frac{1}{2}[P^2+\nu^2 (t)Q^2],
+\end{equation} donde
+
+\begin{equation}
+\gamma = \frac{\hbar^2}{W^2 q}[ab^*\Gamma^\dagger \Gamma + a^*b \Gamma \Gamma^\dagger - a^*b^* \Gamma \Gamma - ab \Gamma^\dagger \Gamma^\dagger]
+\end{equation} con
+
+\begin{equation}
+W= \frac{\dot{f}(t)f^*(t)-\dot{f}^*(t)f(t)}{2i}.
+\end{equation}  Esto contrasta con la aproximación realizada en el trabajo original donde los operadores de creación y aniquilación de la cavidad se expanden en una serie de potencias para aproximar la dependencia de estos sobre el operador $q$ del oscilador mecánico. En este procedimiento se asume $q = l_o + x_m$. En este trabajo asumimos $x_m = Acos(\omega t)$. Tomamos al término $\gamma$ en el punto $q=l_0$
+
+Para lidiar con el primer término del Hamiltoniano se emplea la transformación unitaria dada por el operador
+
+\begin{equation}
+T = e^\frac{i x_m \gamma}{\hbar}.
+\end{equation} Bajo esta transformación 
+
+\begin{align*}
+T^\dagger p T =& p - \gamma, \\
+T^\dagger p^2 T =& p^2 -2p\gamma, \\
+T^\dagger \gamma T =& \gamma,
+\end{align*} por lo que, despreciando el término $\gamma^2$ por ser del orden de $\frac{1}{l_0^2}$
+
+\begin{equation}
+\frac{1}{2m}(p + \frac{g}{q} \gamma)^2 \approx \frac{p^2}{2m}.
+\end{equation} Se conoce como, bajo los operadores de Floquet, los operadores $P$ y $Q$ corresponden a un Hamiltoniano con la forma funcional de un oscilador armónico cuántico usual. Por esto, queda aplicar la transformación al término $\Gamma^\dagger \Gamma$
 
 
 

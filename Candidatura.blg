@@ -8,45 +8,45 @@ Warning--I didn't find a database entry for "PiatekME"
 Warning--empty publisher in WardFT
 Warning--empty year in WardFT
 Warning--can't use both author and editor fields in HanngiDQS
-You've used 35 entries,
+You've used 36 entries,
             1791 wiz_defined-function locations,
-            634 strings with 7647 characters,
-and the built_in function-call counts, 4591 in all, are:
-= -- 382
-> -- 137
+            639 strings with 7755 characters,
+and the built_in function-call counts, 4720 in all, are:
+= -- 393
+> -- 141
 < -- 0
-+ -- 69
-- -- 34
-* -- 115
-:= -- 828
-add.period$ -- 102
-call.type$ -- 35
-change.case$ -- 29
++ -- 71
+- -- 35
+* -- 118
+:= -- 852
+add.period$ -- 105
+call.type$ -- 36
+change.case$ -- 30
 chr.to.int$ -- 0
-cite$ -- 38
-duplicate$ -- 291
-empty$ -- 520
-format.name$ -- 34
-if$ -- 1010
+cite$ -- 39
+duplicate$ -- 299
+empty$ -- 534
+format.name$ -- 35
+if$ -- 1038
 int.to.chr$ -- 0
-int.to.str$ -- 35
-missing$ -- 39
-newline$ -- 175
-num.names$ -- 34
-pop$ -- 129
+int.to.str$ -- 36
+missing$ -- 40
+newline$ -- 180
+num.names$ -- 35
+pop$ -- 132
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 99
+skip$ -- 102
 stack$ -- 0
 substring$ -- 0
-swap$ -- 36
+swap$ -- 37
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 34
-width$ -- 37
-write$ -- 345
+while$ -- 35
+width$ -- 38
+write$ -- 355
 (There were 5 warnings)
