@@ -861,7 +861,19 @@ T^\dagger \gamma T =& \gamma,
 
 \begin{equation}
 \frac{1}{2m}(p + \frac{g}{q} \gamma)^2 \approx \frac{p^2}{2m}.
-\end{equation} Se conoce como, bajo los operadores de Floquet, los operadores $P$ y $Q$ corresponden a un Hamiltoniano con la forma funcional de un oscilador armónico cuántico usual. Por esto, queda aplicar la transformación al término $\Gamma^\dagger \Gamma$
+\end{equation} Se conoce como, bajo los operadores de Floquet, los operadores $P$ y $Q$ corresponden a un Hamiltoniano con la forma funcional de un oscilador armónico cuántico usual. Por esto, queda aplicar la transformación al término $\Gamma^\dagger \Gamma$. Cortando a primer orden en $\epsilon$
+
+\begin{align*}
+e^{\frac{-ix\gamma_0}{\hbar}}\Gamma^\dagger \Gamma e^{\frac{ix\gamma_0}{\hbar}} =& \Gamma^\dagger \Gamma + [\Gamma^\dagger \Gamma, \gamma_0] \\
+=& \Gamma^\dagger \Gamma + \frac{2i\hbar x}{W^2 l_0}(a^*b \Gamma^\dagger \Gamma + a^*b^* \Gamma \Gamma -ab\Gamma^\dagger \Gamma^\dagger)\\
+\approx & \Gamma^\dagger \Gamma + \frac{2i\hbar x}{W^2 l_0} a^*b \Gamma^\dagger \Gamma \\
+=& \Gamma^\dagger \Gamma - \frac{i \dot{f}^*(t)f(t) }{W^2 l_0} x  \Gamma^\dagger \Gamma
+\end{align*} de esta forma la constante de proporcionalidad de la presión de radiación es una cantidad dependiente del tiempo bajo este enfoque. Esto contrasta con la definición usual $F= \frac{\omega_0 \hbar}{l_0}$. Tomando en cuenta el factor de amplitud global para el Hamiltoniano de oscilador armónico con frecuencia natural dependiente del tiempo $\frac{W}{|f(t)|^2}$ se obtiene
+
+\begin{equation}
+H_{cav} = \frac{\hbar W}{|f(t)|^2}\Gamma^\dagger \Gamma - \frac{\hbar i\dot{f}^*(t)f(t) }{|f(t)|^2W l_0}x  \Gamma^ \dagger \Gamma
+\end{equation}
+
 
 
 
