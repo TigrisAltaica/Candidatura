@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  23 OCT 2017 15:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  15 NOV 2017 17:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -461,6 +461,10 @@ Writing index file Candidatura.idx
 (./Candidatura.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
+
+
+LaTeX Warning: Label `LCMasterEquation' multiply defined.
+
 )
 \openout1 = `Candidatura.aux'.
 
@@ -478,8 +482,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count103
 \scratchdimen=\dimen115
@@ -583,11 +586,6 @@ Overfull \hbox (16.83282pt too wide) in paragraph at lines 411--411
 [15
 
 ] [16]
-
-LaTeX Warning: Citation `TesisMaestria' on page 17 undefined on input line 464.
-
-
-
 Overfull \hbox (2.02132pt too wide) in paragraph at lines 481--481
 []\OT1/cmr/bx/n/14.4 Transformaci^^Son Me-dian-te Ope-ra-dor de Des-
  []
@@ -600,10 +598,6 @@ Overfull \hbox (4.61255pt too wide) in paragraph at lines 533--533
 [19] [20]
 
 LaTeX Warning: Citation `PiatekME' on page 21 undefined on input line 593.
-
-
-LaTeX Warning: Citation `TesisMaestria' on page 21 undefined on input line 608.
-
 
 [21] [22]
 Overfull \hbox (19.39066pt too wide) in paragraph at lines 681--682
@@ -621,7 +615,11 @@ Package pdftex.def Info: GraficaTemp.pdf used on input line 788.
 Cap\'{\i }tulo 4.
 [27
 
-] [28] (./Candidatura.bbl [29]
+] [28] [29] [30]
+Cap\'{\i }tulo 5.
+[31
+
+] (./Candidatura.bbl [32]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
@@ -629,27 +627,30 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4.
- [30
+ [33
 
 ]
-Underfull \hbox (badness 1067) in paragraph at lines 180--184
+Underfull \hbox (badness 1067) in paragraph at lines 185--189
 []\OT1/cmr/m/n/10 Peter Zo-ller.  \OT1/cmr/m/it/10 Quan-tum Noi-se:A Hand-book 
 of Mar-ko-vian and Non-
  []
 
-[31]) [32] (./Candidatura.aux
+[34]) [35] (./Candidatura.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 )
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 3619 strings out of 494850
- 45758 string characters out of 6178024
- 115199 words of memory out of 5000000
- 6857 multiletter control sequences out of 15000+600000
+ 3620 strings out of 494850
+ 45773 string characters out of 6178024
+ 115243 words of memory out of 5000000
+ 6858 multiletter control sequences out of 15000+600000
  8415 words of font info for 32 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  37i,10n,30p,1188b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -670,10 +671,10 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm5.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Candidatura.pdf (32 pages, 307495 bytes).
+Output written on Candidatura.pdf (35 pages, 313696 bytes).
 PDF statistics:
- 188 PDF objects out of 1000 (max. 8388607)
- 131 compressed objects within 2 object streams
+ 197 PDF objects out of 1000 (max. 8388607)
+ 137 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

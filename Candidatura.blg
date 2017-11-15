@@ -3,41 +3,40 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Candidatura.aux
 The style file: unsrt.bst
 Database file #1: Bib.bib
-Warning--I didn't find a database entry for "TesisMaestria"
 Warning--I didn't find a database entry for "PiatekME"
 Warning--empty publisher in WardFT
 Warning--empty year in WardFT
 Warning--can't use both author and editor fields in HanngiDQS
-You've used 36 entries,
+You've used 37 entries,
             1791 wiz_defined-function locations,
-            639 strings with 7755 characters,
-and the built_in function-call counts, 4720 in all, are:
-= -- 393
-> -- 141
+            642 strings with 7834 characters,
+and the built_in function-call counts, 4839 in all, are:
+= -- 405
+> -- 145
 < -- 0
-+ -- 71
-- -- 35
-* -- 118
-:= -- 852
-add.period$ -- 105
-call.type$ -- 36
-change.case$ -- 30
++ -- 73
+- -- 36
+* -- 120
+:= -- 877
+add.period$ -- 108
+call.type$ -- 37
+change.case$ -- 31
 chr.to.int$ -- 0
-cite$ -- 39
-duplicate$ -- 299
-empty$ -- 534
-format.name$ -- 35
-if$ -- 1038
+cite$ -- 40
+duplicate$ -- 305
+empty$ -- 545
+format.name$ -- 36
+if$ -- 1063
 int.to.chr$ -- 0
-int.to.str$ -- 36
+int.to.str$ -- 37
 missing$ -- 40
-newline$ -- 180
-num.names$ -- 35
-pop$ -- 132
+newline$ -- 185
+num.names$ -- 36
+pop$ -- 134
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 102
+skip$ -- 104
 stack$ -- 0
 substring$ -- 0
 swap$ -- 37
@@ -46,7 +45,7 @@ text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 35
-width$ -- 38
-write$ -- 355
-(There were 5 warnings)
+while$ -- 36
+width$ -- 39
+write$ -- 366
+(There were 4 warnings)

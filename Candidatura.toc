@@ -25,4 +25,5 @@
 \contentsline {subsection}{\numberline {3.3.3}Base de Decaimiento}{23}
 \contentsline {section}{\numberline {3.4}Enfriamiento Laser}{24}
 \contentsline {section}{\numberline {3.5}An\IeC {\'a}lisis Num\IeC {\'e}rico}{25}
-\contentsline {chapter}{\numberline {4}Dependencia Temporal en la Frecuencia de la Cavidad}{27}
+\contentsline {chapter}{\numberline {4}Cavidad con Frecuencia Dependiente del Tiempo}{27}
+\contentsline {chapter}{\numberline {5}Transformaci\IeC {\'o}n al Marco de Referencia Desplazado}{31}
