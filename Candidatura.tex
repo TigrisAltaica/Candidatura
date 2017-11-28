@@ -946,11 +946,29 @@ U_{b,\Gamma} =  U_b U_\Gamma = e^{(\beta b^\dagger - \beta^* b)}e^{(\alpha\Gamma
 \end{align} A partir de este punto, se omiten los sub-índices de las transformaciones y la $'$ para la matriz densidad. La transformación afecta a los distintos operadores presentes en el Hamiltoniano de la siguiente forma
 
 \begin{align}
-U^\dagger b U =& b + \beta^*,\\
-U^\dagger \Gamma U =& \Gamma + \alpha^*,\\
+U^\dagger b U =& b + \beta,\\
+U^\dagger \Gamma U =& \Gamma + \alpha,\\
 U^\dagger b^\dagger b U =& b^\dagger b + \alpha^* b + \alpha b^\dagger +|\beta|^2,\\
 U^\dagger \Gamma^\dagger \Gamma U =& \Gamma^\dagger \Gamma + \alpha^* \Gamma + \alpha \Gamma^\dagger +|\alpha|^2.
-\end{align} Además de los conjugados Hermitianos que se obtienen de manera trivial.
+\end{align} Los conjugados Hermitianos se obtienen de manera trivial. Utilizar operadores con dependencia temporal explícita añade complejidad adicional a este procedimiento debido a las derivadas temporales del operador $U$. El procedimiento completo puede encontrarse en \cite{TesisMaestria}. Se obtiene
+
+\begin{align}
+\dot{U}_b=&\dot{\beta} b^\dagger U_b - U_b\dot{\beta}^*b - \frac{1}{2}(\dot{\beta} \beta^*+\dot{\beta}^* \beta)U_b,\\
+\dot{U}_b^\dagger=&-\dot{\beta} b^\dagger U_b^\dagger + U_b^\dagger\dot{\beta}^*b - \frac{1}{2}(\dot{\beta} \beta^*+\dot{\beta}^* \beta)U_b^\dagger.
+\end{align} El caso de $U_\Gamma$ es más complejo, pero el procedimiento es equivalente. Se obtiene
+
+\begin{align}
+\dot{U}_\Gamma =&(\dot{\alpha}\Gamma^\dagger +\alpha \dot{\Gamma}^\dagger)U_\Gamma - U_\Gamma(\dot{\alpha}^*\Gamma+\alpha^* \dot{\Gamma}) + (\alpha^*)^2 C_{--}(t)U_\Gamma-\frac{1}{2}(\dot{\alpha} \alpha^*+\dot{\alpha}^* \alpha)U_\Gamma, \\
+\dot{U}^\dagger_\Gamma=&-(\dot{\alpha}\Gamma^\dagger +\alpha \dot{\Gamma}^\dagger)U_\Gamma^\dagger + U_\Gamma^\dagger(\dot{\alpha}^*\Gamma+\alpha^* \dot{\Gamma}) - (\alpha)^2 C_{++}(t)U_\Gamma^\dagger-\frac{1}{2}(\dot{\alpha} \alpha^*+\dot{\alpha}^* \alpha)U_\Gamma^\dagger.
+\end{align} Finalmente se debe calcular las transformaciones de las derivadas temporales de los operadores $\Gamma$
+
+\begin{align}
+U^{\dagger}\dot{\Gamma}U =& \dot{\Gamma} + \alpha C_{-+}(t) -\alpha^* C_{--}(t),\\
+U^{\dagger}\dot{\Gamma}^\dagger U =& \dot{\Gamma}^\dagger - \alpha^* C_{+-}(t) +\alpha C_{++}(t). 
+\end{align} Falta únicamente calcular los términos de la ecuación maestra que corresponden a estas derivadas temporales
+
+
+
 
 
 
