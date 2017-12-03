@@ -15,7 +15,7 @@
 \tableofcontents
 \chapter*{Objetivo General}
 
-Se busca modelar un sistema optomecánico con parámetros dependientes del tiempo. El sistema es una cavidad de Fabry-Perot donde uno de los dos espejos es un resonador armónico cuya frecuencia natural depende del tiempo de manera periódica. Se ha demostradon que utilizar un formalismo que toma en cuenta la dependencia temporal de la frecuencia natural del oscilador llevan a un mejor modelo teórico para el sistema\cite{HanngiFM}. En un trabajo anterior donde se utiliza este formalismo para estudiar el enfriamiento del oscilador mecánico se encontró que la predicción para el enfriamiento es cualitativamente distinta aún a primer orden de perturbación para la dependencia temporal\cite{YanesOC}. Esto motiva la pregunta: ¿Qué sucede al tomar en cuenta el efecto de la variación de la longitud de la cavidad sobre la frecuencia de resonancia de la cavidad? En este trabajo se investiga este efecto. 
+Se estudia el enfriamiento de un oscilador mecánico acoplado a una cavidad óptica cuando se toma en cuenta que la frecuencia natural de la cavidad óptica es una función del tiempo que depende de la frecuencia del oscilador mecánico. Se ha demostrado que utilizar un formalismo que toma en cuenta la dependencia temporal de la frecuencia natural del oscilador mecánico lleva a un mejor modelo teórico para el sistema\cite{HanngiFM}. En un trabajo anterior donde se utiliza este formalismo para estudiar el enfriamiento del oscilador mecánico se encontró que la predicción para el enfriamiento es cualitativamente distinta aún a primer orden de perturbación para la dependencia temporal\cite{YanesOC}. Esto motiva la pregunta: ¿Qué sucede al tomar en cuenta el efecto de la variación de la longitud de la cavidad sobre la frecuencia de resonancia de la cavidad? En este trabajo se investiga este efecto. 
 
 
 \chapter{Introducción}
@@ -406,7 +406,10 @@ P=&U_2^{-1}\tilde{p}U_2 = |f|(p-2\chi q),
 
 Con esto establecido se puede proceder a establecer un Hamiltoniano para enfriamiento optomecánico con parámetros dependientes del tiempo.
 
-\chapter{Enfriamiento Optomecánico Dependiente del Tiempo}
+\chapter{Enfriamiento Optomecánico Dependiente del Tiempo: Caso de Oscilador Armónico Dependiente del Tiempo}
+
+En este capítulo se da un breve resumen del trabajo realizado en \cite{TesisMaestria} y en \cite{YanesOC}. Se muestra que  cuando se toma en cuenta una dependencia temporal en la frecuencia  de un oscilador armónico mecánico acoplado a una cavidad de Fabry-Perot se llega a cambios cuantitativos y cualitativos en el enfriamiento del mismo. Esto motiva el trabajo que inicia en el capítulo siguiente.
+
 
 \section{Hamiltoniano para Enfriamiento Optomecánico con Parámetros Dependientes del Tiempo}
 
@@ -429,47 +432,15 @@ Bomba =& \hbar\frac{\Omega}{2}(a^\dagger + a),
 
 \begin{equation}
 H_{mec}(t) = \hbar\frac{W}{|f(t)|^2}(\Gamma^\dagger \Gamma + \frac{1}{2}).
-\end{equation} Recordando la definición de los operadores de Floquet \eqref{FloquetOperators}, se puede invertir la relación en términos de los operadores $x$ y $p$
-
-\begin{align*}
-\Gamma(t) \Ket{\Psi_\alpha (x,t)} =& \sqrt{\alpha}\Ket{\Psi_{\alpha-1} (x,t)}, \\
-\Gamma^\dagger(t) \Ket{\Psi_\alpha (x,t)} =& \sqrt{\alpha+1}\Ket{\Psi_{\alpha+1} (x,t)}.
-\end{align*}Si se toma la suma y la resta de los operadores
-
-\begin{align*}
-2i(\Gamma (t) + \Gamma ^\dagger (t)) =& (\dot{E} (t) - \dot{E}^* (t)) \sqrt{\frac{2m}{\hbar}}x + (E^* (t) - E (t))\sqrt{\frac{2}{m\hbar}} p, \\
-2i(\Gamma (t) - \Gamma ^\dagger (t)) =& (\dot{E} (t) + \dot{E}^* (t)) \sqrt{\frac{2m}{\hbar}}x -(E^* (t) + E (t))\sqrt{\frac{2}{m\hbar}} p,
-\end{align*} renombrando los coeficientes esto es simplemente
-
-\begin{align*}
-2i(\Gamma (t) + \Gamma ^\dagger (t)) =& ax + bp, \\
-2i(\Gamma (t) - \Gamma ^\dagger (t)) =& cx - dp,
-\end{align*} si se toma la primera ecuación multiplicada por $\frac{d}{b}$ y se suma a la segunda, se obtiene
-
-\begin{align*}
-(\frac{da}{b}+c)x =& 2i \frac{d}{b}(\Gamma (t) + \Gamma ^\dagger (t)) + 2i(\Gamma (t) - \Gamma ^\dagger (t)), \\
-=&2i[(\frac{d}{b}+1)\Gamma (t)+(\frac{d}{b}-1)\Gamma^\dagger (t)]\\
-\therefore x =& \frac{2i[(\frac{d}{b}+1)\Gamma (t)+(\frac{d}{b}-1)\Gamma^\dagger (t)]}{\frac{da}{b}+c},
-\end{align*} o lo que es equivalente
+\end{equation} Recordando la definición de los operadores de Floquet \eqref{FloquetOperators}, se puede invertir la relación en términos de los operadores $x$ y $p$ y sustituir el resultado en el Hamiltoniano de interacción, lo cual produce un nuevo Hamiltoniano\cite{TesisMaestria}
 
 \begin{equation}
-x = 2i \sqrt{\frac{\hbar}{2m}}[(\frac{A(t) +1}{B(t)})\Gamma (t) +(\frac{A(t) -1}{B(t)})\Gamma^\dagger (t)],
-\end{equation} donde
-
-\begin{align}
-A(t) =& \frac{d}{b} = \frac{(E^* (t) + E (t))}{(E^* (t) - E (t))}, \\
-B(t) = & \frac{da}{b}+c \\
-=& \frac{(E^* (t) + E (t))(\dot{E} (t) - \dot{E}^* (t)) \sqrt{\frac{2m}{\hbar}}}{(E^* (t) - E (t))} + (\dot{E} (t) + \dot{E}^* (t)) \sqrt{\frac{2m}{\hbar}}\\
-=&\sqrt{\frac{2m}{\hbar}}\frac{(E^* (t) + E (t))(\dot{E} (t) - \dot{E}^* (t))+(E^* (t) - E (t))(\dot{E} (t) + \dot{E}^* (t))}{(E^* (t) - E (t))}.
-\end{align}Con esto, es posible sustituir el operador $x$ en el Hamiltoniano de radiación con operadores de Floquet, lo cual produce un nuevo Hamiltoniano\cite{TesisMaestria}
-
-\begin{equation}
-H(t)_{rad} = 2ig\sqrt{\frac{\hbar^3}{2m}}  a^\dagger a[(\frac{A(t) +1}{B(t)})\Gamma (t) +(\frac{A(t) -1}{B(t)})\Gamma^\dagger (t)]
+H(t)_{rad} = 2ig\sqrt{\frac{\hbar^3}{2m}}  a^\dagger a[\gamma_+(t)\Gamma (t) +\gamma_-(t)\Gamma^\dagger (t)]
 \end{equation} con esto, el Hamiltoniano final es el siguiente
 
 \begin{equation}\label{LaserCoolingHamiltonian}
 H(t) = -\hbar \delta a^\dagger a + \frac{W}{|f(t)|^2}(\Gamma^\dagger \Gamma + \frac{1}{2}) +  g'a^\dagger a[\gamma_+(t)\Gamma (t) +\gamma_-(t)\Gamma^\dagger (t)] + \hbar\frac{\Omega}{2}(a^\dagger + a),
-\end{equation} donde se hicieron las redefiniciones
+\end{equation} donde 
 
 \begin{align*}
 g'=&g\sqrt{\frac{\hbar^3}{2m}},\\
@@ -480,95 +451,35 @@ g'=&g\sqrt{\frac{\hbar^3}{2m}},\\
 
 \section{Transformación Mediante Operador de Desplazamiento}
 
-Para poder encontrar una solución es necesario eliminar los términos de tercer orden en operadores, ya que estos son no-lineales y causan dificultades. Esto puede lograrse mediante una transformación unitaria. Esta técnica es análoga a la utilizada para el enfriamiento láser optomecánico usual. Se utiliza la transformación
+Para poder encontrar una solución es necesario eliminar los términos de tercer orden en operadores, ya que estos son no-lineales y causan dificultades. Esto puede lograrse mediante una transformación unitaria. Se utiliza la transformación
 
 \begin{equation}
 U_{a,\Gamma} = e^{(\alpha(t) a^\dagger - \alpha(t)^*a)}e^{(\beta(t) \Gamma^\dagger - \beta(t)^*\Gamma)},
-\end{equation}la cual es unitaria. Es importante notar que tanto $\alpha$ como $\beta$ dependen del tiempo, está dependencia no se escribirá de forma explícita a futuro por brevedad. Bajo la transformación, el operador densidad es
+\end{equation}la cual es unitaria. Tanto $\alpha$ como $\beta$ dependen del tiempo, está dependencia no se escribirá de forma explícita a futuro por brevedad. Bajo la transformación, el operador densidad es
 
 \begin{equation}
 \rho' = U_{a,\Gamma}^\dagger \rho U_{a,\Gamma}.
-\end{equation} Se puede despejar en términos de $\rho$, utilizando el hecho de que la transformación es unitaria
+\end{equation} Se puede despejar en términos de $\rho$, aprovechando que la transformación es unitaria
 
 \begin{equation}
 \rho = U_{a,\Gamma} \rho' U_{a,\Gamma}^\dagger,
-\end{equation}y derivando respecto al tiempo
+\end{equation} y derivando respecto al tiempo
 
 \begin{equation}
 \dot{\rho} = L\rho = \frac{d}{dt}(U_{a,\Gamma} \rho' U_{a,\Gamma}^\dagger).
-\end{equation} En este caso, $L$ representa el operador de Liouville. Esto permite obtener una ecuación maestra para $\rho'$. 
+\end{equation} En este caso, $L$ representa el operador de Liouville. Esto permite obtener una ecuación maestra para $\rho$. 
 
 \begin{align}
  U_{a,\Gamma} \dot{(\rho')} U_{a,\Gamma}^\dagger =& L[U_{a,\Gamma} \rho' U_{a,\Gamma}^\dagger] - \dot{U}_{a,\Gamma}\rho'U_{a,\Gamma}^\dagger -U_{a,\Gamma} \rho' \dot{U}_{a,\Gamma}^\dagger\\
 \dot{\rho} =& U_{a,\Gamma}^\dagger L[U_{a,\Gamma} \rho' U_{a,\Gamma}^\dagger]U_{a,\Gamma}-U_{a,\Gamma}^\dagger\dot{U}_{a,\Gamma}\rho'-\rho'\dot{U}_{a,\Gamma}^\dagger U_{a,\Gamma}.
-\end{align}A partir de este punto, se omiten los sub-índices de las transformaciones y la $'$ para el operador densidad. Para ver los cálculos de la transformación en detalle, ver los apéndices, en esta sección únicamente se ilustrara el procedimiento. Para entender el efecto de la transformación se utiliza la fórmula de Baker-Campbell-Hausdorff \cite{SakuraiQM}, para dos operadores $A$ y $B$
+\end{align}
 
-\begin{equation}
-e^{A} B e^{-A} = B + [A,B] + \frac{1}{2}[A,[A,B]] + ... .
-\end{equation} Debido a que los operadores involucrados si conmutan con sus conmutadores, la serie se corta de manera automática. Aplicando esta regla a los operadores que forman la ecuación maestra se obtiene
-
-\begin{align}
-U^{\dagger} a U =& a + \alpha, \\
-U^{\dagger} a^{\dagger} U =& a^{\dagger} + \alpha^*, \\
-U^{\dagger} \Gamma U =& \Gamma + \beta, \\
-U^{\dagger} \Gamma^{\dagger} U =& \Gamma^{\dagger} + \beta^*, 
-\end{align} Con esto, los Hamiltonianos transforman en
-
-\begin{align}
-H_{cav}' =& -\hbar \delta(a^{\dagger}a +\alpha a^{\dagger}+\alpha^* a + |\alpha|^2),\\
-H_{mec}' =& \frac{W}{|f(t)|^2}(\Gamma^{\dagger}\Gamma + \beta \Gamma^{\dagger} + \beta^* \Gamma + |\beta|^2 ),\\
-H_{rad}'=&-\hbar g'[(a^{\dagger}a +\alpha a^{\dagger}+\alpha^* a + |\alpha|^2)(\gamma_-(t)(\Gamma^{\dagger}+\beta^*)+\gamma_+(t)(\Gamma+\beta))],\\
-B' =& \frac{\hbar \Omega}{2}(a^{\dagger} + a +\alpha + \alpha^*),
-\end{align}Los términos de Lindblad que modelan el decaimiento se convierten en
-
-\begin{align}
-L_a ' =& L_a + \frac{A}{2}[(\alpha a^\dagger - \alpha^*a),\rho], \\
-L_{\Gamma}' =& L_{\Gamma} + \frac{\gamma}{2}[(\beta\Gamma^{\dagger}-\beta^* \Gamma),\rho].
-\end{align}Finalmente es necesario tomar en cuenta los términos provenientes de las derivadas temporales. Estos cálculos requieren de especial atención debido a la dependencia temporal de los operadores de Floquet. Los detalles se encuentran en el apéndice. Los términos obtenidos son
-
-\begin{align*}
-U^{\dagger}\dot{U}\rho + \rho \dot{U}^\dagger U =& -(\dot{\alpha}a \rho + \rho\dot{\alpha}a^{\dagger}) + \dot{\alpha}a^{\dagger}\rho + \rho \dot{\alpha}^*a,\\
-&+ \dot{\beta}\Gamma^{\dagger}\rho + \rho\dot{\beta}^*\Gamma-(\dot{\beta}^*\Gamma + \beta^*\dot{\Gamma})\rho - \rho(\dot{\beta} \Gamma^{\dagger} + \beta \dot{\Gamma}^{\dagger}) +\beta \dot{\Gamma}^{\dagger} + \rho\beta^* \dot{\Gamma},\\
-&+3(\beta^*)^2C_{--}(t)\rho + |\beta|^2(C_{+-}(t) - C_{-+}(t))\rho -  \beta^2 C_{++}(t)\rho,
-\end{align*}  donde las funciones $C_{\pm \pm}(t)$ son los conmutadores entre los operadores de Floquet y sus derivadas temporales, ya que estos, en general, no son nulos
-
-\begin{align*}
-C_{++}(t) =& [\dot{\Gamma}^{\dagger}, \Gamma^{\dagger}],\\
-C_{+-}(t) =& [\dot{\Gamma}^{\dagger}, \Gamma],\\
-C_{-+}(t) =& [\dot{\Gamma}, \Gamma^{\dagger}],\\
-C_{--}(t) =& [\dot{\Gamma}, \Gamma].
-\end{align*} 
- 
-Es interesante notar que toda la dependencia relacionada con estas funciones va acompañada de coeficientes de orden $|\beta|^2$. Por el momento estos términos se tratarán de forma separada. Todos los demás términos se pueden expresar como conmutadores
-
-\begin{equation}
--(U^{\dagger}\dot{U}\rho + \rho \dot{U}^\dagger U) = [\dot{\alpha}^*a-\dot{\alpha}a^\dagger+\dot{\beta}^*\Gamma-\dot{\beta}\Gamma^\dagger,\rho]+ [\beta^*\dot{\Gamma} - \beta \dot{\Gamma}^\dagger,\rho],
-\end{equation} lo cual sugiere tratarlos, junto con los términos adicionales que surgen al transformar los términos de Lindblad, como parte del Hamiltoniano. Esto lleva a que el Hamiltoniano efectivo en el marco transformado 
-
-\begin{align}
-H_{rot} =& i\hbar(\dot{\alpha}^*a-\dot{\alpha}a^\dagger+\dot{\beta}^*\Gamma-\dot{\beta}\Gamma^\dagger),\\
-H_{dec} =& i\hbar(\frac{A}{2}(\alpha a^\dagger - \alpha^*a)+\frac{\gamma}{2}(\beta\Gamma^{\dagger}-\beta^* \Gamma)),\\
-H_{temp}=& i\hbar(\beta^*\dot{\Gamma} - \beta \dot{\Gamma}^\dagger),
-\end{align} si se escribe el Hamiltoniano total del sistema en el nuevo marco de referencia, se llega a que este es
-
-\begin{align*}
-H =& -\hbar \delta(a^{\dagger}a +\alpha a^{\dagger}+\alpha^* a)+\hbar\frac{W}{|f(t)|^2}(\Gamma^{\dagger}\Gamma + \beta \Gamma^{\dagger} + \beta^* \Gamma)\\
- &-\hbar g'[(a^{\dagger}a +\alpha a^{\dagger}+\alpha^* a + |\alpha|^2)(\gamma_-(t)(\Gamma^{\dagger}+\beta^*)+\gamma_+(t)(\Gamma+\beta))]\\
- &+\frac{\hbar \Omega}{2}(a^{\dagger} + a)+i\hbar(\dot{\alpha}^*a-\dot{\alpha}a^\dagger+\dot{\beta}^*\Gamma-\dot{\beta}\Gamma^\dagger)\\
- &+i\hbar(\frac{A}{2}(\alpha a^\dagger - \alpha^*a)+\frac{\gamma}{2}(\beta\Gamma^{\dagger}-\beta^* \Gamma))+i\hbar(\beta^*\dot{\Gamma} - \beta \dot{\Gamma}^\dagger),
-\end{align*} aquí es importante notar que se eliminaron los términos que no contenían ningún operador, puesto que estos claramente conmutan con $\rho$ y por lo tanto no contribuyen a la ecuación maestra. Se desea eliminar los términos que únicamente contienen un operador de creación o aniquilación, por lo que se agrupan todos estos términos y se obtienen cuatro ecuaciones
-
-\begin{align}
-a&(-\hbar\delta\alpha^* -\hbar g' \alpha^*(\gamma_-(t) \beta^* + \gamma_+(t) \beta)+ \frac{\hbar\Omega}{2} + i\hbar\dot{\alpha}^* -i\hbar\frac{A}{2}\alpha^*),\\
-a^\dagger&(-\hbar\delta\alpha -\hbar g' \alpha(\gamma_-(t) \beta^* + \gamma_+(t) \beta)+ \frac{\hbar\Omega}{2} - i\hbar\dot{\alpha} +i\hbar\frac{A}{2}\alpha),\\
-\Gamma&(\frac{W}{|f(t)|^2}\beta^*-\hbar g'|\alpha|^2\gamma_- +  i\hbar\dot{\beta}^*+i\hbar\frac{\gamma}{2}\beta^*),\\
-\Gamma^\dagger&(\hbar\frac{W}{|f(t)|^2}\beta-\hbar g'|\alpha|^2\gamma_+ -  i\hbar\dot{\beta}-i\hbar\frac{\gamma}{2}\beta),
-\end{align} si se desea eliminar todos estos términos, los términos asociados a cada operador deben eliminarse de manera independiente, lo cual genera ecuaciones diferenciales independientes para los coeficientes $\alpha$ y $\beta$. Es importante notar que solo se obtienen dos ecuaciones, ya que dos de las ecuaciones son simplemente los complejos conjugados de las otras dos. Estas son
+Esta transformación se emplea de nuevo y con más detalle en el capítulo siguiente. En el caso donde $\alpha$ y $beta$ cumplen con las ecuaciones
 
 \begin{align}
 \dot{\alpha} =& \alpha(-\frac{A}{2}+i(\delta+g'(\gamma_-(t) \beta^* + \gamma_+(t) \beta))-i\frac{\Omega}{2},\\
 \dot{\beta} =& \beta(-\frac{\gamma}{2}-i\frac{W}{|f(t)|^2})+ig'|\alpha|^2\gamma_+(t),
-\end{align} si estas ecuaciones se cumplen
+\end{align} el Hamiltoniano resulta
 
 
 \begin{align*}
@@ -576,13 +487,18 @@ H'=& -\hbar \delta' a^\dagger a + \frac{W}{|f(t)|^2}\Gamma \Gamma^\dagger -\hbar
 &+ i\hbar(\beta^*\dot{\Gamma} - \beta \dot{\Gamma}^\dagger),
 \end{align*}  donde se ha hecho el cambio $\delta' = \delta + g'(\beta + \beta^*)$. Con esto se obtiene la ecuación maestra para el enfriamiento optomecánico con un oscilador con frecuencia dependiente del tiempo, en el marco de referencia desplazado
 
+
 \begin{equation}\label{DLCMasterEquation}
-\dot{\rho} = \frac{1}{i\hbar}[H',\rho] + L_a\rho + L_\Gamma\rho + 3(\beta^*)^2C_{--}(t)\rho + |\beta|^2(C_{+-}(t) - C_{-+}(t))\rho -  \beta^2 C_{++}(t)\rho,
-\end{equation} en donde $C(t)$ representa los términos de conmutadores vistos anteriormente. Para poder avanzar más, se requiere una forma específica para la dependencia funcional de la frecuencia del oscilador. 
+\dot{\rho} = \frac{1}{i\hbar}[H',\rho] + L_a\rho + L_\Gamma\rho + |\beta|^2(Re[C])\rho,
+\end{equation} donde 
+
+\begin{equation}
+C = [\dot{\Gamma}^\dagger, \Gamma]
+\end{equation} 
 
 \section{Solución para Oscilaciones Pequeñas}
 
-La solución deseada se puede obtener mediante la teoría de Floquet vista anteriormente
+Esta solución se obtiene mediante la teoría de Floquet. \cite{TesisMaestria} 
 
 \begin{equation}\label{SmallOscillationsTDHO}
 \nu(t) = \nu_0 + \epsilon cos(2\omega t),
@@ -607,12 +523,9 @@ f(t)=  e^{i\omega t} + \frac{\epsilon}{16} e^{3i\omega t},
 
 Con una solución para \ref{SmallOscillationsTDHO} en mano, podemos calcular soluciones explícitas para todos los términos que se han obtenido. Estos resultan ser\cite{TesisMaestria}
 
-\begin{align}
-C_{++}(t) =& -\epsilon\frac{i}{8}e^{-4i\omega t},\\
-C_{--}(t) =& -\epsilon\frac{i}{8}e^{4i\omega t},\\
-C_{+-}(t) =& i [1 -\frac{\epsilon}{16}e^{2i\omega t}-\frac{6\epsilon}{16}e^{-2i\omega t}],\\
-C_{-+}(t) =& i [1 -\frac{\epsilon}{16}e^{-2i\omega t}-\frac{6\epsilon}{16}e^{2i\omega t}].
-\end{align} Los coeficientes $\gamma_{\pm}$ se calculan y resultan
+\begin{equation}
+C(t) = i [1 -\frac{\epsilon}{16}e^{-2i\omega t}-\frac{6\epsilon}{16}e^{2i\omega t}].
+\end{equation} Los coeficientes $\gamma_{\pm}$ son
 
 \begin{equation}
 \gamma_\pm= \frac{1}{\omega}e^{\mp i\omega t},
@@ -627,7 +540,7 @@ Y se puede obtener expresiones explícitas para los coeficientes $\alpha(t)$ y $
 \begin{align}
 \dot{\alpha} =& \alpha(-\frac{A}{2}+i(\delta+g'e^{i\omega t} \beta^* + e^{-i\omega t} \beta))-i\frac{\Omega}{2},\\
 \dot{\beta} =& \beta(-\frac{\gamma}{2}-i 2\omega)+ig'|\alpha|^2e^{i\omega t},
-\end{align} el enfoque del enfriamiento se encuentra en el caso del estado estacionario ($\dot{\alpha}(t)=\dot{\beta}(t)=0$) y en el régimen de acoplamiento débil por lo que coeficientes de orden mayor a cero en g $g'$ se desprecian. Esto lleva a 
+\end{align} el enfoque del enfriamiento se encuentra en el caso del estado estacionario ($\dot{\alpha}(t)=\dot{\beta}(t)=0$) y en el régimen de acoplamiento débil por lo que coeficientes de orden mayor a cero en  $g'$ se desprecian. Esto lleva a 
 
 \begin{align}
 0 =& \alpha(-\frac{A}{2}+i\delta)-i\frac{\Omega}{2},\\
@@ -641,12 +554,12 @@ Y se puede obtener expresiones explícitas para los coeficientes $\alpha(t)$ y $
 
 \subsection{Hamiltoniano para Enfriamiento Laser}
 
-Bajo estás condiciones se anulan todos los términos de conmutadores y las derivadas y el Hamiltoniano resulta
+Bajo estás condiciones  el Hamiltoniano resulta
 
 \begin{align}
 H =& -\hbar \delta a^{\dagger}a +\hbar\omega\Gamma^{\dagger}\Gamma \\
 &-\hbar g'(a^{\dagger}a +\alpha_0 a^{\dagger}+\alpha^*_0 a)(\gamma_-(t)\Gamma^{\dagger}+\gamma_+(t)\Gamma)\nonumber.
-\end{align} En este régimen $|\alpha| \gg 1$ \cite{BarberisLC}, por lo que el término $a^\dagger a$ se puede despreciar y se llega a un Hamiltoniano simplificado
+\end{align} En este régimen $|\alpha_0| \gg 1$ \cite{BarberisLC}, por lo que el término $a^\dagger a$ se puede despreciar y se llega a un Hamiltoniano simplificado
 
 \begin{align} \label{LCHamiltonian}
 H(t) =& -\hbar \delta a^{\dagger}a +\hbar\omega\Gamma^{\dagger}\Gamma \\
@@ -789,7 +702,7 @@ El cálculo utiliza la proporción entre la frecuencia promedio $nu_0$ y el desf
 \caption{\textit{Comparación entre predicciones con y sin el término $\epsilon$} La línea puntuada representa la predicción sin dependencia temporal y la línea sólida representa la predicción con el término adicional. Esta resulta en un mínimo más pequeño de excitaciones posibles y en un corrimiento en el punto donde se espera encontrar este mínimo. Se utiliza $\kappa \ll \nu_0$}
 \end{figure}
 
-\chapter{Cavidad con Frecuencia Dependiente del Tiempo}
+\chapter{Enfriamiento Optomecánico Dependiente del Tiempo: Caso de Cavidad con Frecuencia Dependiente del Tiempo}
 
 Como se puede observar en el capítulo anterior, el cambio en el comportamiento predicho por el modelo con dependencia temporal es notorio. Sin embargo, durante todas las derivaciones se asume que la cavidad tiene un solo modo de frecuencia constante $\omega_c$. La frecuencia de resonancia de una cavidad de Fabry-Perot, asumiendo que su interior se encuentre en el vacío, está dada por
 
@@ -798,15 +711,15 @@ Como se puede observar en el capítulo anterior, el cambio en el comportamiento 
 \end{equation} donde $c$ es la velocidad de la luz en el vacío, $n$ es algún entero y $L$ es la longitud de la cavidad. Al emplear un montaje optomecánico como el que se lleva a los resultados del capítulo anterior, $L$ deja de ser constante. Si el oscilador mecánico tiene oscilaciones de amplitud $A$ y se toma a $L_0$ como la longitud promedio de la cavidad, la longitud de la cavidad como función del tiempo viene dada por
 
 \begin{equation}
-l(t) = l_0 + A cos(\omega t)
+l(t) = l_0 - A cos(2\omega t)
 \end{equation} lo cual lleva a la frecuencia 
 
 \begin{align}
-\nu(t) =& \frac{nc}{2l_0+2Acos(\omega t)}, \\
-\approx& \frac{nc}{2l_0} - \frac{nc Acos(\omega t)}{4l_0^2}, \\
-=& \frac{nc}{2l_0} - \frac{nc}{2l_0}(\frac{A}{l_0})cos(\omega t), \\
-=& \omega_0 - \epsilon\omega_0 cos(\omega t), \\
-=& \omega_0(1-\epsilon\ cos(\omega t)).
+\nu(t) =& \frac{nc}{2l_0-2Acos(2\omega t)}, \\
+\approx& \frac{nc}{2l_0} + \frac{nc Acos(2\omega t)}{4l_0^2}, \\
+=& \frac{nc}{2l_0} + \frac{nc}{2l_0}(\frac{A}{l_0})cos(2\omega t), \\
+=& \omega_0 + \epsilon\omega_0 cos(2\omega t), \\
+=& \omega_0(1+\epsilon\ cos(2\omega t)).
 \end{align} donde la expresión se deja en primer orden del parámetro de perturbación $\epsilon = \frac{A}{l_0}$. Bajo estas restricciones se tiene un sistema de oscilador armónico donde la frecuencia natural es una función periódica del tiempo. Esto permite el uso de los operadores de Floquet vistos en el capítulo anterior. Se busca un Hamiltoniano optomecánico expresado en términos de estos operadores. Para este fin se hace referencia a la derivación del Hamiltoniano optomecánico general en \cite{LawOH}. Reduciendo la expresión a un solo modo para la cavidad, se tiene la expresión
 
 \begin{equation}
@@ -966,6 +879,125 @@ U^\dagger \Gamma^\dagger \Gamma U =& \Gamma^\dagger \Gamma + \alpha^* \Gamma + \
 U^{\dagger}\dot{\Gamma}U =& \dot{\Gamma} + \alpha C_{-+}(t) -\alpha^* C_{--}(t),\\
 U^{\dagger}\dot{\Gamma}^\dagger U =& \dot{\Gamma}^\dagger - \alpha^* C_{+-}(t) +\alpha C_{++}(t). 
 \end{align} Falta únicamente calcular los términos de la ecuación maestra que corresponden a estas derivadas temporales
+
+\begin{equation}
+U_b^\dagger \dot{U}_b \rho + U_\Gamma^\dagger \dot{U}_\Gamma \rho + \rho \dot{U}_b^\dagger U_b+ \rho \dot{U}_\Gamma^\dagger U_\Gamma,
+\end{equation} los cuales resultan ser
+
+\begin{align}
+U_\Gamma^\dagger \dot{U}_\Gamma \rho &= [(\dot{\alpha}\Gamma^\dagger + \alpha \dot{\Gamma}^\dagger - \dot{\alpha}^*\Gamma -\alpha^*\dot{\Gamma} ) \\
+ &- |\alpha|^2C_{+-} + (\alpha)^2C_{++} + (\alpha^*)^2 C_{--} - \frac{1}{2}\dot{|\alpha^2|} + \dot{\alpha}^*\alpha]\rho \nonumber,
+\end{align}
+
+\begin{align}
+ \rho \dot{U}_\Gamma^\dagger U_\Gamma &= \rho[(-\dot{\alpha}\Gamma^\dagger - \alpha \dot{\Gamma}^\dagger + \dot{\alpha}^*\Gamma +\alpha^*\dot{\Gamma} ) \\
+ &+ |\alpha|^2C_{-+} - (\alpha)^2C_{++} - (\alpha^*)^2 C_{--} - \frac{1}{2}\dot{|\alpha^2|} + \dot{\alpha}\alpha^*], \nonumber
+\end{align}
+
+\begin{align}
+U_\Gamma^\dagger \dot{U}_\Gamma \rho + \rho \dot{U}_\Gamma^\dagger U_\Gamma &= [\rho, (\alpha^*\dot{\Gamma} - \alpha\dot{\Gamma}^\dagger)] + [\rho, (\dot{\alpha}^*\Gamma - \dot{\alpha}\Gamma^\dagger)] \\
+&+|\alpha|^2 (C_{-+} - C_{+-}).
+\end{align} Los términos $C$ no contienen operadores y son
+
+\begin{align*}
+C_{+-}(t) =& [\dot{\Gamma}^{\dagger}, \Gamma],\\
+C_{-+}(t) =& [\dot{\Gamma}, \Gamma^{\dagger}],
+\end{align*} 
+
+
+Los terminos que involucran un conmutador con la matriz densidad se consideran parte del Hamiltoniano. El procedimiento para los términos  $U_b$ es el mismo pero resulta más sencillo
+
+\begin{equation}
+U_b^\dagger \dot{U}_b \rho+ \rho \dot{U}_b^\dagger U_b = [\rho, (\dot{\beta}^*b - \dot{\beta}b^\dagger)].
+\end{equation} El Hamiltoniano queda entonces dado por
+
+\begin{align}
+H_{mec}' =& \hbar \omega(b^{\dagger}b +\beta b^{\dagger}+\beta^* b + |\beta|^2),\\
+H_{cav}' =& \hbar\frac{W}{|f(t)|^2}(\Gamma^{\dagger}\Gamma + \alpha \Gamma^{\dagger} + \alpha^* \Gamma + |\alpha|^2 ),\\
+H_{rad}'=&-\hbar g(t)[(\Gamma^{\dagger}\Gamma + \alpha \Gamma^{\dagger} + \alpha^* \Gamma + |\alpha|^2 )((b^{\dagger}+\beta^*)+(b+\beta))],\\
+B' =& \frac{\hbar \Omega}{2}(\Gamma^{\dagger} + \Gamma +\alpha + \alpha^*).
+\end{align}
+
+Más términos adicionales generados por la transformación debido a sus derivadas temporales
+
+\begin{equation}
+H_{T} = (\alpha^*\dot{\Gamma} - \alpha\dot{\Gamma}^\dagger) +(\dot{\alpha}^*\Gamma - \dot{\alpha}\Gamma^\dagger) +(\dot{\beta}^*b - \dot{\beta}b^\dagger),
+\end{equation} y debido a los términos de Lindblad
+
+\begin{equation}
+U^\dagger [L_aU\rho U^\dagger]U + U^\dagger [L_\Gamma U\rho U^\dagger]U,
+\end{equation} se generan términos adicionales para el Hamitloniano mientras que los términos de Lindblad mantienen su forma original
+
+\begin{align}
+U^\dagger [L_bU\rho U^\dagger]U=& L_b\rho + [\beta b^\dagger - \beta^* b,\rho],\\
+U^\dagger [L_\Gamma U\rho U^\dagger]U =& L_\Gamma \rho + [ \alpha \Gamma^\dagger - \alpha^* \Gamma,\rho].
+\end{align} La transformación de los términos Lindblad resulta en  Hamiltoniano efectivo adicional
+
+\begin{equation}
+H_L = -\frac{\gamma}{2}(\beta b^\dagger + \beta^* b) -\frac{\kappa}{2}( \alpha \Gamma^\dagger + \alpha^* \Gamma).
+\end{equation} A fin de simplificar el Hamiltoniano, es necesario agrupar todos los términos a primer orden en operadores
+
+\begin{align}
+&b(\omega\beta - g(t)|\alpha|^2 + i\dot{\beta}^* + i\frac{\gamma}{2}\beta),\\
+&\Gamma(\frac{W\alpha}{|f|^2} -g(t)\alpha(\beta^*+\beta) + \frac{\Omega}{2}-i\dot{\alpha} - i\frac{\kappa}{2}\alpha),
+\end{align} y sus conjugados Hermitianos. Para anular estos términos es necesario que se cumpla el sistema de ecuaciones diferenciales
+
+\begin{align}
+&\dot{\beta} = -i\omega\beta^* + ig(t)|\alpha|^2 - \frac{\gamma}{2}\beta,\\
+&\dot{\alpha} = -i \frac{W}{|f|^2}\alpha^* + ig(t)\alpha(\beta + \beta^*) -i \frac{\Omega}{2} - \frac{\kappa}{2}\alpha^*.
+\end{align} Debido a la forma de la frecuencia elegida, la función $f(t)$ que figura en los operadores $\Gamma$ es
+
+\begin{equation}
+f(t) = e^{i\omega t} + \frac{\epsilon}{16}e^{3i\omega t}
+\end{equation} por lo que si se desprecian términos de corrección menores a epsilon
+
+\begin{align}
+\dot{\Gamma}(t) =& i\omega \Gamma(t),\\
+\dot{\Gamma}^\dagger(t) =& -i\omega \Gamma^\dagger(t),
+\end{align} y estos términos deben incluirse en las ecuaciones para $\alpha$ y $\beta$
+
+\begin{align}
+&\dot{\beta} = -i\omega\beta^* + ig(t)|\alpha|^2 - \frac{\gamma}{2}\beta,\\
+&\dot{\alpha} = -i \frac{W}{|f|^2}\alpha^* + ig(t)\alpha(\beta + \beta^*) -i \frac{\Omega}{2} - \frac{\kappa}{2}\alpha^* + \omega\alpha^*.
+\end{align} El caso de interés es el caso estacionario $\dot{\alpha}=\dot{\beta} = 0$. Se trabaja el límite de acoplamiento pequeño y se limíta el análisis a orden 0 en el parámetro de acoplamiento $g(t)$
+
+\begin{align}
+&0 = -i\omega\beta^* - \frac{\gamma}{2}\beta,\\
+&0 = -i \frac{W}{|f|^2}\alpha^* -i \frac{\Omega}{2} - \frac{\kappa}{2}\alpha^* + \omega\alpha^*.
+\end{align} dada la expresión para $f(t)$ se tiene
+
+\begin{equation}
+\frac{W}{|f(t)|^2} = \omega,
+\end{equation} se llega a la solución, a orden 0 en acoplamiento
+
+\begin{align}
+\beta_0 =& 0, \\
+\alpha_0 =& \frac{\Omega}{-i\kappa - 2\omega(1-i)}.
+\end{align} lo cual resulta en el Hamiltoniano transformado
+
+\begin{equation}
+H = \hbar \omega b^\dagger b + \hbar\omega \Gamma^\dagger \Gamma -\hbar g(t)[( \alpha \Gamma^{\dagger} + \alpha^* \Gamma)(b^{\dagger}+b)]
+\end{equation} donde se ha despreciado el término $\Gamma^{\dagger}\Gamma$ en la interacción ya que en este régimen $|\alpha| \gg 1$ y es depreciable respecto a los otros dos términos. De esta forma se tiene un nuevo Hamiltoniano para interacción optomecánica donde se modela que la intensidad de la interacción optomecánica es una función del tiempo.
+
+\chapter{Objetivos Futuros}
+
+
+A partir del Hamiltoniano obtenido es posible estudiar un sistema de gran importancia tomando en cuenta su dependencia temporal inherente, la cual se no se mantiene en el Hamiltoniano usual\cite{CavesIF}. A partir de este punto se proponen tres objetivos para realizar un estudio más completo de este sistema bajo este nuevo enfoque. En todos los casos se espera obtener expresiones analíticas y resultados numéricos  para la temperatura final del oscilador mecánico bajo la aproximación adiabática.
+
+\section{Objetivos y Calendarización}
+
+\begin{enumerate}
+\item Llegar a una expresión para la temperatura final del espejo bajo la aproximación adiabática y compararla con la expresión usual que se obtiene al no considerar una dependencia temporal explícita para la frecuencia natural de la cavidad. Esto requiere deducir desde primeros principios la ecuación maestra que contiene los coeficientes de enfriamiento y calentamiento correspondientes al oscilador mecánico.
+
+\item Estudiar el sistema en un régimen distinto al establecido en los capítulos anteriores. Si no se puede tomar la interacción a orden cero durante la transformación al marco desplazado esto cambia el coeficiente $\alpha$ y lo convierte en una función del tiempo.
+
+\item Estudiar el sistema cuando el parámetro $\epsilon$ debe tomarse en cuenta hasta segundo orden. Este cambio lleva a que incluso el factor global del Hamiltoniano para el campo dentro de la cavidad sea una función del tiempo, lo que lleva a estudiar el efecto sobre el oscilador de interactuar con un campo cuya frecuencia natural oscila en el tiempo. 
+\end{enumerate}
+
+Se prevee que cada uno de estos objetivos, junto con trabajo de redacción y revisión bibliográfica adicional, sea realizable dentro de un semestre de trabajo. Esto implicaría un último semetre únicamente dedicado a redacción a fin de elaborar la tesis doctoral en tiempo y forma, así como un artículo de investigación a ser publicado en una revista internacional.
+
+
+
 
 
 
