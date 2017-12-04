@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  27 NOV 2017 12:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  4 DEC 2017 12:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -554,80 +554,78 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+) [1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write4
 \openout4 = `Candidatura.toc'.
 
- [1
-
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
+ [2] [3
 
 ]
 Cap\'{\i }tulo 1.
-[3
+[4
 
-] [4] [5]
+] [5] [6]
 Overfull \hbox (5.03125pt too wide) in paragraph at lines 79--79
 []\OT1/cmr/bx/n/14.4 Enfriamiento Op-to-mec^^Sani-co con Par^^Same-tros
  []
 
-[6]
+[7]
 Cap\'{\i }tulo 2.
-[7
+[8
 
-] [8] [9] [10] [11] [12] [13] [14]
+] [9] [10] [11] [12] [13] [14] [15]
 Cap\'{\i }tulo 3.
 
-Overfull \hbox (16.83282pt too wide) in paragraph at lines 411--411
+Overfull \hbox (16.83282pt too wide) in paragraph at lines 414--414
 []\OT1/cmr/bx/n/14.4 Hamiltoniano pa-ra En-fria-mien-to Op-to-mec^^Sani-
  []
 
-[15
+[16
 
-] [16]
-Overfull \hbox (2.02132pt too wide) in paragraph at lines 481--481
+]
+Overfull \hbox (2.02132pt too wide) in paragraph at lines 453--453
 []\OT1/cmr/bx/n/14.4 Transformaci^^Son Me-dian-te Ope-ra-dor de Des-
  []
 
 [17] [18]
-Overfull \hbox (4.61255pt too wide) in paragraph at lines 533--533
-[] 
- []
 
-[19] [20]
+LaTeX Warning: Citation `PiatekME' on page 19 undefined on input line 510.
 
-LaTeX Warning: Citation `PiatekME' on page 21 undefined on input line 593.
-
-[21] [22]
-Overfull \hbox (19.39066pt too wide) in paragraph at lines 681--682
+[19]
+Overfull \hbox (19.39066pt too wide) in paragraph at lines 595--596
 \OT1/cmr/m/n/10 po os-ci-la-dor arm^^Soni-co, la ecua-ci^^Son tie-ne so-lu-ci^^
 Son me-dian-te la ba-se de decaimiento[[]]. 
  []
 
-[23] [24] <GraficaTemp.pdf, id=96, 418.44414pt x 335.33347pt>
+[20] [21] [22] <GraficaTemp.pdf, id=88, 418.44414pt x 335.33347pt>
 File: GraficaTemp.pdf Graphic file (type pdf)
 
 <use GraficaTemp.pdf>
-Package pdftex.def Info: GraficaTemp.pdf used on input line 788.
+Package pdftex.def Info: GraficaTemp.pdf used on input line 702.
 (pdftex.def)             Requested size: 230.14499pt x 184.43398pt.
- [25] [26 <./GraficaTemp.pdf>]
+ [23] [24 <./GraficaTemp.pdf>]
 Cap\'{\i }tulo 4.
-[27
+[25
 
-] [28] [29] [30]
+] [26] [27] [28] [29]
 Cap\'{\i }tulo 5.
-[31
+[30
 
-] (./Candidatura.bbl [32]
+] [31] [32] [33] [34]
+Cap\'{\i }tulo 6.
+(./Candidatura.bbl [35
+
+]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 4.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4.
- [33
+ [36
 
 ]
 Underfull \hbox (badness 1067) in paragraph at lines 185--189
@@ -635,7 +633,7 @@ Underfull \hbox (badness 1067) in paragraph at lines 185--189
 of Mar-ko-vian and Non-
  []
 
-[34]) [35] (./Candidatura.aux
+[37]) [38] (./Candidatura.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 )
@@ -649,11 +647,11 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  3620 strings out of 494850
  45773 string characters out of 6178024
- 115243 words of memory out of 5000000
+ 116244 words of memory out of 5000000
  6858 multiletter control sequences out of 15000+600000
  8415 words of font info for 32 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 37i,10n,30p,1188b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,10n,30p,1191b,407s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
@@ -667,14 +665,13 @@ fonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm5.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Candidatura.pdf (35 pages, 315269 bytes).
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm5.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on Candidatura.pdf (38 pages, 308180 bytes).
 PDF statistics:
- 197 PDF objects out of 1000 (max. 8388607)
- 137 compressed objects within 2 object streams
+ 205 PDF objects out of 1000 (max. 8388607)
+ 143 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

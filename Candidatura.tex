@@ -15,7 +15,7 @@
 \tableofcontents
 \chapter*{Objetivo General}
 
-Se estudia el enfriamiento de un oscilador mecánico acoplado a una cavidad óptica cuando se toma en cuenta que la frecuencia natural de la cavidad óptica es una función del tiempo que depende de la frecuencia del oscilador mecánico. Se ha demostrado que utilizar un formalismo que toma en cuenta la dependencia temporal de la frecuencia natural del oscilador mecánico lleva a un mejor modelo teórico para el sistema\cite{HanngiFM}. En un trabajo anterior donde se utiliza este formalismo para estudiar el enfriamiento del oscilador mecánico se encontró que la predicción para el enfriamiento es cualitativamente distinta aún a primer orden de perturbación para la dependencia temporal\cite{YanesOC}. Esto motiva la pregunta: ¿Qué sucede al tomar en cuenta el efecto de la variación de la longitud de la cavidad sobre la frecuencia de resonancia de la cavidad? En este trabajo se investiga este efecto. 
+Se estudia el enfriamiento de un oscilador mecánico acoplado a una cavidad óptica cuando se toma en cuenta que la frecuencia natural de la cavidad  es una función del tiempo que depende de la posición del oscilador mecánico. Se ha demostrado que utilizar un formalismo que toma en cuenta la dependencia temporal de la frecuencia natural del oscilador mecánico lleva a un mejor modelo teórico para el sistema\cite{HanngiFM}. En un trabajo anterior donde se utiliza este formalismo para estudiar el enfriamiento del oscilador mecánico se encontró que la predicción para el enfriamiento es cualitativamente distinta aún a primer orden de perturbación para la dependencia temporal\cite{YanesOC}. Esto motiva la pregunta: ¿Qué sucede al tomar en cuenta el efecto de la variación de la longitud de la cavidad sobre la frecuencia de resonancia de la cavidad? En este trabajo se investiga este efecto. 
 
 
 \chapter{Introducción}
@@ -25,15 +25,15 @@ La optomecánica es el estudio de la interacción entre elementos ópticos y ele
 
 \section{Posibles Sistemas Optomecánicos}
 
-Existen muchas implementaciones posibles de acoplamientos entre elementos ópticos y elementos mecánicos \cite{KippenberCO}. En esta sección se detallan algunas de las posibilidades.
+Existen muchas implementaciones posibles de acoplamientos entre elementos ópticos y elementos mecánicos \cite{KippenberCO}. En esta sección se detallan algunas de las posibilidades más comunes.
 
 \subsection{Espejos Suspendidos}
 
-Estos sistemas consisten en cavidades ópticas donde uno o más de los espejos pueden cambiar de posición y así alteran la longitud de la cavidad. La primera realización experimental de este tipo de sistemas se debe a los primeros esfuerzos para detectar ondas gravitacionales \cite{AbramoviciLIGO}. El sistema consiste en un interferómetro con los espejos fijos en masas suspendidas, a manera que una onda gravitacional, al interactuar con las masas cambiaría la posición de los espejos y así la longitud de camino óptico. El propósito de suspender las masas no es optomecánico, sin embargo, las fluctuaciones en la potencia del láser, debido a la incertidumbre en el número de fotones, son un efecto cuántico que impone un límite a la precisión de las mediciones \cite{CavesIF}. Experimentos en este tipo de sistemas han demostrado varios efectos, entre ellos el enfriamiento mediante presión de radiación \cite{CorbittOC}. También es posible utilizar este tipo de sistemas para estudiar el entrelazamiento cuántico\cite{ChenED} al acoplar dos cavidades al mismo espejo y así lograr entrelazamiento entre los modos de ambos campos.
+Estos sistemas consisten de cavidades ópticas donde uno o más de los espejos pueden cambiar de posición y así alterar la longitud de la cavidad. La primera realización experimental de este tipo de sistemas se debe a los primeros esfuerzos para detectar ondas gravitacionales \cite{AbramoviciLIGO}. El sistema consiste en un interferómetro con los espejos montados en masas suspendidas, a manera que una onda gravitacional, al interactuar con las masas cambiaría la posición de los espejos y así la longitud de camino óptico. El propósito de suspender las masas no es optomecánico, sin embargo, las fluctuaciones en la potencia del láser, debido a la incertidumbre en el número de fotones, son un efecto cuántico que impone un límite a la precisión de las mediciones \cite{CavesIF}. Experimentos en este tipo de sistemas han demostrado varios efectos, entre ellos el enfriamiento mediante presión de radiación \cite{CorbittOC}. También es posible utilizar este tipo de sistemas para estudiar el entrelazamiento cuántico\cite{ChenED} al acoplar dos cavidades al mismo espejo y así lograr entrelazamiento entre los modos de ambos campos.
 
 \subsection{Microresonadores}
 
-Otro tipo posible de sistema son los microresonador o microcavidades. En este tipo de sistemas, es posible confinar a la luz a viajar en modos \textit{whispering gallery}, los cuales implican que la luz es guiada a lo largo del perímetro del resonador,el cual puede tener forma esférica, circular, o toroidal\cite{VahalaOM}. Si este vibra, esto puede alterar el camino óptico de la luz y se logra un acoplamiento optomecánico. Es posible fabricar resonadores de este tipo con un factor de calidad de $10^6$ \cite{EuroSensors2017}. Debido a su tamaño, es posible obtener acoplamiento fuerte entre sistemas cuánticos y el resonador\cite{VerhagenMOC}.
+Otro tipo posible de sistema son los microresonador o microcavidades. En este tipo de sistemas, es posible confinar a la luz a viajar en modos \textit{whispering gallery}, los cuales implican que la luz es guiada a lo largo del perímetro del resonador, el cual puede tener forma esférica, circular, o toroidal\cite{VahalaOM}. Si este vibra, esto puede alterar el camino óptico de la luz y se logra un acoplamiento optomecánico. Es posible fabricar resonadores de este tipo con un factor de calidad de $10^6$ \cite{EuroSensors2017}. Debido a su tamaño, es posible obtener acoplamiento fuerte entre sistemas cuánticos y el resonador\cite{VerhagenMOC}.
 
 \subsection{Objetos Suspendidos o Levitados}
 
@@ -54,7 +54,7 @@ En esta sección se da un pequeño resumen de los efectos optomecánicos más co
 
 \item \textbf{Bi-Estabilidad Óptica (optical bi-stability)} La presión de radiación puede desplazar al objeto mecánico y se espera que se llegue a una posición de equilibrio. Sin embargo, la dependencia del potencial efectivo sobre la posición es no lineal, lo cual lleva a que se generen dos posiciones de equilibrio. Para una presión lo suficientemente fuerte, este efecto se borra y se llega a una posición altamente estable\cite{DorselOB}.
 
-\item \textbf{Enfriamiento Optomecánico}  A la absorción de fonones (enfriamiento) se le asocia con procesos de dispersión de Raman donde un quanto sube de nivel mientras que los procesos de emisión (calentamiento) se le asocia con dispersión de Raman donde un fotón decae \cite{LCNooshi}. Este enfriamiento es posible siempre y cuando el ancho de banda de la cavidad sea mucho menor que la frecuencia de oscilación mecánica. \cite{LCNooshi} \cite{MarquardtSC} Este régimen solo es válido cuando el acoplamiento optomecánico puede ser tratado como una perturbación, así que el esquema deja de ser valido cuando el acoplamiento es comparable al ancho de banda de la cavidad o a la frecuencia del oscilador mecánico
+\item \textbf{Enfriamiento Optomecánico}  A la absorción de fonones (enfriamiento) se le asocia con procesos de dispersión de Raman donde un cuanto sube de nivel mientras que los procesos de emisión (calentamiento) se le asocia con dispersión de Raman donde un fotón decae \cite{LCNooshi}. Este enfriamiento es posible siempre y cuando el ancho de banda de la cavidad sea mucho menor que la frecuencia de oscilación mecánica. \cite{LCNooshi} \cite{MarquardtSC} Este régimen solo es válido cuando el acoplamiento optomecánico puede ser tratado como una perturbación, así que el esquema deja de ser valido cuando el acoplamiento es comparable al ancho de banda de la cavidad o a la frecuencia del oscilador mecánico
 \end{itemize}
 
 
@@ -64,13 +64,13 @@ Existen muchas aplicaciones posibles para los efectos y sistemas utilizados en o
 
 \begin{itemize}
 
-\item \textbf{Estabilización Laser} Al utilizar una cavidad de tipo cristal optomecánico doble (\textit{zipper cavity} en inglés) como base para un láser, se puede obtener un dispositivo tal que su frecuencia, en especial la sensibilidad de está a ruido térmico, se puede estabilizar optomecanicamente\cite{MayerZC}.
+\item \textbf{Estabilización Láser} Al utilizar una cavidad de tipo cristal optomecánico doble (\textit{zipper cavity} en inglés) como base para un láser, se puede obtener un dispositivo tal que su frecuencia, en especial la sensibilidad de está a ruido térmico, se puede estabilizar optomecánicamente\cite{MayerZC}.
 
-\item  \textbf{Memoria Optomecánica} Se puede crear un sistema de memoria utilizando una cavidad optomecánica compuesta por una guía de ondas y un resonador mecánico ligeramente torcido a manera de tener dos configuraciones posibles, arriba y abajo. Esto lleva a que se genere un potencial de doble pozo asimétrico para el resonador y con la ayuda de un láser para excitar el sistema y de otro para enfriarlo es posible realizar un proceso controlado donde se decide en que pozo queda el resonador. Estos dos estados corresponden a 0 y 1 y el sistema no requiere energía para mantenerse en la configuración final, generando un sistema de memoria estable \cite{BagheriMM}.
+\item  \textbf{Memoria Optomecánica} Se puede crear un sistema de memoria utilizando una cavidad optomecánica compuesta por una guía de ondas y un resonador mecánico ligeramente torcido a manera de tener dos configuraciones posibles, arriba y abajo. Esto lleva a que se genere un potencial de doble pozo asimétrico para el resonador y, con la ayuda de un láser para excitar el sistema y de otro para enfriarlo, es posible realizar un proceso controlado donde se decide en que pozo queda el resonador. Estos dos estados corresponden a 0 y 1 y el sistema no requiere energía para mantenerse en la configuración final, generando un sistema de memoria estable \cite{BagheriMM}.
 
 \item \textbf{Magnetometría} Al acoplar un material magnetostrictivo al resonador mecánico de una cavidad optomecánica se pueden excitar los eigenmodos del resonador mecánico al aplicar un campo magnético. De esta forma, la presencia del campo magnético se puede leer en el comportamiento del campo de luz dentro de la cavidad. Esto permite tener un sensor de campos magnéticos de alta precisión que funciona a temperatura ambiente \cite{ForstnerOM}.
 
-\item \textbf{Reder Cuánticas} La optomecánica permite realizar el mapeo de los estados de un campo de luz a los modos vibracionales de un oscilador mecánico \cite{ZhangQST}. Este tipo de transferencia de información es clave en la formación de redes de información cuánticas.\cite{KimbleQI}
+\item \textbf{Redes Cuánticas} La optomecánica permite realizar el mapeo de los estados de un campo de luz a los modos vibracionales de un oscilador mecánico \cite{ZhangQST}. Este tipo de transferencia de información es clave en la formación de redes de información cuánticas.\cite{KimbleQI}
 
 \item \textbf{Detección de Cáncer} Los Microtúbulos son una parte clave de la estructura de una célula y se ha estudiado si su interacción con campos electromagnéticos externos puede ser un tratamiento viable para el cáncer\cite{KirsonEMT}. El estudio de las propiedades vibracionales de estas estructuras es clave para esto y se ha propuesto un montaje experimental para realizar estas mediciones mediante un acoplamiento optomecánico\cite{SalariOC}.
 
@@ -78,16 +78,16 @@ Existen muchas aplicaciones posibles para los efectos y sistemas utilizados en o
 
 \section{Enfriamiento Optomecánico con Parámetros Dependientes del Tiempo}
 
-Este trabajo se enfoca en el enfriamiento optomecánico con parámetros dependientes del tiempo. Uno de los métodos empleados la búsqueda por mejorar el enfriamiento del oscilador mecánico acoplado a la cavidad es utilizar un oscilador mecánico cuya frecuencia natural sea función del tiempo \cite{BarberisLC}. Esta dependencia modifica el cuasi espectro de energía del sistema\cite{HanngiFM}. En el acercamiento empleado en \cite{BarberisLC} esto no se toma en cuenta, sin embargo, dado que \cite{HanngiFM} muestra que este no es el enfoque óptimo, se realizó un trabajo que sí toma en cuenta los efectos de la dependencia temporal de la frecuencia natural del oscilador durante la derivación  de la temperatura final que se espera del sistema \cite{YanesOC}. Los resultados de este trabajo muestras diferencias cuantitativas y cualitativas en el comportamiento de la temperatura del oscilador mecánico, lo cual motiva la pregunta ¿qué sucede al tomar en cuenta la dependencia temporal de la frecuencia del oscilador mecánico sobre la frecuencia natural de la cavidad? 
+Este trabajo se enfoca en el enfriamiento optomecánico con parámetros dependientes del tiempo. Uno de los métodos empleados en la búsqueda por mejorar el enfriamiento de un oscilador mecánico acoplado a una cavidad es utilizar un oscilador mecánico cuya frecuencia natural sea función del tiempo \cite{BarberisLC}. Esta dependencia modifica el cuasi espectro de energía del sistema\cite{HanngiFM}. En el formalismo empleado en \cite{BarberisLC} esto no se toma en cuenta, sin embargo, dado que \cite{HanngiFM} muestra que este no es el enfoque óptimo, se realizó un trabajo que sí toma en cuenta los efectos de la dependencia temporal de la frecuencia natural del oscilador durante la derivación  de la temperatura final que se espera del sistema \cite{YanesOC}. Los resultados de este trabajo muestras diferencias cuantitativas y cualitativas en el comportamiento de la temperatura del oscilador mecánico, lo cual motiva la pregunta ¿Qué sucede al tomar en cuenta la dependencia temporal de la frecuencia natural de la cavidad? 
 
-En esta propuesta se explican los pasos que se siguen para modelar este tipo de sistemas en términos generales y luego se explica como se obtiene la temperatura final del sistema. Finalmente se propone aplicar este formalismo a un sistema donde se toma en cuenta la dependencia temporal de tanto un oscilador mecánico como la cavidad a la cual este se encuentra acoplado. Se discute la teoría de los sistemas cuánticos abiertos, del oscilador mecánico dependiente del tiempo, y el enfriamiento optomecánico dependiente del tiempo.
+En esta propuesta se explican los pasos que se siguen para modelar este tipo de sistemas en términos generales y luego se explica como se obtiene la temperatura final del sistema. Finalmente se propone aplicar este formalismo a un sistema donde se toma en cuenta la dependencia temporal de la cavidad. Se discute la teoría de los sistemas cuánticos abiertos, del oscilador mecánico dependiente del tiempo, y el enfriamiento optomecánico dependiente del tiempo.
 
 
 
 
 \chapter{Oscilador Armónico Dependiente del Tiempo}
 
-Antes de proceder a enfriamiento optomecánico es importante saber como modelar de manera cuántica un oscilador armónico con frecuencia dependiente del tiempo. Para resolver el problema, se utiliza la teoría de Floquet \cite{WardFT} y se busca una expresión para el Hamiltoniano del sistema expresada en términos de operadores de Floquet, los cuales se definirán más adelante.
+Antes de proceder a enfriamiento optomecánico es importante saber como modelar de manera cuántica un oscilador armónico con frecuencia natural dependiente del tiempo. Para resolver este problema, se utiliza la teoría de Floquet \cite{WardFT} y se busca una expresión para el Hamiltoniano del sistema expresada en términos de operadores de Floquet, los cuales se definirán más adelante.
 
 \section{Teoría de Floquet}
 
@@ -99,7 +99,7 @@ x' = A(t)x,
 
 \begin{equation}\label{FloquetForm}
 x(t)=e^{\mu t}p(t).
-\end{equation} Los valores $\mu$ se conocen como los exponentes característicos o de Floquet y la función $p(t)$ es periódica con período $\tau$, es decir el mismo periodo que el coeficiente en la ecuación diferencial. Los coeficientes $\mu$ son, en general, complejos. Claramente, el hecho de que la solución tenga la forma \eqref{FloquetForm} puede llevar a que la solución se dispare con el tiempo, por lo que se desea entender el criterio de estabilidad de este tipo de soluciones. Antes de esto, es necesario establecer algunas definiciones y propiedades, las cuales se presentan sin demostración debido a que no son el enfoque principal de este trabajo. Si el lector se encuentra interesado, el tratamiento se encuentra con mayor detalle en las notas de las cuales surge la sección siguiente \cite{WardFT}.
+\end{equation} Los valores $\mu$ se conocen como los exponentes característicos o de Floquet y la función $p(t)$ es periódica con período $\tau$, es decir el mismo periodo que el coeficiente en la ecuación diferencial. Los coeficientes $\mu$ son, en general, complejos. Claramente, el hecho de que la solución tenga la forma \eqref{FloquetForm} puede llevar a que la solución sea divergente con el tiempo, por lo que se desea entender el criterio de estabilidad para este tipo de soluciones. Antes de esto, es necesario establecer algunas definiciones y propiedades, las cuales se presentan sin demostración debido a que no son el enfoque principal de este trabajo. Si el lector se encuentra interesado, el tratamiento se encuentra con mayor detalle en las notas de las cuales surge la sección siguiente \cite{WardFT}.
 
 \subsection{Propiedades Básicas}
 
@@ -398,7 +398,7 @@ P=&U_2^{-1}\tilde{p}U_2 = |f|(p-2\chi q),
 
 \begin{equation}
 \Gamma = \sqrt{\frac{mW}{2}}Q + i \sqrt{\frac{1}{2mW}}P.
-\end{equation} La expresión \eqref{FloquetOperators} se obtiene expresando los operadores en las coordenadas usuales, no en las transformadas. Es de mas utilidad expresar este Hamiltoniano en terminos de estos operadores $\Gamma(t)$. Se obtiene
+\end{equation} La expresión \eqref{FloquetOperators} se obtiene expresando los operadores en las coordenadas usuales, no en las transformadas. Es de mas utilidad expresar este Hamiltoniano en términos de estos operadores $\Gamma(t)$. Se obtiene
 
 \begin{equation}
 \tilde{H} = \frac{W}{|f(t)|^2}(\Gamma^\dagger(t)\Gamma(t) + \frac{1}{2}).
@@ -424,11 +424,7 @@ H_{cav} =& -\hbar \delta a^\dagger a,\\
 H_{mec}(t) =& \frac{p^2}{2m} + \frac{1}{2}m \nu^2 (t) x^2,\\
 H_{rad} =& -\hbar g a^\dagger a x,\\
 Bomba =& \hbar\frac{\Omega}{2}(a^\dagger + a),
-\end{align} en este caso, $\delta = w_{bomba} - w_{cav}$ representa la diferencia de frecuencias entre la bomba de fotones y la cavidad y $\hbar g$ representa la fuerza de radiación que un fotón aplica sobre el oscilador mecánico sin modulación. El término $H_{rad}$ modela una interacción simple entre los fotones y el espejo. Dado que en este caso la longitud de la cavidad no es fija, la frecuencia de la cavidad debe tener una dependencia en la coordenada $x$, entonces, tomando el Hamiltoniano para el oscilador que modela la cavidad y expandiendo hasta primer orden en $x$ (el resultado obtenido mediante un procedimiento más completo es el mismo)\cite{KippenberCO} 
-
-\begin{equation}
-\hbar w_{cav}(x) a^\dagger a \simeq \hbar(w_{cav}-g_0x)a^\dagger a,
-\end{equation}lo cual acopla los dos sistemas. Por \eqref{QTDHO}, se modela al oscilador mecánico utilizando operadores de Floquet
+\end{align} en este caso, $\delta = w_{bomba} - w_{cav}$ representa la diferencia de frecuencias entre la bomba de fotones y la cavidad y $\hbar g$ representa la fuerza de radiación que un fotón ejerce sobre el oscilador mecánico sin modulación. El término $H_{rad}$ modela una interacción simple entre los fotones y el espejo. Dado que en este caso la longitud de la cavidad no es fija, la frecuencia de la cavidad debe tener una dependencia en la coordenada $x$. Una derivación completa de este término puede encontrarse en la referencia \cite{KippenberCO}. Por \eqref{QTDHO}, se modela al oscilador mecánico utilizando operadores de Floquet
 
 \begin{equation}
 H_{mec}(t) = \hbar\frac{W}{|f(t)|^2}(\Gamma^\dagger \Gamma + \frac{1}{2}).
@@ -436,26 +432,31 @@ H_{mec}(t) = \hbar\frac{W}{|f(t)|^2}(\Gamma^\dagger \Gamma + \frac{1}{2}).
 
 \begin{equation}
 H(t)_{rad} = 2ig\sqrt{\frac{\hbar^3}{2m}}  a^\dagger a[\gamma_+(t)\Gamma (t) +\gamma_-(t)\Gamma^\dagger (t)]
-\end{equation} con esto, el Hamiltoniano final es el siguiente
+\end{equation} donde
+
+\begin{align}
+\gamma(t)_+ =& \frac{i}{4}\sqrt{\frac{2}{m\hbar^3}} \frac{f(t)^*}{(\dot{f}(t)f(t)^*-\dot{f}(t)^*f(t))},\\
+\gamma(t)_- =& \frac{i}{4}\sqrt{\frac{2}{m\hbar^3}} \frac{f(t)}{(\dot{f}(t)f(t)^*-\dot{f}(t)^*f(t))},
+\end{align}
+
+con esto, el Hamiltoniano final es el siguiente
 
 \begin{equation}\label{LaserCoolingHamiltonian}
 H(t) = -\hbar \delta a^\dagger a + \frac{W}{|f(t)|^2}(\Gamma^\dagger \Gamma + \frac{1}{2}) +  g'a^\dagger a[\gamma_+(t)\Gamma (t) +\gamma_-(t)\Gamma^\dagger (t)] + \hbar\frac{\Omega}{2}(a^\dagger + a),
 \end{equation} donde 
 
-\begin{align*}
-g'=&g\sqrt{\frac{\hbar^3}{2m}},\\
-\gamma_+(t)=2i&\frac{A(t) +1}{B(t)},\\
-\gamma_-(t)=2i&\frac{A(t) -1}{B(t)},
-\end{align*} 
+\begin{equation}
+g'=g\sqrt{\frac{\hbar^3}{2m}}.
+\end{equation}
 
 
 \section{Transformación Mediante Operador de Desplazamiento}
 
-Para poder encontrar una solución es necesario eliminar los términos de tercer orden en operadores, ya que estos son no-lineales y causan dificultades. Esto puede lograrse mediante una transformación unitaria. Se utiliza la transformación
+Para poder encontrar una solución es necesario eliminar los términos de tercer orden en operadores, ya que estos son no-lineales y causan dificultades. Esto se logra mediante una transformación unitaria. Se utiliza la transformación
 
 \begin{equation}
 U_{a,\Gamma} = e^{(\alpha(t) a^\dagger - \alpha(t)^*a)}e^{(\beta(t) \Gamma^\dagger - \beta(t)^*\Gamma)},
-\end{equation}la cual es unitaria. Tanto $\alpha$ como $\beta$ dependen del tiempo, está dependencia no se escribirá de forma explícita a futuro por brevedad. Bajo la transformación, el operador densidad es
+\end{equation} Tanto $\alpha$ como $\beta$ dependen del tiempo, está dependencia no se escribirá de forma explícita a futuro por brevedad. Bajo la transformación, el operador densidad es
 
 \begin{equation}
 \rho' = U_{a,\Gamma}^\dagger \rho U_{a,\Gamma}.
@@ -506,14 +507,14 @@ Esta solución se obtiene mediante la teoría de Floquet. \cite{TesisMaestria}
 
 \begin{equation}
 \ddot{x} + (\nu_0^2 + 2\epsilon \nu_0 cos(2\omega t))x = 0,
-\end{equation} la cual es un caso particular de la ecuación de Mathieu \cite{PiatekME}. A fin de tener la ecuación en la forma estandard hacemos $t'= \omega t$ y $\epsilon' = \frac{2\epsilon \nu_0}{\omega^2}$ y
+\end{equation} la cual es un caso particular de la ecuación de Mathieu \cite{PiatekME}. A fin de tener la ecuación en la forma estándar hacemos $t'= \omega t$ y $\epsilon' = \frac{2\epsilon \nu_0}{\omega^2}$ y
 
 
 \begin{equation}
 \frac{\nu_0^2}{\omega^2} = n^2\label{scattering}
 \end{equation}
 
-con $n \in \mathbb{Z}^+$ ya que como se vió esto es necesario para tener soluciones estables\cite{WardFT}. Bajo estas restricciones, tenemos que las soluciones para \eqref{SmallOscillationsTDHO} son, a primer orden en $\epsilon$ y para $n=1$
+con $n \in \mathbb{Z}^+$ ya que como se vio esto es necesario para tener soluciones estables\cite{WardFT}. Bajo estas restricciones, tenemos que las soluciones para \eqref{SmallOscillationsTDHO} son, a primer orden en $\epsilon$ y para $n=1$
 
 \begin{equation}\label{SmallOscillationsSolution}
 f(t)=  e^{i\omega t} + \frac{\epsilon}{16} e^{3i\omega t},
@@ -552,7 +553,7 @@ Y se puede obtener expresiones explícitas para los coeficientes $\alpha(t)$ y $
 \beta_0 =& 0.
 \end{align} El subíndice 0 muestra que las soluciones son válidas a orden cero en el acoplamiento.
 
-\subsection{Hamiltoniano para Enfriamiento Laser}
+\subsection{Hamiltoniano para Enfriamiento Láser}
 
 Bajo estás condiciones  el Hamiltoniano resulta
 
@@ -587,7 +588,7 @@ L_\Gamma \rho =& - \frac{\gamma}{2}(n_m + 1)[\Gamma^\dagger \Gamma\rho + \rho \G
  &- \frac{\gamma}{2}(n_m)[ \Gamma\Gamma^\dagger\rho + \rho  \Gamma\Gamma^\dagger -2\Gamma^\dagger\rho \Gamma].\nonumber
 \end{align} 
 
-Está ecuación es uno de los resultados novedosos presentados en \cite{YanesOC}.
+Está ecuación es uno de los resultados presentados en \cite{YanesOC}.
 
 \subsection{Base de Decaimiento}
 
@@ -639,7 +640,7 @@ P\rho=&Tr_c[\rho]\otimes \rho^{0}, \\
 Q\rho=&(1-P)\rho.
 \end{align}
 
-El proceso de expandir la proporción entre escalas de tiempo rápidas y lentas equivale al límite $\tau \rightarrow \infty$,y eventualmente lleva a una ecuación  cerrada para el operador densidad del sistema en el subespacion $P$
+El proceso de expandir la proporción entre escalas de tiempo rápidas y lentas equivale al límite $\tau \rightarrow \infty$,y eventualmente lleva a una ecuación  cerrada para el operador densidad del sistema en el subespacio $P$
 
 
 \begin{equation}
@@ -758,7 +759,7 @@ H = \frac{1}{2m}(p + \frac{g}{q} \gamma)^2 + v(q) + \frac{1}{2}[P^2+\nu^2 (t)Q^2
 
 \begin{equation}
 W= \frac{\dot{f}(t)f^*(t)-\dot{f}^*(t)f(t)}{2i}.
-\end{equation}  Esto contrasta con la aproximación realizada en el trabajo original donde los operadores de creación y aniquilación de la cavidad se expanden en una serie de potencias para aproximar la dependencia de estos sobre el operador $q$ del oscilador mecánico. En este procedimiento se asume $q = l_o + x_m$. En este trabajo asumimos $x_m = Acos(\omega t)$. Tomamos al término $\gamma$ en el punto $q=l_0$
+\end{equation}  Esto contrasta con la aproximación realizada en el trabajo original donde los operadores de creación y aniquilación de la cavidad se expanden en una serie de potencias para aproximar la dependencia de estos sobre el operador $q$ del oscilador mecánico. En este procedimiento se asume $q = l_o + x_m$. En este trabajo asumimos $x_m = -Acos(\omega t)$. Tomamos al término $\gamma$ en el punto $q=l_0$
 
 Para lidiar con el primer término del Hamiltoniano se emplea la transformación unitaria dada por el operador
 
@@ -797,7 +798,7 @@ H = \hbar \omega b^\dagger b + \hbar\frac{ W}{|f(t)|^2}\Gamma^\dagger \Gamma -F(
 
 \begin{equation}
 H = \hbar \omega b^\dagger b + \hbar\frac{ W}{|f(t)|^2}\Gamma^\dagger \Gamma -g(t)\Gamma^\dagger \Gamma(b^\dagger + b),
-\end{equation} donde $g$ es una funcion del tiempo que modula la fuerza de la interacción y está dada por
+\end{equation} donde $g$ es una función del tiempo que modula la fuerza de la interacción y está dada por
 
 \begin{equation}
 g(t) = \sqrt{\frac{\hbar}{2m\omega}}F(t).
@@ -819,7 +820,7 @@ H = \hbar \omega b^\dagger b + \hbar\frac{ W}{|f(t)|^2}\Gamma^\dagger \Gamma -g(
 \dot{\rho} = \frac{1}{i\hbar}[H,\rho] +L_b\rho + L_\Gamma \rho
 \end{equation}
 
-Los términos $L$ representan los intercambios de energía con el ambiente. Corresponen al oscilador mecánico y a la cavidad respectivamente. De forma explícita
+Los términos $L$ representan los intercambios de energía con el ambiente. Corresponden al oscilador mecánico y a la cavidad respectivamente. De forma explícita
 
 \begin{align}
 L_b \rho =& - \frac{\gamma}{2}(n_m + 1)[b^\dagger b\rho + \rho b^\dagger b -2b\rho b^\dagger]  \\
@@ -878,7 +879,14 @@ U^\dagger \Gamma^\dagger \Gamma U =& \Gamma^\dagger \Gamma + \alpha^* \Gamma + \
 \begin{align}
 U^{\dagger}\dot{\Gamma}U =& \dot{\Gamma} + \alpha C_{-+}(t) -\alpha^* C_{--}(t),\\
 U^{\dagger}\dot{\Gamma}^\dagger U =& \dot{\Gamma}^\dagger - \alpha^* C_{+-}(t) +\alpha C_{++}(t). 
-\end{align} Falta únicamente calcular los términos de la ecuación maestra que corresponden a estas derivadas temporales
+\end{align} Los coeficientes $C(t)$ surgen debido a que los operadores $\Gamma$ no necesariamente conmutan con sus derivadas temporales
+
+\begin{align*}
+C_{++}(t) =& [\dot{\Gamma}^{\dagger}, \Gamma^{\dagger}],\\
+C_{+-}(t) =& [\dot{\Gamma}^{\dagger}, \Gamma],\\
+C_{-+}(t) =& [\dot{\Gamma}, \Gamma^{\dagger}],\\
+C_{--}(t) =& [\dot{\Gamma}, \Gamma].
+\end{align*} Falta únicamente calcular los términos de la ecuación maestra que corresponden a estas derivadas temporales
 
 \begin{equation}
 U_b^\dagger \dot{U}_b \rho + U_\Gamma^\dagger \dot{U}_\Gamma \rho + \rho \dot{U}_b^\dagger U_b+ \rho \dot{U}_\Gamma^\dagger U_\Gamma,
@@ -897,15 +905,9 @@ U_\Gamma^\dagger \dot{U}_\Gamma \rho &= [(\dot{\alpha}\Gamma^\dagger + \alpha \d
 \begin{align}
 U_\Gamma^\dagger \dot{U}_\Gamma \rho + \rho \dot{U}_\Gamma^\dagger U_\Gamma &= [\rho, (\alpha^*\dot{\Gamma} - \alpha\dot{\Gamma}^\dagger)] + [\rho, (\dot{\alpha}^*\Gamma - \dot{\alpha}\Gamma^\dagger)] \\
 &+|\alpha|^2 (C_{-+} - C_{+-}).
-\end{align} Los términos $C$ no contienen operadores y son
+\end{align} 
 
-\begin{align*}
-C_{+-}(t) =& [\dot{\Gamma}^{\dagger}, \Gamma],\\
-C_{-+}(t) =& [\dot{\Gamma}, \Gamma^{\dagger}],
-\end{align*} 
-
-
-Los terminos que involucran un conmutador con la matriz densidad se consideran parte del Hamiltoniano. El procedimiento para los términos  $U_b$ es el mismo pero resulta más sencillo
+Los términos que involucran un conmutador con la matriz densidad se consideran parte del Hamiltoniano. El procedimiento para los términos  $U_b$ es el mismo pero resulta más sencillo
 
 \begin{equation}
 U_b^\dagger \dot{U}_b \rho+ \rho \dot{U}_b^\dagger U_b = [\rho, (\dot{\beta}^*b - \dot{\beta}b^\dagger)].
@@ -959,7 +961,7 @@ f(t) = e^{i\omega t} + \frac{\epsilon}{16}e^{3i\omega t}
 \begin{align}
 &\dot{\beta} = -i\omega\beta^* + ig(t)|\alpha|^2 - \frac{\gamma}{2}\beta,\\
 &\dot{\alpha} = -i \frac{W}{|f|^2}\alpha^* + ig(t)\alpha(\beta + \beta^*) -i \frac{\Omega}{2} - \frac{\kappa}{2}\alpha^* + \omega\alpha^*.
-\end{align} El caso de interés es el caso estacionario $\dot{\alpha}=\dot{\beta} = 0$. Se trabaja el límite de acoplamiento pequeño y se limíta el análisis a orden 0 en el parámetro de acoplamiento $g(t)$
+\end{align} El caso de interés es el caso estacionario $\dot{\alpha}=\dot{\beta} = 0$. Se trabaja el límite de acoplamiento pequeño y se limita el análisis a orden 0 en el parámetro de acoplamiento $g(t)$
 
 \begin{align}
 &0 = -i\omega\beta^* - \frac{\gamma}{2}\beta,\\
@@ -977,7 +979,7 @@ f(t) = e^{i\omega t} + \frac{\epsilon}{16}e^{3i\omega t}
 
 \begin{equation}
 H = \hbar \omega b^\dagger b + \hbar\omega \Gamma^\dagger \Gamma -\hbar g(t)[( \alpha \Gamma^{\dagger} + \alpha^* \Gamma)(b^{\dagger}+b)]
-\end{equation} donde se ha despreciado el término $\Gamma^{\dagger}\Gamma$ en la interacción ya que en este régimen $|\alpha| \gg 1$ y es depreciable respecto a los otros dos términos. De esta forma se tiene un nuevo Hamiltoniano para interacción optomecánica donde se modela que la intensidad de la interacción optomecánica es una función del tiempo.
+\end{equation} donde se ha despreciado el término $\Gamma^{\dagger}\Gamma$ en la interacción ya que en este régimen $|\alpha| \gg 1$ y es despreciable respecto a los otros dos términos. De esta forma se tiene un nuevo Hamiltoniano para interacción optomecánica donde se modela que la intensidad de la interacción optomecánica es una función del tiempo.
 
 \chapter{Objetivos Futuros}
 
@@ -994,7 +996,7 @@ A partir del Hamiltoniano obtenido es posible estudiar un sistema de gran import
 \item Estudiar el sistema cuando el parámetro $\epsilon$ debe tomarse en cuenta hasta segundo orden. Este cambio lleva a que incluso el factor global del Hamiltoniano para el campo dentro de la cavidad sea una función del tiempo, lo que lleva a estudiar el efecto sobre el oscilador de interactuar con un campo cuya frecuencia natural oscila en el tiempo. 
 \end{enumerate}
 
-Se prevee que cada uno de estos objetivos, junto con trabajo de redacción y revisión bibliográfica adicional, sea realizable dentro de un semestre de trabajo. Esto implicaría un último semetre únicamente dedicado a redacción a fin de elaborar la tesis doctoral en tiempo y forma, así como un artículo de investigación a ser publicado en una revista internacional.
+Se prevee que cada uno de estos objetivos, junto con trabajo de redacción y revisión bibliográfica adicional, sea realizable dentro de un semestre de trabajo. Esto implicaría un último semestre únicamente dedicado a redacción a fin de elaborar la tesis doctoral en tiempo y forma, así como un artículo de investigación a ser publicado en una revista internacional.
 
 
 
