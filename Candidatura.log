@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  17 JAN 2018 12:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  17 JAN 2018 13:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -787,7 +787,7 @@ orar ese camino ahora que defiendas tu candidatura. Hablamos mas skype en estos
  dias. Creo que este cap\IeC {\'\i }tulo lo tienes que reescribir simplemente p
 oniendo la ecuacion estandar de CK Law con la disipaci\IeC {\'o}n de Hangi y de
 cir que intentarmos resolverlo. Agregar tambien que exploraremos la alternativa
- que te dije al principio de este comentario.' on input line 1069.
+ que te dije al principio de este comentario.' on input line 1067.
  [28] [29] [30]
 Cap\'{\i }tulo 5.
 [31
@@ -861,7 +861,7 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf
 fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/symbols/msbm5.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Candidatura.pdf (39 pages, 357048 bytes).
+Output written on Candidatura.pdf (39 pages, 357371 bytes).
 PDF statistics:
  224 PDF objects out of 1000 (max. 8388607)
  157 compressed objects within 2 object streams

@@ -990,30 +990,30 @@ $\frac{\nu_0}{\delta} \in [-2,2]$
 
 \chapter{Enfriamiento Optomecánico Dependiente del Tiempo: Caso de Cavidad con Frecuencia Dependiente del Tiempo}
 
-Como se puede observar en el capítulo anterior, el cambio en el comportamiento predicho por el modelo con dependencia temporal es notorio. Sin embargo, durante todas las derivaciones se asume que la cavidad tiene un solo modo de frecuencia constante $\omega_c$. La frecuencia de resonancia de una cavidad de Fabry-Perot, asumiendo que su interior se encuentre en el vacío, está dada por
+Como se puede observar en el capítulo anterior, el cambio en el comportamiento predicho por el modelo con dependencia temporal es notorio. Sin embargo, durante todas las derivaciones se asume que la cavidad cuenta con únicamente un modo, el cual tiene  frecuencia constante $\omega_c$. La frecuencia de resonancia de una cavidad de Fabry-Perot, asumiendo que su interior se encuentre en el vacío, está dada por
 
 \begin{equation}
 \omega_c = \frac{nc}{2L},
-\end{equation} donde $c$ es la velocidad de la luz en el vacío, $n$ es algún entero y $L$ es la longitud de la cavidad. Al emplear un montaje optomecánico como el que se lleva a los resultados del capítulo anterior, $L$ deja de ser constante. Si el oscilador mecánico tiene oscilaciones de amplitud $A$ y se toma a $L_0$ como la longitud promedio de la cavidad, la longitud de la cavidad como función del tiempo viene dada por
+\end{equation} donde $c$ es la velocidad de la luz en el vacío, $n$ es algún entero y $L$ es la longitud de la cavidad. Al emplear un montaje optomecánico como el que se lleva a los resultados del capítulo anterior, $L$ deja de ser constante. Si el oscilador mecánico tiene oscilaciones de amplitud $x_m(t)$ y se toma a $l_0$ como la longitud promedio de la cavidad, la longitud de la cavidad como función del tiempo viene dada por
 
 \begin{equation}
-l(t) = l_0 - A cos(2\omega t)
+L(t) = l_0 + x_m(t)
 \end{equation} lo cual lleva a la frecuencia 
 
 \begin{align}
-\nu(t) =& \frac{nc}{2l_0-2Acos(2\omega t)}, \\
-\approx& \frac{nc}{2l_0} + \frac{nc Acos(2\omega t)}{4l_0^2}, \\
-=& \frac{nc}{2l_0} + \frac{nc}{2l_0}(\frac{A}{l_0})cos(2\omega t), \\
-=& \omega_0 + \epsilon\omega_0 cos(2\omega t), \\
-=& \omega_0(1+\epsilon\ cos(2\omega t)).
-\end{align} donde la expresión se deja en primer orden del parámetro de perturbación $\epsilon = \frac{A}{l_0}$. Bajo estas restricciones se tiene un sistema de oscilador armónico donde la frecuencia natural es una función periódica del tiempo. Esto permite el uso de los operadores de Floquet vistos en el capítulo anterior. Se busca un Hamiltoniano optomecánico expresado en términos de estos operadores. Para este fin se hace referencia a la derivación del Hamiltoniano optomecánico general en \cite{LawOH}. Reduciendo la expresión a un solo modo para la cavidad, se tiene la expresión
+\nu(t) =& \frac{nc}{2l_0+2X_m(t)}, \\
+\approx& \frac{nc}{2l_0} - \frac{nc X_m(t)}{4l_0^2}, \\
+=& \frac{nc}{2l_0} - \frac{nc}{2l_0}(\frac{X_m(t)}{l_0}), \\
+=& \omega_0 + \epsilon\omega_0C(t), \\
+=& \omega_0(1+\epsilon\ C(t)).
+\end{align} donde la expresión se deja en primer orden del parámetro de perturbación $\epsilon = \frac{x_m}{l_0}$ y la dependencia temporal de la amplitud queda contenida en $C(t)$, la cual también contiene un cambio de signo por simplicidad. Si se pide que dicha dependencia temporal sea periódica se tiene un sistema de oscilador armónico donde la frecuencia natural es una función periódica del tiempo. Esto permite el uso de los operadores de Floquet vistos en el capítulo anterior. Sin embargo Se busca un Hamiltoniano  expresado en términos de estos operadores. Para este fin se hace referencia a la derivación del Hamiltoniano optomecánico general en \cite{LawOH}. Reduciendo la expresión a un solo modo para la cavidad, se tiene la expresión
 
 \begin{equation}
 H = \frac{1}{2m}(p + \frac{g}{q} PQ)^2 + v(q) + \frac{1}{2}[P^2+\nu^2 (t)Q^2].
-\end{equation} Los operadores $p$ y $q$ corresponden al oscilador mecánico y $P$ y $Q$ al campo dentro de la cavidad. $g$ es una constante. En el trabajo original la dependencia de la frecuencia es sobre la variable $q$ y no precisamente $t$. El teorema de Floquet permite obtener las soluciones de la ecuación
+\end{equation} Los operadores $p$ y $q$ corresponden al oscilador mecánico y $P$ y $Q$ al campo dentro de la cavidad. $g$ es una constante. En el trabajo original la dependencia de la frecuencia es sobre la variable $q$ y no precisamente $t$. Se pide que la frecuencia $\nu(t)$ tenga una dependencia temporal periódica. El teorema de Floquet permite obtener las soluciones de la ecuación
 
 \begin{equation}
-\ddot{q} + \nu^2(t)q=0,
+\ddot{Q} + \nu^2(t)Q=0,
 \end{equation} y se les llama $f(t)$ y $f(t)^*$. De acuerdo con \cite{HanngiFM} los operadores de Floquet se pueden expresar como
 
 \begin{equation}
@@ -1035,7 +1035,7 @@ b =& \frac{1}{2i}\sqrt{\frac{2}{m\hbar}} f(t).
 \end{align} Esto se sustituye en el término $PQ$ del Hamiltoniano y se obtiene
 
 \begin{equation}
-H = \frac{1}{2m}(p + \frac{g}{q} \gamma)^2 + v(q) + \frac{1}{2}[P^2+\nu^2 (t)Q^2],
+H = \frac{1}{2m}(p + g \gamma)^2 + v(q) + \frac{1}{2}[P^2+\nu^2 (t)Q^2],
 \end{equation} donde
 
 \begin{equation}
@@ -1049,9 +1049,7 @@ Esto contrasta con la aproximación realizada en el trabajo original
 donde los operadores de creación y aniquilación de la cavidad se
 expanden en una serie de potencias para aproximar la dependencia de
 estos sobre el operador $q$ del oscilador mecánico. En este
-procedimiento se asume $q = l_o + x_m$. En este trabajo asumimos
-$x_m = -Acos(\omega t)$. Tomamos al término $\gamma$ en el punto
-$q=l_0$
+procedimiento se asume $q = l_o + x_m$.  Se hace la aproximación de tomar al término $\gamma$ en el punto promedio  $q=l_0$
 
 \fxnote{Creo que esta mal la forma en la que hiciste el cálculo. Te
   debo una disculpa por tardarme tanto en darme cuenta. En el artículo
@@ -1069,7 +1067,7 @@ $q=l_0$
   alternativa que te dije al principio de este comentario.}
 
 
-Para lidiar con el primer término del Hamiltoniano se emplea la transformación unitaria dada por el operador
+Para simplificar con el primer término del Hamiltoniano se emplea la transformación unitaria dada por el operador
 
 \begin{equation}
 T = e^\frac{i x_m \gamma}{\hbar}.
@@ -1082,15 +1080,15 @@ T^\dagger \gamma T =& \gamma,
 \end{align*} por lo que, despreciando el término $\gamma^2$ por ser del orden de $\frac{1}{l_0^2}$
 
 \begin{equation}
-\frac{1}{2m}(p + \frac{g}{q} \gamma)^2 \approx \frac{p^2}{2m}.
-\end{equation} Se conoce como, bajo los operadores de Floquet, los operadores $P$ y $Q$ corresponden a un Hamiltoniano con la forma funcional de un oscilador armónico cuántico usual. Por esto, queda aplicar la transformación al término $\Gamma^\dagger \Gamma$. Cortando a primer orden en $\epsilon$
+\frac{1}{2m}(p + g \gamma)^2 \approx \frac{p^2}{2m}.
+\end{equation} Se conoce que, expresados en operadores de Floquet, los operadores $P$ y $Q$ corresponden a un Hamiltoniano con la forma funcional de un oscilador armónico cuántico usual. Por esto, queda aplicar la transformación al término $\Gamma^\dagger \Gamma$. Cortando a primer orden en $\epsilon$
 
 \begin{align*}
-e^{\frac{-ix\gamma_0}{\hbar}}\Gamma^\dagger \Gamma e^{\frac{ix\gamma_0}{\hbar}} =& \Gamma^\dagger \Gamma + [\Gamma^\dagger \Gamma, \gamma_0], \\
-=& \Gamma^\dagger \Gamma + \frac{2i\hbar x}{W^2 l_0}(a^*b \Gamma^\dagger \Gamma + a^*b^* \Gamma \Gamma -ab\Gamma^\dagger \Gamma^\dagger),\\
-\approx & \Gamma^\dagger \Gamma + \frac{2i\hbar x}{W^2 l_0} a^*b \Gamma^\dagger \Gamma, \\
-=& \Gamma^\dagger \Gamma - \frac{i \dot{f}^*(t)f(t) }{W^2 l_0} x  \Gamma^\dagger \Gamma,
-\end{align*} de esta forma la constante de proporcionalidad de la presión de radiación es una cantidad dependiente del tiempo bajo este enfoque. Esto contrasta con la definición usual $F= \frac{\omega_0 \hbar}{l_0}$. Tomando en cuenta el factor de amplitud global para el Hamiltoniano de oscilador armónico con frecuencia natural dependiente del tiempo $\frac{W}{|f(t)|^2}$ se obtiene
+e^{\frac{-ix\gamma_0}{\hbar}}\Gamma^\dagger \Gamma e^{\frac{ix_m\gamma_0}{\hbar}} =& \Gamma^\dagger \Gamma + \frac{ix_m}{\hbar}[\Gamma^\dagger \Gamma, \gamma_0], \\
+=& \Gamma^\dagger \Gamma + \frac{2i\hbar x_m}{W^2 l_0}(a^*b \Gamma^\dagger \Gamma + a^*b^* \Gamma \Gamma -ab\Gamma^\dagger \Gamma^\dagger),\\
+\approx & \Gamma^\dagger \Gamma + \frac{2i\hbar x_m}{W^2 l_0} a^*b \Gamma^\dagger \Gamma, \\
+=& \Gamma^\dagger \Gamma - \frac{i \dot{f}^*(t)f(t) }{W^2 l_0} x_m  \Gamma^\dagger \Gamma,
+\end{align*} de esta forma la constante de proporcionalidad de la presión de radiación es una cantidad dependiente del tiempo bajo este enfoque. Esto contrasta con la definición usual $F= \frac{\omega_0 \hbar}{l_0}$. Solo se trabaja con los operadores de número al estar en una aproximación de un solo modo. Tomando en cuenta el factor de amplitud global para el Hamiltoniano de oscilador armónico con frecuencia natural dependiente del tiempo $\frac{W}{|f(t)|^2}$ se obtiene
 
 \begin{equation}
 H_{cav} = \frac{\hbar W}{|f(t)|^2}\Gamma^\dagger \Gamma - \frac{\hbar i\dot{f}^*(t)f(t) }{|f(t)|^2W l_0}x  \Gamma^ \dagger \Gamma,
@@ -1101,8 +1099,8 @@ F(t) = \frac{\hbar i\dot{f}^*(t)f(t) }{|f(t)|^2W l_0},
 \end{equation} y a un Hamiltoniano para un oscilador optomecánico de la forma
 
 \begin{equation}
-H = \hbar \omega b^\dagger b + \hbar\frac{ W}{|f(t)|^2}\Gamma^\dagger \Gamma -F(t)x\Gamma^\dagger \Gamma,
-\end{equation} pero $x$ es el operador de posición del espejo, el cual se puede expresar en términos de los operadores de creación y aniquilación del oscilador armónico mecánico
+H = \hbar \omega b^\dagger b + \hbar\frac{ W}{|f(t)|^2}\Gamma^\dagger \Gamma -F(t)x_m\Gamma^\dagger \Gamma,
+\end{equation} pero $x_m$ es el operador de posición del espejo, el cual se puede expresar en términos de los operadores de creación y aniquilación del oscilador armónico mecánico
 
 \begin{equation}
 H = \hbar \omega b^\dagger b + \hbar\frac{ W}{|f(t)|^2}\Gamma^\dagger \Gamma -g(t)\Gamma^\dagger \Gamma(b^\dagger + b),
@@ -1112,10 +1110,10 @@ H = \hbar \omega b^\dagger b + \hbar\frac{ W}{|f(t)|^2}\Gamma^\dagger \Gamma -g(
 g(t) = \sqrt{\frac{\hbar}{2m\omega}}F(t).
 \end{equation}
 
-A este Hamiltoniano se le agrega un término correspondiente a una bomba láser
+A este Hamiltoniano se le agrega un término correspondiente a un láser de forzamiento
 
 \begin{equation}
-H_{bomba}= \hbar \frac{\Omega}{2}(\Gamma^\dagger + \Gamma).
+H_{laser}= \hbar \frac{\Omega}{2}(\Gamma^\dagger + \Gamma).
 \end{equation} Y lleva a un Hamiltoniano completo
 
 \begin{equation}
