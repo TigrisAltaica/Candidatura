@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  17 JAN 2018 13:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  22 JAN 2018 13:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -487,10 +487,6 @@ Writing index file Candidatura.idx
 (./Candidatura.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
-
-
-LaTeX Warning: Label `LCMasterEquation' multiply defined.
-
 )
 \openout1 = `Candidatura.aux'.
 
@@ -508,7 +504,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Info: Redefining \. on input line 14.
 LaTeX Info: Redefining \% on input line 14.
- (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count109
 \scratchdimen=\dimen115
@@ -587,91 +584,37 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write4
 \openout4 = `Candidatura.toc'.
 
- [2]
-FiXme Note: 'Poner ``,''' on input line 28.
- [3
+ [2] [3
 
 ]
 Cap\'{\i }tulo 1.
-FiXme Note: 'No es un un proposito, describirlo mejor' on input line 55.
-FiXme Note: 'No se entiende, puede haber fluctuaciones en la potencia del laser
- que no son cuanticas' on input line 59.
-FiXme Note: 'optomecanico' on input line 69.
-FiXme Note: 'no se entiende a que se refiere este' on input line 75.
-FiXme Note: 'creo que es mejor decir el acoplamiento entre que y que a decir qu
-e el acoplamiento es optomecanico' on input line 78.
-FiXme Note: 'esto es mucho o poco comparado con que?' on input line 80.
-FiXme Note: 'el resonador no es cuantico?' on input line 82.
 [4
 
 ]
-FiXme Note: 'instancia de que?' on input line 105.
+FiXme Note: 'instancia de que?' on input line 95.
 FiXme Note: 'Hay que ser consistentes con el uso de la palabra ``optomecanico''
 : a veces la usas para describir una interaccion, a veces para describir una fa
-milia de efectos, a veces para describir un tipo de sistemas' on input line 122
+milia de efectos, a veces para describir un tipo de sistemas' on input line 112
 .
-FiXme Note: 'se' on input line 124.
-FiXme Note: 'no se entiende que es lo que cambia de estrubtura, o de que estruc
-tura se refiere' on input line 127.
-FiXme Note: 'de' on input line 133.
- [5]
-FiXme Note: 'Creo que se puede explicar mejor, ya que lo entiendes en detalle' 
-on input line 150.
- [6]
-Overfull \hbox (5.03125pt too wide) in paragraph at lines 183--183
+FiXme Note: 'ya record\IeC {\'e} que puse estructura ya que no todas las cavida
+des son estilo fabry-perot' on input line 116.
+ [5] [6] [7]
+Overfull \hbox (5.03125pt too wide) in paragraph at lines 217--217
 []\OT1/cmr/bx/n/14.4 Enfriamiento Op-to-mec^^Sani-co con Par^^Same-tros
  []
 
-FiXme Note: 'frecuencia de la' on input line 205.
-FiXme Note: 'Falta decir algo sobre que pasa con la disipacion (acoplamiento de
-l sistema con el medio ambiente) cuando la frecuencia depende del tiempo' on in
-put line 212.
-[7]
+[8] [9]
 Cap\'{\i }tulo 2.
-[8
+[10
 
-]
+] [11] [12] [13]
 
-LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 258.
+LaTeX Warning: Citation `PiatekME' on page 14 undefined on input line 467.
 
-FiXme Note: 'algo esta mal en la redaccion' on input line 258.
-[9]
-FiXme Note: 'poner la definicion de $\phi $ luego despues de cuando la nombras 
-por primera vez' on input line 361.
- [10]
-FiXme Note: 'el periodo no puede ser siempre $\pi $' on input line 382.
- [11]
-FiXme Note: '\IeC {\textquestiondown }No vale la pena poner las soluciones para
- este caso aqui?' on input line 427.
-FiXme Note: 'Que tal asi (me parece mas claro): Utilizaremos los resultados obt
-enidos en la secci\IeC {\'o}n anterior para estudiar Hamiltonianos con un par\I
-eC {\'a}metro con una dependencia periodica en el tiempo' on input line 436.
-FiXme Note: 'El uso de ``en este caso'' hace pensar que se necesita cumplir que
- exista el conjunto $\{\phi _n\}$ para que la ecuaci\IeC {\'o}n de Schroedinger
- tenga la forma \ref {SchrodingerEQ}. Sin embargo la ecuacion de Schroedinger e
-s siempre como la pusiste. Tienes que cambiar como redactaste esta secci\IeC {\
-'o}n' on input line 451.
- [12]
-FiXme Note: 'dependientes' on input line 481.
-FiXme Note: 'cual condicion' on input line 489.
-FiXme Note: 'Ojo: este $\phi $ es diferente al que definiste en 2.17' on input 
-line 495.
-FiXme Note: 'No pones sobre que indice es la suma' on input line 496.
-
-
-LaTeX Warning: Marginpar on page 13 moved.
-
-FiXme Note: 'No es claro a que quieres llegar. Se mas explicito' on input line 
-507.
-FiXme Note: 'pon el numero de ecuacion' on input line 513.
-[13] [14]
-FiXme Note: 'Me pareci\IeC {\'o} muy confuso como llegaste a la ecuacion 2.55' 
-on input line 592.
- [15]
+[14] [15] [16] [17]
 Cap\'{\i }tulo 3.
 
-Overfull \hbox (16.83282pt too wide) in paragraph at lines 599--599
+Overfull \hbox (16.83282pt too wide) in paragraph at lines 625--625
 []\OT1/cmr/bx/n/14.4 Hamiltoniano pa-ra En-fria-mien-to Op-to-mec^^Sani-
  []
 
@@ -681,120 +624,38 @@ ural depende del tiempo, acoplado a una cavidad. Se asume que el acoplamiento e
 s tal que la cavidad se puede suponer que solo tiene un modo. La cavidad es exc
 itada por un laser.... (dices que la cavidad es forzada, pero despues hablas de
  una bomba, es poco claro a que se refiere la palabra bomba. Creo que es mejor 
-evitar la palabra bomba y usar laser de excitacion o algo asi' on input line 61
-2.
-[16
+evitar la palabra bomba y usar laser de excitacion o algo asi' on input line 63
+4.
+[18
 
-]
-Overfull \hbox (2.02132pt too wide) in paragraph at lines 650--650
+] [19]
+Overfull \hbox (2.02132pt too wide) in paragraph at lines 692--692
 []\OT1/cmr/bx/n/14.4 Transformaci^^Son Me-dian-te Ope-ra-dor de Des-
  []
 
-[17] [18]
-FiXme Note: 'Esta seccion es muy confusa. Nunca has hablado de disipacion, sin 
-embargo de repente aparece $\rho $ e introduces el operador de Lindbladt. Falta
- explicar que haces y porque. Falta decir quien es la variable $A$ y falta deci
-r de donde sacaste que $L_\Gamma \rho $ es un mejor modelo de disipaci\IeC {\'o
-}n. Falta justificar que estas haciendo y porque.' on input line 702.
-FiXme Note: 'esta secci\IeC {\'o}n esta fuera de contesto, creo que la tienes q
-ue poner antes, donde hablas del caso $\epsilon $ peque\IeC {\~n}o' on input li
-ne 706.
-
-
-LaTeX Warning: Citation `PiatekME' on page 19 undefined on input line 715.
-
-FiXme Note: 'No estas buscando una solucion de esta ecuacion. Esta mal la refer
-encia, creo que tienes que referenciar la siguienre ecuacion' on input line 730
-.
-[19]
-FiXme Note: 'Quien es $A$, falta un parentesis en la ecuacion para $\alpha $' o
-n input line 751.
-FiXme Note: 'no es claro a que te refieres con el ``enfoque del enfriamiento''.
- Tienes que decir que si $\alpha ,\beta $ llegan al estado estacionario muy rap
-ido, podemos considerar sus valores estacionarios, o algo asi' on input line 75
-4.
-FiXme Note: 'yo pondria: Vamos a trabajar en el r\IeC {\'e}gimen en el que $|\a
-lpha _0| \gg 1$' on input line 778.
-FiXme Note: 'no hay correspondencias entre Hamiltonianos y ecuaciones maestras.
- Yo pondria algo asi como: Agregando disipaci\IeC {\'o}n en tal y tal se puede 
-construir la ecuacion maestra' on input line 789.
- [20]
-FiXme Note: '\ref {LCMasterEq} y \ref {LCMasterEquation} son la misma ecuacion'
- on input line 802.
-FiXme Note: '\IeC {\textquestiondown }Cual de las tres ecuaciones? Sobra el ace
-nto' on input line 814.
+[20] [21] [22]
 FiXme Note: 'No es la unica solucion. Mas bien, una forma de encontrar la soluc
 ion es usando la base de decaimiento. Argumentar porque nos interesa esta forma
  de encontrar la soluci\IeC {\'o}n- Explicar mejor que es lo que haces aqui.' o
-n input line 824.
-FiXme Note: '\IeC {\textquestiondown }Cual ansatz?, \IeC {\textquestiondown }Cu
-al secci\IeC {\'o}n?, \IeC {\textquestiondown }Quien es $C_n^l$ ?' on input lin
-e 834.
-FiXme Note: 'Nunca has dicho quien es $\rho _n^l$ ' on input line 835.
- [21]
-FiXme Note: 'Creo que es mas claro que pongas explicitamente la soluci\IeC {\'o
-}n en el cuadro normal' on input line 853.
-FiXme Note: '$L_1^+$, $L_1^-$ y $L_m$ no aparecen en (3.47) y $L_1$, $L_2$ no e
-stan definidas.' on input line 871.
-FiXme Note: 'No esta definido' on input line 874.
-FiXme Note: 'no se entiende, esta redactado de forma tal que parece que necesit
-as los dos operadores $P$ y $Q$ para proyectar al espacio $P$' on input line 87
-9.
-FiXme Note: 'No has definido $\rho ^{0}$' on input line 887.
- [22]
-FiXme Note: 'Creo que es poco claro el m\IeC {\'e}todo de separaci\IeC {\'o}n d
-e escala que usan en esa referencia. Creo que es mas seguro no usarlo (i.e. eli
-minar $\tau $ de el hamiltoniano)' on input line 895.
-FiXme Note: 'Yo pondr\IeC {\'\i }a 3.54 despues de 3.55' on input line 926.
-FiXme Note: 'No es claro a cuales son los eigenvalores de la cavidad' on input 
-line 935.
-FiXme Note: 'No es claro a que traza te refieres' on input line 936.
- [23]
-FiXme Note: 'La ecuacion 3.57 tiene un igual que no va. Entre 3.58 y 3.57 no va
- ``='' va $\approx $' on input line 949.
-FiXme Note: 'No es trivial que la aproximacion sea valida, ya que la integral v
-a de 0 a infinito, luego entonces $\epsilon t$ no es peque\IeC {\~n}o y la expa
-nsi\IeC {\'o}n es dificil de justificar. Sin embargo, la aproximaci\IeC {\'o}n 
-funciona, la raz\IeC {\'o}n es el termino $e^{-\lambda t}$, que permite cortar 
-la integral en $t$ f\IeC {\'\i }nito y ahi si usar que cuando $\epsilon t$ es p
-eque\IeC {\~n}o. Explicarlo en el texto.' on input line 956.
-FiXme Note: 'implica' on input line 971.
-FiXme Note: 'redactar mejor: Vamos a suponer, como ejemplo, que $\epsilon = \fr
-ac {\nu _0}{10}$, debido a la Ecuaci\IeC {\'o}n (...)....' on input line 977.
-FiXme Note: 'tienes que decir a que c\IeC {\'a}lculo te refieres' on input line
- 980.
- <GraficaTemp.pdf, id=95, 418.44414pt x 335.33347pt>
+n input line 820.
+ [23] [24] [25]
+<GraficaTemp.pdf, id=101, 418.44414pt x 335.33347pt>
 File: GraficaTemp.pdf Graphic file (type pdf)
-
-<use GraficaTemp.pdf>
-Package pdftex.def Info: GraficaTemp.pdf used on input line 985.
+ <use GraficaTemp.pdf>
+Package pdftex.def Info: GraficaTemp.pdf used on input line 956.
 (pdftex.def)             Requested size: 230.14499pt x 184.43398pt.
-FiXme Note: 'Falta discutir la figura en el texto' on input line 989.
- [24] [25 <./GraficaTemp.pdf>]
+
+[26] [27 <./GraficaTemp.pdf>]
 Cap\'{\i }tulo 4.
-[26
+[28
 
-] [27]
-FiXme Note: 'Creo que esta mal la forma en la que hiciste el c\IeC {\'a}lculo. 
-Te debo una disculpa por tardarme tanto en darme cuenta. En el art\IeC {\'\i }c
-ulo de CK Law ya supone que la frecuencia depende de la posici\IeC {\'o}n, como
- la posici\IeC {\'o}n depende del tiempo, el c\IeC {\'a}lculo de CK Law incluye
- que la frecuencia depende del tiempo, por lo tanto no es consistente ponerle o
-tra dependencia temporal como lo haces. Sin embargo tu idea me parece muy buena
- si lo que haces es expandir la soluci\IeC {\'o}n del problema cl\IeC {\'a}sico
- en soluciones de Floquet en lugar de lo que hace CK Law. Creo que debemos expl
-orar ese camino ahora que defiendas tu candidatura. Hablamos mas skype en estos
- dias. Creo que este cap\IeC {\'\i }tulo lo tienes que reescribir simplemente p
-oniendo la ecuacion estandar de CK Law con la disipaci\IeC {\'o}n de Hangi y de
-cir que intentarmos resolverlo. Agregar tambien que exploraremos la alternativa
- que te dije al principio de este comentario.' on input line 1067.
- [28] [29] [30]
+] [29] [30] [31] [32]
 Cap\'{\i }tulo 5.
-[31
+[33
 
-] [32] [33] [34] [35]
+] [34] [35] [36] [37]
 Cap\'{\i }tulo 6.
-(./Candidatura.bbl [36
+(./Candidatura.bbl [38
 
 ]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 4.
@@ -803,68 +664,61 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4.
- [37
+ [39
 
 ]
-Underfull \hbox (badness 1067) in paragraph at lines 185--189
+Underfull \hbox (badness 1067) in paragraph at lines 169--173
 []\OT1/cmr/m/n/10 Peter Zo-ller.  \OT1/cmr/m/it/10 Quan-tum Noi-se:A Hand-book 
 of Mar-ko-vian and Non-
  []
 
-[38])
+)
 
-FiXme Summary: Number of notes: 58,
+FiXme Summary: Number of notes: 5,
 (FiXme)        Number of warnings: 0,
 (FiXme)        Number of errors: 0,
 (FiXme)        Number of fatal errors: 0,
-(FiXme)        Total: 58.
+(FiXme)        Total: 5.
 
-[39] (./Candidatura.aux
+[40] [41] (./Candidatura.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 )
 
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4305 strings out of 494850
- 56478 string characters out of 6178024
- 133853 words of memory out of 5000000
- 7519 multiletter control sequences out of 15000+600000
- 9667 words of font info for 36 fonts, out of 8000000 for 9000
+ 4306 strings out of 494850
+ 56482 string characters out of 6178024
+ 132864 words of memory out of 5000000
+ 7521 multiletter control sequences out of 15000+600000
+ 9308 words of font info for 35 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 37i,10n,60p,1071b,407s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,10n,60p,866b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/symbols/msbm5.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Candidatura.pdf (39 pages, 357371 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/symbols/msbm5.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on Candidatura.pdf (41 pages, 348865 bytes).
 PDF statistics:
- 224 PDF objects out of 1000 (max. 8388607)
- 157 compressed objects within 2 object streams
+ 226 PDF objects out of 1000 (max. 8388607)
+ 158 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

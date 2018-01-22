@@ -43,10 +43,6 @@ Kerry~J. Vahala.
 \newblock Optical microcavities.
 \newblock {\em Nature}, 2003.
 
-\bibitem{EuroSensors2017}
-{\em 1 Million-Q Optomechanical Microdisk Resonators with Very Large Scale
-  Integration}, 2017.
-
 \bibitem{VerhagenMOC}
 E.~Verhagen{,} et~al.
 \newblock Quantum-coherent coupling of a mechanical oscillator to an optical
@@ -91,16 +87,10 @@ A.~Dorsel.
   pressure.
 \newblock {\em Physical Review Letters}, 1983.
 
-\bibitem{LCNooshi}
-I~Wilson-Rae{,} N.~Nooshi{,} et~al.
-\newblock Cavity-assisted back action cooling of mechanical resonators.
-\newblock {\em New Journal of Physics}, 2008.
-
-\bibitem{MarquardtSC}
-Florian Marquardt{,} Joe~P. Chen.
-\newblock Quantum theory of cavity-assisted sideband cooling of mechanical
-  motion.
-\newblock {\em Physical Review Letters}, 2007.
+\bibitem{WarwickQO}
+Warwick P. Bowen {,} Gerard~G. Milburn.
+\newblock {\em Quantum Optomechanics}.
+\newblock CRC Press, 2016.
 
 \bibitem{MayerZC}
 Thiago P.~Mayer Alegre.
@@ -155,12 +145,6 @@ W.Domcke{,} P. H\"{a}nggi{,}~D. Tannor.
 \newblock {\em Driven Quantum Systems}.
 \newblock Special Issue: Chemical Physics, Vol. 217, 1997.
 
-\bibitem{ArfkenMM}
-George~B. Arfken.
-\newblock {\em Mathematical Methods for Physicists, Seventh Edition: A
-  Comprehensive Guide}.
-\newblock Academic Press, 2013.
-
 \bibitem{BarnettSD}
 Stephen Barnett{,}~Stig Stenholm.
 \newblock Spectral decomposition of the lindblad operator.
@@ -191,6 +175,12 @@ Peter Zoller.
 Hans-Jurgen Briegel{,} Berthold-Georg Englert.
 \newblock Quantum optical master equations: The use of damping bases.
 \newblock {\em PHYSICAL REVIEW A}, 1993.
+
+\bibitem{NooshiLC}
+I.~Wilson-Rae{,}~N. Nooshi.
+\newblock Theory of ground state cooling of a mechanical oscillator using
+  dynamical backaction.
+\newblock {\em Physical Review Letters}, 2007.
 
 \bibitem{LawOH}
 C.~K. Law.
