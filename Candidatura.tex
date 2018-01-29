@@ -140,14 +140,14 @@ Algunos de estos efectos son:
 
 \subsection{Enfriamiento Optomecánico}
 
-En esta sección se da una breve explicación de la causa del enfriamiento optomecánico y la razón de que este sea un efecto puramente cuántico. La derivación se basa en la encontrada en \cite{WarwickQO} y requiere un teorema que se presenta sin demostración. Primero se enuncia el  Densidad de Potencia Espectral como
+En esta sección se da una breve explicación de la causa del enfriamiento optomecánico y la razón de que este sea un efecto puramente cuántico. La derivación se basa en la encontrada en \cite{WarwickQO} y requiere un teorema que se presenta sin demostración. Primero se define la  Densidad de Potencia Espectral como
 
 \begin{equation}
 S_{hh}(\omega) = \lim_{\tau \to\infty} \frac{1}{\tau}\langle h_\tau^*(\omega)h_\tau(\omega) \rangle ,
 \end{equation} para h(t) una variable compleja cuyas propiedades estadísticas son independientes del tiempo. $h_\tau(\omega)$ es la transformada de Fourier tomada entre $\frac{-\tau}{2}< t < \frac{\tau}{2}$
 
 \begin{center}
-\textbf{Teorema de Wiener-Khinchin:} \textit{Sea h(t) una variabe compleja cuyas propiedades estadísticas son estacionarias, entonces }
+\textbf{Teorema de Wiener-Khinchin:} \textit{Sea h(t) una variable compleja cuyas propiedades estadísticas son estacionarias, entonces }
 
 \begin{equation} \label{WienerKhichin}
 S_{hh}(\omega) = \int_{-\infty}^\infty d\tau e^{i\omega \tau} \langle h^*(t+\tau)h(t) \rangle_{t=0} = \int_{-\infty}^\infty d\omega' \langle h^*(-\omega) h(\omega') \rangle
@@ -585,7 +585,7 @@ U = e^{-i\chi(t)q^2(t)},
 \end{align} Se puede escribir el Hamiltoniano en las nuevas coordenadas tomando en cuenta que $\ddot{f}= -k(t)f$
 
 \begin{equation}
- H = \frac{1}{2m}\tilde{p}^2 + \frac{\chi(t)}{m}(\{\tilde{q},\tilde{p}\}) + \frac{mW^2}{|f|^2}k(t)\tilde{q}^2.
+ H = \frac{1}{2m}\tilde{p}^2 + \frac{\chi(t)}{m}(\{\tilde{q},\tilde{p}\}) + \frac{mW^2}{|f|^2}k(t)\tilde{q}^2,
 \end{equation} donde W es el Wronskiano
 
 \begin{equation}
