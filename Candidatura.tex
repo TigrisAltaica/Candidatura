@@ -952,21 +952,21 @@ El cálculo numérico de \eqref{GWithCorrection} utiliza la proporción entre la
 el desfazamiento $\delta$ en el rango
 $\frac{\nu_0}{\delta} \in [-2,2]$ como variable dependiente. Se obtiene
 
-\begin{figure}
-\includegraphics[scale=.55]{GraficaTemp.pdf} 
+\begin{figure}[h!]
+\includegraphics[scale=.45]{GraficaTemp.pdf} 
 \caption{\textit{Comparación entre predicciones con y sin el término $\epsilon$} La línea puntuada representa la predicción sin dependencia temporal y la línea sólida representa la predicción con el término adicional.  Se utiliza $\kappa \ll \nu_0$}
+\label{GraficaEnfriamiento}
 \end{figure}
 
-Como se observa claramente se obtiene un mínimo más pequeño de excitaciones posibles y un corrimiento en el punto donde se espera encontrar este mínimo. Esto correspondería a un mayor enfriamiento del espejo, pero no en los parámetros donde se esperaría encontrar sin la corrección.
+Como se observa en la figura \ref{GraficaEnfriamiento} claramente se obtiene un mínimo más pequeño de excitaciones posibles y un corrimiento en el punto donde se espera encontrar este mínimo. Esto correspondería a un mayor enfriamiento del espejo, pero no en los parámetros donde se esperaría encontrar sin la corrección.
 
+\chapter{Enfriamiento Optomecánico Dependiente del Tiempo: Cavidad con Disipación Dependiente del Tiempo}
 
-\chapter{Enfriamiento Optomecánico Dependiente del Tiempo: Caso de Cavidad con Frecuencia Dependiente del Tiempo}
-
-Como se puede observar en el capítulo anterior, el cambio en el comportamiento predicho por el modelo con dependencia temporal es notorio. Sin embargo, durante todas las derivaciones se asume que la cavidad cuenta con únicamente un modo, el cual tiene  frecuencia constante $\omega_c$. La frecuencia de resonancia de una cavidad de Fabry-Perot, asumiendo que su interior se encuentre en el vacío, está dada por
+En el capítulo anterior se demostró el profundo efecto que puede tener el considerar una dependencia temporal en la frecuencia natural del oscilador armónico. Este resultado motiva investigar el efecto de dependencias temporales en otros parámetros del sistema. Usualmente, durante las derivaciones para este tipo de sistemas, se asume que la cavidad cuenta con únicamente un modo, el cual tiene  frecuencia constante $\omega_c$. La frecuencia de resonancia de una cavidad de Fabry-Perot, asumiendo que su interior se encuentre en el vacío, está dada por
 
 \begin{equation}
 \omega_c = \frac{nc}{2L},
-\end{equation} donde $c$ es la velocidad de la luz en el vacío, $n$ es algún entero y $L$ es la longitud de la cavidad. Al emplear un montaje optomecánico como el que se lleva a los resultados del capítulo anterior, $L$ deja de ser constante. Si el oscilador mecánico tiene oscilaciones de amplitud $x_m(t)$ y se toma a $l_0$ como la longitud promedio de la cavidad, la longitud de la cavidad como función del tiempo viene dada por
+\end{equation} donde $c$ es la velocidad de la luz en el vacío, $n$ es algún entero y $L$ es la longitud de la cavidad. Al emplear un montaje optomecánico como el que se lleva a los resultados del capítulo anterior, $L$ deja de ser constante. Si el oscilador mecánico tiene oscilaciones en torno a un punto de equilibrio dadas por $x_m(t)$ y se toma a $l_0$ como la longitud promedio de la cavidad, la longitud de la cavidad como función del tiempo está dada por
 
 \begin{equation}
 L(t) = l_0 + x_m(t)
@@ -978,7 +978,44 @@ L(t) = l_0 + x_m(t)
 =& \frac{nc}{2l_0} - \frac{nc}{2l_0}(\frac{X_m(t)}{l_0}), \\
 =& \omega_0 + \epsilon\omega_0C(t), \\
 =& \omega_0(1+\epsilon\ C(t)).
-\end{align} donde la expresión se deja en primer orden del parámetro de perturbación $\epsilon = \frac{x_m}{l_0}$ y la dependencia temporal de la amplitud queda contenida en $C(t)$, la cual también contiene un cambio de signo por simplicidad. Si se pide que dicha dependencia temporal sea periódica se tiene un sistema de oscilador armónico donde la frecuencia natural es una función periódica del tiempo. Esto permite el uso de los operadores de Floquet vistos en el capítulo anterior. Sin embargo Se busca un Hamiltoniano  expresado en términos de estos operadores. Para este fin se hace referencia a la derivación del Hamiltoniano optomecánico general en \cite{LawOH}. Reduciendo la expresión a un solo modo para la cavidad, se tiene la expresión
+\end{align} donde la expresión se deja en primer orden del parámetro de perturbación $\epsilon = \frac{x_m}{l_0}$ y la dependencia temporal de la amplitud queda contenida en $C(t)$, la cual también contiene un cambio de signo por simplicidad. Claramente la frecuencia natural de la cavidad es una función del tiempo, sin embargo esto tiende a no tomarse en cuenta en la literatura. Como primera aproximación a este problema, consideramos la idea de modificar la disipación de la cavidad, dada por el término ya visto
+
+\begin{align}
+L_a \rho =& - \frac{\kappa}{2}(n_p + 1)[a^\dagger a\rho + \rho a^\dagger a -2a\rho a^\dagger]  \\
+ &- \frac{\kappa}{2}(n_p)[ aa^\dagger\rho + \rho  aa^\dagger -2a^\dagger\rho a].\nonumber
+\end{align} el cual corresponde a una frecuencia natural constante. Cuando se realiza la transformación unitaria de los operadores de desplazamiento, se está tomando como estado de temperatura 0 a un estado coherente, es decir
+
+\begin{equation}
+\Ket{\beta(t)}_D = e^{(\beta(t) b^\dagger - \beta(t)^*b)} \Ket{0}.
+\end{equation} Esto quiere decir que al enfriar al oscilador armónico mecánico a una temperatura mínima el estado que se obtiene es muy cercano, en el marco de desplazamiento a $\Ket{0}_D$, lo cual es muy cercano a un estado coherente en el marco de referencia inicial. Suponemos entonces que el oscilador armónico mecánico tiende a un estado de tipo
+
+\begin{equation}
+\Ket{\beta} + \epsilon\Ket{T}
+\end{equation} es decir un estado coherente más una pequeña perturbación procedente de ruido térmico. Proponemos emplear la frecuencia de este estado coherente para determinar la dependencia temporal de la frecuencia de la cavidad. Si el oscilador armónico mecánico se mueve de forma
+
+\begin{equation}
+x_m(t) = l_0 - xcos(\omega_\beta t)
+\end{equation} se tiene que la frecuencia de la cavidad es
+
+\begin{equation}
+\nu_c(t) = \nu_0 + \epsilon cos(\omega_\beta t),
+\end{equation} lo cual permite el uso de operadores de Floquet directamente en la disipación 
+
+\begin{align}
+L_\Gamma \rho =& - \frac{\kappa}{2}(n_c + 1)[\Gamma^\dagger \Gamma\rho + \rho \Gamma^\dagger \Gamma -2\Gamma\rho \Gamma^\dagger]  \\
+ &- \frac{\kappa}{2}(n_c)[ \Gamma\Gamma^\dagger\rho + \rho  \Gamma\Gamma^\dagger -2\Gamma^\dagger\rho \Gamma].\nonumber
+\end{align} Este modelo de disipación debe de ser más correcto, ya que si toma en cuenta que aún cuando se logra enfriamiento del oscilador mecánico, este se continúa moviendo y el largo de la cavidad nunca es constante. Sin embargo, insertar estos operadores en el Hamiltoniano es complicado, ya que estos operadores  no son compatibles con los operadores utilizados para modelar la cavidad. Esto se debe a que los operadores de Floquet se expresan en términos de los operadores de posición y momento de un oscilador con frecuencia natural dependiente del tiempo, mientras que los operadores $b$ y $b^\dagger$ corresponden a un oscilador sin esta dependencia. Si se toma la aproximación de asumir que la frecuencia de la cavidad como su frecuencia promedio y se hace el cambio a operadores de Floquet en el Hamiltoniano, se obtiene un término de la forma
+
+\begin{equation}
+a^\dagger a = C_1 (\nu_0, \omega_\beta)\Gamma^\dagger \Gamma + C_2(\nu_0, \omega_\beta) \Gamma \Gamma + C_3(\nu_0, \omega_\beta) \Gamma^\dagger \Gamma^\dagger +C_4(\nu_0, \omega_\beta) \Gamma \Gamma
+\end{equation} donde los coeficientes $C$ dependen de las dos frecuencias y de la forma específica de las soluciones $f(t)$. El tratar de esta forma la dependencia temporal de la cavidad presenta complejidad añadida. Esto señala la necesidad de intentar introducir los operadores de Floquet al Hamiltoniano en primeros principios, después de lo cual estos surgirán de manera natural en la disipación.
+
+
+
+
+\chapter{Enfriamiento Optomecánico Dependiente del Tiempo: Caso de Cavidad con Frecuencia Dependiente del Tiempo}
+
+En este capítulo se presenta una derivación tentativa para lograr modelar la dependencia temporal en la frecuencia natural de la cavidad desde primeros principios. Para este fin se hace referencia a la derivación del Hamiltoniano optomecánico general en \cite{LawOH}, si embargo en este caso se trabaja con el enfoque de que la frecuencia natural de la cavidad depende del tiempo. Si se pide que dicha dependencia temporal sea periódica se tiene un sistema de oscilador armónico donde la frecuencia natural es una función periódica del tiempo. Esto permite el uso de los operadores de Floquet.  Se busca un Hamiltoniano  expresado en términos de estos operadores. Se trabaja en el régimen de un solo modo.
 
 \begin{equation}
 H = \frac{1}{2m}(p + \frac{g}{q} PQ)^2 + v(q) + \frac{1}{2}[P^2+\nu^2 (t)Q^2].
@@ -1065,8 +1102,7 @@ H = \hbar \omega b^\dagger b + \hbar\frac{ W}{|f(t)|^2}\Gamma^\dagger \Gamma -g(
 
 \begin{equation}
 g(t) = \sqrt{\frac{\hbar}{2m\omega}}F(t).
-\end{equation}
-
+\end{equation} 
 A este Hamiltoniano se le agrega un término correspondiente a un láser de forzamiento
 
 \begin{equation}
@@ -1075,7 +1111,8 @@ H_{laser}= \hbar \frac{\Omega}{2}(\Gamma^\dagger + \Gamma).
 
 \begin{equation}
 H = \hbar \omega b^\dagger b + \hbar\frac{ W}{|f(t)|^2}\Gamma^\dagger \Gamma -g(t)\Gamma^\dagger \Gamma(b^\dagger + b) + \hbar \frac{\Omega}{2}(\Gamma^\dagger + \Gamma).
-\end{equation}
+\end{equation} Este Hamiltoniano asume que el cambio en la longitud de la cavidad es lo suficientemente lento para que el campo dentro de la misma se mantenga en un solo modo y asume que este modo corresponde a un movimiento periódico del oscilador mecánico. El siguiente paso en el proyecto es encontrar la solución para el comportamiento de $x_m(t)$ para así poder determinar la frecuencia natural de la cavidad y la forma explícita de los operadores de Floquet.
+
 
  La ecuación maestra que corresponde a este Hamiltoniano toma en cuenta los intercambios de energía del sistema con el ambiente, tanto la pérdida de fotones de la cavidad como la re-termalización del oscilador mecánico. Esta es \cite{BarberisLC}
 
@@ -1097,7 +1134,7 @@ L_\Gamma \rho =& - \frac{\kappa}{2}(n_c + 1)[\Gamma^\dagger \Gamma\rho + \rho \G
 
 $n_m$ y $n_c$ representan el número promedio de excitaciones térmicas y $\gamma$ y $\kappa$ modelan la pérdida de energía ante el ambiente. Para poder estudiar este sistema se hace una transformación a  un marco de referencia desplazado, esto se estudia en detalle en el próximo capítulo.
 
-\chapter{Transformación al Marco de Referencia Desplazado}
+\section{Transformación al Marco de Referencia Desplazado}
 
 Esta transformación se utiliza para eliminar términos de orden tercero en operadores en la ecuación \eqref{LCMasterEquation}. La transformación es unitaria y se genera mediante el operador
 
@@ -1252,7 +1289,7 @@ A partir del Hamiltoniano obtenido es posible estudiar un sistema de gran import
 \section{Objetivos y Calendarización}
 
 \begin{enumerate}
-\item Llegar a una expresión para la temperatura final del espejo bajo la aproximación adiabática y compararla con la expresión usual que se obtiene al no considerar una dependencia temporal explícita para la frecuencia natural de la cavidad. Esto requiere deducir desde primeros principios la ecuación maestra que contiene los coeficientes de enfriamiento y calentamiento correspondientes al oscilador mecánico.
+\item Llegar a una expresión para la temperatura final del espejo bajo la aproximación adiabática y compararla con la expresión usual que se obtiene al no considerar una dependencia temporal explícita para la frecuencia natural de la cavidad. Esto requiere deducir desde primeros principios la ecuación maestra que contiene los coeficientes de enfriamiento y calentamiento correspondientes al oscilador mecánico así como resolver el movimiento del oscilador armónico mecánico.
 
 \item Estudiar el sistema en un régimen distinto al establecido en los capítulos anteriores. Si no se puede tomar la interacción a orden cero durante la transformación al marco desplazado esto cambia el coeficiente $\alpha$ y lo convierte en una función del tiempo.
 

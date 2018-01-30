@@ -26,7 +26,8 @@
 \contentsline {subsection}{\numberline {3.3.3}Base de Decaimiento}{23}
 \contentsline {section}{\numberline {3.4}Enfriamiento Laser}{24}
 \contentsline {section}{\numberline {3.5}An\IeC {\'a}lisis Num\IeC {\'e}rico}{25}
-\contentsline {chapter}{\numberline {4}Enfriamiento Optomec\IeC {\'a}nico Dependiente del Tiempo: Caso de Cavidad con Frecuencia Dependiente del Tiempo}{28}
-\contentsline {chapter}{\numberline {5}Transformaci\IeC {\'o}n al Marco de Referencia Desplazado}{33}
-\contentsline {chapter}{\numberline {6}Objetivos Futuros}{38}
-\contentsline {section}{\numberline {6.1}Objetivos y Calendarizaci\IeC {\'o}n}{38}
+\contentsline {chapter}{\numberline {4}Enfriamiento Optomec\IeC {\'a}nico Dependiente del Tiempo: Cavidad con Disipaci\IeC {\'o}n Dependiente del Tiempo}{28}
+\contentsline {chapter}{\numberline {5}Enfriamiento Optomec\IeC {\'a}nico Dependiente del Tiempo: Caso de Cavidad con Frecuencia Dependiente del Tiempo}{31}
+\contentsline {section}{\numberline {5.1}Transformaci\IeC {\'o}n al Marco de Referencia Desplazado}{34}
+\contentsline {chapter}{\numberline {6}Objetivos Futuros}{39}
+\contentsline {section}{\numberline {6.1}Objetivos y Calendarizaci\IeC {\'o}n}{39}
