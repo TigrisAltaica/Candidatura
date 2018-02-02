@@ -28,6 +28,7 @@
 \contentsline {section}{\numberline {3.5}An\IeC {\'a}lisis Num\IeC {\'e}rico}{25}
 \contentsline {chapter}{\numberline {4}Enfriamiento Optomec\IeC {\'a}nico Dependiente del Tiempo: Cavidad con Disipaci\IeC {\'o}n Dependiente del Tiempo}{28}
 \contentsline {chapter}{\numberline {5}Enfriamiento Optomec\IeC {\'a}nico Dependiente del Tiempo: Caso de Cavidad con Frecuencia Dependiente del Tiempo}{31}
-\contentsline {section}{\numberline {5.1}Transformaci\IeC {\'o}n al Marco de Referencia Desplazado}{34}
-\contentsline {chapter}{\numberline {6}Objetivos Futuros}{39}
-\contentsline {section}{\numberline {6.1}Objetivos y Calendarizaci\IeC {\'o}n}{39}
+\contentsline {section}{\numberline {5.1}Ecuaci\IeC {\'o}n de Onda para el Potencial Vectorial en una Cavidad con Espejo M\IeC {\'o}vil}{34}
+\contentsline {section}{\numberline {5.2}Transformaci\IeC {\'o}n al Marco de Referencia Desplazado}{36}
+\contentsline {chapter}{\numberline {6}Objetivos Futuros}{41}
+\contentsline {section}{\numberline {6.1}Objetivos y Calendarizaci\IeC {\'o}n}{41}

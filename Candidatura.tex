@@ -850,7 +850,7 @@ A partir de este se llega a la solución para los estados izquierdos $\rho_n^l$,
 \cite{EnglertDB}
 
 \begin{equation}
-\lambda_n^l = -A[n + \frac{|l|}{2}],
+\lambda_n^l = -\kappa[n + \frac{|l|}{2}],
 \end{equation} los cuales cumplen con las condiciones
 
 \begin{equation}
@@ -1015,10 +1015,10 @@ a^\dagger a = C_1 (\nu_0, \omega_\beta)\Gamma^\dagger \Gamma + C_2(\nu_0, \omega
 
 \chapter{Enfriamiento Optomecánico Dependiente del Tiempo: Caso de Cavidad con Frecuencia Dependiente del Tiempo}
 
-En este capítulo se presenta una derivación tentativa para lograr modelar la dependencia temporal en la frecuencia natural de la cavidad desde primeros principios. Para este fin se hace referencia a la derivación del Hamiltoniano optomecánico general en \cite{LawOH}, si embargo en este caso se trabaja con el enfoque de que la frecuencia natural de la cavidad depende del tiempo. Si se pide que dicha dependencia temporal sea periódica se tiene un sistema de oscilador armónico donde la frecuencia natural es una función periódica del tiempo. Esto permite el uso de los operadores de Floquet.  Se busca un Hamiltoniano  expresado en términos de estos operadores. Se trabaja en el régimen de un solo modo.
+En este capítulo se presenta una derivación tentativa para lograr modelar la dependencia temporal en la frecuencia natural de la cavidad desde el Hamiltoniano original presentado en \cite{LawOH}.En este caso se trabaja con el enfoque de que la frecuencia natural de la cavidad depende del tiempo. Si se pide que dicha dependencia temporal sea periódica se tiene un sistema de oscilador armónico donde la frecuencia natural es una función periódica del tiempo. Esto permite el uso de los operadores de Floquet.  Se busca un Hamiltoniano  expresado en términos de estos operadores. Se trabaja en el régimen de un solo modo. El Hamiltoniano original de \cite{LawOH} es
 
-\begin{equation}
-H = \frac{1}{2m}(p + \frac{g}{q} PQ)^2 + v(q) + \frac{1}{2}[P^2+\nu^2 (t)Q^2].
+\begin{equation}\label{LawHamiltonian}
+H = \frac{1}{2m}(p + \frac{g}{q} PQ)^2 + V(q) + \frac{1}{2}[P^2+\nu^2 (t)Q^2].
 \end{equation} Los operadores $p$ y $q$ corresponden al oscilador mecánico y $P$ y $Q$ al campo dentro de la cavidad. $g$ es una constante. En el trabajo original la dependencia de la frecuencia es sobre la variable $q$ y no precisamente $t$. Se pide que la frecuencia $\nu(t)$ tenga una dependencia temporal periódica. El teorema de Floquet permite obtener las soluciones de la ecuación
 
 \begin{equation}
@@ -1132,7 +1132,56 @@ L_\Gamma \rho =& - \frac{\kappa}{2}(n_c + 1)[\Gamma^\dagger \Gamma\rho + \rho \G
  &- \frac{\kappa}{2}(n_c)[ \Gamma\Gamma^\dagger\rho + \rho  \Gamma\Gamma^\dagger -2\Gamma^\dagger\rho \Gamma].\nonumber
 \end{align}
 
-$n_m$ y $n_c$ representan el número promedio de excitaciones térmicas y $\gamma$ y $\kappa$ modelan la pérdida de energía ante el ambiente. Para poder estudiar este sistema se hace una transformación a  un marco de referencia desplazado, esto se estudia en detalle en el próximo capítulo.
+$n_m$ y $n_c$ representan el número promedio de excitaciones térmicas y $\gamma$ y $\kappa$ modelan la pérdida de energía ante el ambiente. 
+
+Esta derivación lleva a un resultado interesante, sin embargo existen problemas de compatibilidad con las ecuaciones originales en \cite{LawOH}. Para entender este problema, se presenta, de forma breve, la derivación original. 
+
+\section{Ecuación de Onda para el Potencial Vectorial en una Cavidad con Espejo Móvil}
+
+El potencial vectorial $A(x,t)$ dentro de la cavidad se define en la región $0 \leq x \leq q(t)$ donde $q(t)$ es la posición del espejo Esta coordenada es estrictamente no negativa y se toma el potencial $V(q)$ que siente el espejo como una barrera infinita en $q=0$. El potencial vectorial cumple la ecuación de onda con $c=1$
+
+\begin{equation}\label{WaveEq}
+\frac{\partial^2 A(x,t)}{\partial x^2} = \frac{\partial^2 A(x,t)}{\partial t^2},
+\end{equation} con condiciones a la frontera que dependen del tiempo debido a la posición del espejo
+
+\begin{equation}\label{VectorPotential}
+A(0,t) = A(q(t),t) = 0.
+\end{equation} Adicionalmente $q(t)$ cumple la ecuación
+
+\begin{equation}\label{MirrorEq}
+m\ddot{q} = -\frac{\partial V(q)}{\partial q} + \frac{1}{2}(\frac{\partial A(x,t)}{\partial x})^2 |_{x=q(t)}.
+\end{equation} El segundo término del lado derecho es la presión de radiación que siente el espejo en su marco de referencia en reposo. La dinámica del sistema queda especificada por estas tres ecuaciones. Se define un juego de coordenadas generalizadas $Q_k$
+
+\begin{equation}
+Q_k \equiv = \sqrt{\frac{2}{q(t)}} \int_0^{q(t)}dx A(x,t)sin(\frac{k\pi x}{q(t)}).
+\end{equation} Esta expansión equivale a los distintos modos determinados por la posición instantánea del espejo. Uno de los principales objetivos siguientes para este trabajo es buscar otra expansión que permita integrar el formalismo de Floquet desde este punto. Como los modos son un conjunto de funciones completo, se tiene que
+
+\begin{equation}
+A(x,t) = \sum_{k=1}^\infty Q_k(t) \sqrt{\frac{2}{q(t)}}sin(\frac{k\pi x}{q(t)}).
+\end{equation} Se puede sustituir esta expresión para $A(x,t)$ en \eqref{WaveEq},\eqref{MirrorEq}, \eqref{VectorPotential} y se obtiene dos ecuaciones
+
+\begin{align}\label{RegularModesEq}
+\ddot{Q}_k =& -\omega^2_k Q_k + 2\frac{\dot{q}}{q} \sum_j g_{kj}\dot{Q}_j +\frac{\ddot{q}q-\dot{q}^2}{q^2} \sum_j g_{kj}Q_j\\
+&+ \frac{\dot{q}^2}{q^2}\sum_{j,l} g_{jk}g_{jl}Ql,\nonumber \\
+m\ddot{q} =& -\frac{\partial V(q)}{\partial q} + \frac{1}{q}\sum_{k,j}(-1)^{k+j}\omega_k \omega_j Q_k Q_j.
+\end{align} Las frecuencias $\omega_k$ están dadas por
+
+\begin{equation}
+\omega_k (q) = \frac{k\pi}{q},
+\end{equation} y los coeficientes $g_{kj}$
+
+\begin{align}
+&(-1)^{k+j} \frac{2kj}{j^2-k^2}, k \neq j \\
+g_{kj} = \Big \{\quad \nonumber &\\
+& 0, k = j.\nonumber\\
+\end{align} Estas ecuaciones son consecuencia de las ecuaciones de Euler-Lagrange del Lagrangiano 
+
+\begin{align}
+L(q,\dot{q},Q_k,\dot{Q}_k) =& \frac{1}{2} \sum_k [\dot{Q}_k^2-\omega_k^2(q)Q_k^2] + \frac{1}{2}m\dot{q}^2 - V(q)\\
+&+\frac{\dot{q}}{q} \sum_{j,k} g_{kj}\dot{Q}_k Q_j + \frac{\dot{q}^2}{2q^2}\sum_{j,k,l} g_{kj}g_{kl}Q_l Q_j, \nonumber 
+\end{align} de donde sigue el Hamiltoniano \eqref{LawHamiltonian} de manera directa. El problema de compatibilidad antes mencionado se refiere a si exigir que $q$ realice un movimiento periódico y que $Q$ por ende cumpla la ecuación de Floquet es consistente con \eqref{RegularModesEq}. De no ser así, se buscará encontrar otra expansión de modos que si sea compatible.
+
+
 
 \section{Transformación al Marco de Referencia Desplazado}
 
