@@ -6,11 +6,6 @@ Sigmund Kohler{,} Thomas Dittrich† {,}~Peter H\"{a}nggi.
   harmonic quantum oscillator.
 \newblock {\em Phys.Rev. E55}, 30 Sep 1998.
 
-\bibitem{YanesOC}
-Pablo Yanes-Thomas {,}~Pablo Barberis-Blostein.
-\newblock Optomechanical cooling with time dependent parameters.
-\newblock {\em TBD}, 2017.
-
 \bibitem{KippenberCO}
 Thomas J. Kippenberg{,} Thomas Marquardt{,}~Markus Aspelmeyer.
 \newblock Cavity optomechanics.
@@ -136,6 +131,11 @@ Marc Bienert{,}~Pablo Barberis-Blostein.
 \newblock Optomechanical laser cooling with mechanical modulation.
 \newblock {\em Physical Review Letters A}, 2015.
 
+\bibitem{YanesOC}
+Pablo Yanes-Thomas {,}~Pablo Barberis-Blostein.
+\newblock Optomechanical cooling with time dependent parameters.
+\newblock {\em TBD}, 2017.
+
 \bibitem{WardFT}
 M.~Ward.
 \newblock {\em Supplement: Floquet Theory and the Mathieu's Equation}.
@@ -170,6 +170,11 @@ Peter Zoller.
 \newblock {\em Quantum Noise:A Handbook of Markovian and Non-Markovian Quantum
   Stochastic Methods with Applications to Quantum Optics}.
 \newblock Springer Science and Business Media, 2004.
+
+\bibitem{CarmichaelFL}
+Howard Carmichael.
+\newblock {\em An Open Systems Approach to Quantum Optics}.
+\newblock Springer-Verlag, 1993.
 
 \bibitem{EnglertDB}
 Hans-Jurgen Briegel{,} Berthold-Georg Englert.

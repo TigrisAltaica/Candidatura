@@ -20,15 +20,14 @@
 \contentsline {chapter}{\numberline {3}Enfriamiento Optomec\IeC {\'a}nico Dependiente del Tiempo: Caso de Oscilador Arm\IeC {\'o}nico Dependiente del Tiempo}{18}
 \contentsline {section}{\numberline {3.1}Hamiltoniano para Enfriamiento Optomec\IeC {\'a}nico con Par\IeC {\'a}metros Dependientes del Tiempo}{18}
 \contentsline {section}{\numberline {3.2}Disipaci\IeC {\'o}n en Sistemas Optomec\IeC {\'a}nicos}{20}
-\contentsline {section}{\numberline {3.3}Transformaci\IeC {\'o}n Mediante Operador de Desplazamiento}{20}
-\contentsline {subsection}{\numberline {3.3.1}Soluci\IeC {\'o}n Expl\IeC {\'\i }cita para Peque\IeC {\~n}as Oscilaciones }{21}
-\contentsline {subsection}{\numberline {3.3.2}Hamiltoniano para Enfriamiento L\IeC {\'a}ser}{22}
-\contentsline {subsection}{\numberline {3.3.3}Base de Decaimiento}{23}
+\contentsline {section}{\numberline {3.3}Transformaci\IeC {\'o}n Mediante Operador de Desplazamiento}{21}
+\contentsline {subsection}{\numberline {3.3.1}Soluci\IeC {\'o}n Expl\IeC {\'\i }cita para Peque\IeC {\~n}as Oscilaciones }{22}
+\contentsline {subsection}{\numberline {3.3.2}Base de Decaimiento}{23}
 \contentsline {section}{\numberline {3.4}Enfriamiento Laser}{24}
 \contentsline {section}{\numberline {3.5}An\IeC {\'a}lisis Num\IeC {\'e}rico}{25}
-\contentsline {chapter}{\numberline {4}Enfriamiento Optomec\IeC {\'a}nico Dependiente del Tiempo: Cavidad con Disipaci\IeC {\'o}n Dependiente del Tiempo}{28}
+\contentsline {chapter}{\numberline {4}Enfriamiento Optomec\IeC {\'a}nico Dependiente del Tiempo: Modelo Mejorado de Disipaci\IeC {\'o}n Aplicado a Cavidad}{28}
 \contentsline {chapter}{\numberline {5}Enfriamiento Optomec\IeC {\'a}nico Dependiente del Tiempo: Caso de Cavidad con Frecuencia Dependiente del Tiempo}{31}
-\contentsline {section}{\numberline {5.1}Ecuaci\IeC {\'o}n de Onda para el Potencial Vectorial en una Cavidad con Espejo M\IeC {\'o}vil}{34}
+\contentsline {section}{\numberline {5.1}Ecuaci\IeC {\'o}n de Onda para el Potencial Vectorial en una Cavidad con Espejo M\IeC {\'o}vil}{31}
 \contentsline {section}{\numberline {5.2}Transformaci\IeC {\'o}n al Marco de Referencia Desplazado}{36}
 \contentsline {chapter}{\numberline {6}Objetivos Futuros}{41}
 \contentsline {section}{\numberline {6.1}Objetivos y Calendarizaci\IeC {\'o}n}{41}
