@@ -15,9 +15,21 @@
 
 \tableofcontents
 \chapter*{Objetivo General}
- En un trabajo anterior se estudió el enfriamiento optomecánico de un oscilador armónico mecánico acoplado a una cavidad de Fabry-Perot cuando la frecuencia natural de este es una función periódica del tiempo. Se ha demostrado que utilizar un formalismo de disipación que toma en cuenta la dependencia temporal de la frecuencia natural del oscilador mecánico lleva a un mejor modelo teórico para el
-sistema\cite{HanngiFM}. Se encontró que emplear este formalismo de disipación lleva a una predicción cualitativa y cuantitativamente distinta para la temperatura final del espejo. Esto motiva la pregunta: ¿Puede escribirse el Hamiltoniano del sistema a forma de usar este modelo para la disipación en el caso de la cavidad? En este trabajo se
-investiga esta posibilidad.
+Si la frecuencia natural de un oscilador armónico mecánico con fricción,
+acoplado a una cavidad de Fabry-Perot es una función periódica del
+tiempo, el modelo de disipación usado debe tomar en cuenta esta dependencia; en
+general esto no se hace. Durante el primer año de doctorado se encontró
+que, si en este caso, se emplea un formalismo de disipación que toma en
+cuenta la dependencia temporal de la frecuencia natural, se obtiene una
+predicción cualitativa y cuantitativamente distinta para la temperatura
+final del oscilador mecánico que si no se  toma en cuenta. Este
+resultado justifica la sospecha de que en el caso de un sistema
+optomecánico, en donde el oscilador mecánico también es un espejo
+semitransparente, el cambio de la frecuencia natural de los modos de la
+cavidad debe ser tomado en cuenta en el modelo de perdida de
+fotones a través de los espejos. El objetivo de la tesis es investigar
+esta posibilidad y sus posibles efectos en enfriamiento de sistemas
+optomecánicos y manipulación de su estado cuántico.
 
 
 \chapter{Introducción}
@@ -39,7 +51,7 @@ se debe a los primeros esfuerzos para detectar ondas gravitacionales
 los espejos montados en masas suspendidas, a manera que una onda
 gravitacional, al interactuar con las masas cambiaría la posición de
 los espejos y así la longitud de camino óptico. El propósito de
-suspender las masas no es  crear un sistema optomecánico, sin embargo, fue necesario estudiar las fluctuaciones ocasionadas por la interacción entre la luz y las masas \cite{CavesIF}.
+suspender las masas no es crear un sistema optomecánico, sin embargo, fue necesario estudiar las fluctuaciones ocasionadas por la interacción entre la luz y las masas \cite{CavesIF}.
 Experimentos en este tipo de sistemas han demostrado varios efectos,
 entre ellos el enfriamiento mediante presión de radiación
 \cite{CorbittOC}. También es posible utilizar este tipo de sistemas
@@ -55,9 +67,7 @@ confinar a la luz a viajar en modos \textit{whispering gallery}, los
 cuales implican que la luz es guiada a lo largo del perímetro del
 resonador, el cual puede tener forma esférica, circular, o
 toroidal\cite{VahalaOM}. Si el resonador vibra, esto puede alterar el camino óptico de la luz y
-se logra un acoplamiento entre el resonador macroscópico y la luz atrapada en el. Es posible fabricar resonadores de este
-tipo con un factor de calidad de $10^6$, este factor es igual a $2\pi$ veces el número de oscilaciones requeridas para que la energía almacenada en el resonador decaiga a $\frac{1}{e}$ de su valor inicial. Debido a su tamaño, es
-posible obtener acoplamiento fuerte entre sistemas cuánticos y el
+se logra un acoplamiento entre el resonador macroscópico y la luz atrapada en el. Es posible fabricar resonadores de este tipo con un factor de calidad de $10^6$, este factor es igual a $2\pi$ veces el número de oscilaciones requeridas para que la energía almacenada en el resonador decaiga a $\frac{1}{e}$ de su valor inicial. Debido a su tamaño, es posible obtener acoplamiento fuerte entre sistemas cuánticos y el
 resonador, el cual es un objeto macroscópico \cite{VerhagenMOC}.
 
 \subsection{Objetos Suspendidos o Levitados}
@@ -81,11 +91,11 @@ sus modos vibracionales\cite{FaveroCR}.
 
 Este tipo de sistema es más reciente que los demás y se basa en redes
 cristalinas donde se logra acoplar fotones y fonones. En uno de los primeros
-\fxnote*{instancia de que?}{experimentos} se fabricó una nano viga
+experimentos se fabricó una nano viga
 de silicio \cite{EichenfieldOC}. El sistema consiste en una nano viga
-con agujeros espaciados regularmente, lo cual forma una red. Se
+con agujeros espaciados de manera regular, lo cual forma una red. Se
 introduce un defecto mediante una reducción cuadrática en la constante
-de red, de manera simétrica al centro de la viga. Esto genera un
+de red, de manera simétrica respecto al centro de la viga. Esto genera un
 potencial efectivo para los modos ópticos y uno análogo para los modos
 mecánicos. Las vibraciones ocasionan un cierto desplazamiento en la
 estructura lo cual afecta el potencial efectivo para los modos ópticos
@@ -95,14 +105,11 @@ diamante para implementar el resonador\cite{BurekDO}.
 
 \section{Efectos Optomecánicos}
 
-En esta sección se da un pequeño resumen de los efectos \fxnote{Hay que
-  ser consistentes con el uso de la palabra ``optomecanico'': a veces
-  la usas para describir una interaccion, a veces para describir una
-  familia de efectos, a veces para describir un tipo de sistemas}
+En esta sección se da un pequeño resumen de los efectos 
  más conocidos y utilizados resultantes de la interacción optomecánica. Frecuentemente estos efectos
-{se} deben a la interacción entre la presión de radiación que la luz
+se deben a la interacción entre la presión de radiación que la luz
 incidente aplica sobre los elemento mecánicos y la reacción retardada
-de la cavidad a los cambios en su \fxnote*{ya recordé que puse estructura ya que no todas las cavidades son estilo fabry-perot}{longitud o el equivalente en cavidades de otras geometrías}.
+de la cavidad a los cambios en su longitud o el equivalente en cavidades de otras geometrías.
 Algunos de estos efectos son:
 
 
@@ -144,7 +151,7 @@ S_{hh}(\omega) = \int_{-\infty}^\infty d\tau e^{i\omega \tau} \langle h^*(t+\tau
 .
 \end{center}
 
-El teorema es la primera igualdad y la segunda resulta de las propiedades de la transformada de Fourier. En el caso clásico la Densidad de Potencia Espectral es simétrica respecto a la frecuencia. Sin embargo, en el caso de operadores esto no es necesariamente cierto. Debido a que, en general, no se puede asegurar que para un operador Hermitiano $\hat{O}(t)$ se tenga $[\hat{O}(t),\hat{O}(t+\tau)] = 0$ sigue entonces que no se puede asegurar $S_{OO}(\omega) = S_{OO}(-\omega)$. El hecho de que un operador no necesariamente conmuta consigo mismo a distintos tiempos rompe la simetría. Se estudia ahora el caso específico de un oscilador armónico cuántico que está acoplado a un baño térmico mediante un término de tipo
+El teorema es la primera igualdad y la segunda resulta de las propiedades de la transformada de Fourier. En el caso clásico la Densidad de Potencia Espectral es simétrica respecto a la frecuencia. Sin embargo, en el caso de operadores esto no es necesariamente cierto. Debido a que, en general, no se puede asegurar que para un operador Hermitiano $\hat{O}(t)$ se tenga $[\hat{O}(t),\hat{O}(t+\tau)] = 0$. Se sigue entonces que no se puede asegurar $S_{OO}(\omega) = S_{OO}(-\omega)$. El hecho de que un operador no necesariamente conmuta consigo mismo a distintos tiempos rompe la simetría. Se estudia ahora el caso específico de un oscilador armónico cuántico que está acoplado a un baño térmico mediante un término de tipo
 
 \begin{equation}
 V(t) = qF(t)
@@ -157,11 +164,11 @@ A_{if}(t) =  \Braket{\Psi_f(t)|U_0 U_I|\Psi(0)}= e^{\frac{-i E_f t}{hbar}} \Brak
 \begin{align}
 U_0 =& e^{\frac{-i H_0 t}{\hbar}}\\
 U_I =& e^{\frac{-i V t}{\hbar}}
-\end{align} $H_0$ es el Hamiltoniano del oscilador armónico con frecuencia $\Omega$ y $V(t)$ es la interacción. Utilizando teoría de perturbación a primer orden, y asumiendo que la interacción es débil y por lo tanto los estados del baño y del oscilador armónico se mantienen separables, se llega a que la amplitud de transición para transicionar de un estado $n$ a $n+1$ en el oscilador, dado que el baño inicia en algún estado $j$ y que la interacción lo deje en un estado $k$ es
+\end{align} $H_0$ es el Hamiltoniano del oscilador armónico con frecuencia $\Omega$ y $V(t)$ es la interacción. Utilizando teoría de perturbación a primer orden, y asumiendo que la interacción es débil y por lo tanto los estados del baño y del oscilador armónico se mantienen separables, se llega a que la amplitud de transición para pasar de un estado $n$ a un estado $n+1$ en el oscilador, dado que el baño inicia en algún estado $j$ y que la interacción lo deje en un estado $k$ es
 
 \begin{equation}
 A_{if}(t) = \frac{x_{zp}\sqrt{n+1}}{i\hbar}\int_0^t d\tau_1 e^{i\Omega \tau_1} \Bra{k}F(\tau_1)\Ket{j},
-\end{equation} donde $F_I(t)$ es la fuerza en el cuadro de interacción y $x_{zp}$ es la amplitud mínima del oscilador. La probabilidad de transición requiere sumar sobre todos los posibles estados finales del baño y resulta
+\end{equation} donde $F_I(t)$ es la fuerza en el cuadro de interacción y $x_{zp}$ es la amplitud mínima del oscilador. La probabilidad de transición se obtiene al sumar sobre todos los posibles estados finales del baño y resulta
 
 \begin{equation}
 P_{n \to n+1} = \frac{x_{zp}^2 (n+1)}{\hbar^2} \int\int_0^t d\tau_1 d\tau_2 e^{i \Omega (\tau_2-\tau_1)}\langle F_I(\tau_1)F_I(\tau_2) \rangle ,
@@ -251,7 +258,7 @@ x' = A(t)x,
 
 \begin{equation}\label{FloquetForm}
 x(t)=e^{\mu t}p(t).
-\end{equation} Los valores $\mu$ se conocen como los exponentes característicos o de Floquet y la función $p(t)$ es periódica con período $\tau$, es decir el mismo periodo que el coeficiente en la ecuación diferencial. Los coeficientes $\mu$ son, en general, complejos. Claramente, el hecho de que la solución tenga la forma \eqref{FloquetForm} puede llevar a que la solución sea divergente con el tiempo, por lo que se desea entender el criterio de estabilidad para este tipo de soluciones. Antes de esto, es necesario establecer algunas definiciones y propiedades, las cuales se presentan sin demostración debido a que no son el enfoque principal de este trabajo. Si el lector se encuentra interesado, el tratamiento se encuentra con mayor detalle en las notas de las cuales surge la sección siguiente \cite{WardFT}.
+\end{equation} Los valores $\mu$ se conocen como los exponentes característicos o de Floquet y la función $p(t)$ es periódica con período $\tau$, es decir el mismo periodo que el coeficiente en la ecuación diferencial. Los coeficientes $\mu$ son, en general, complejos. Claramente, el hecho de que la solución tenga la forma \eqref{FloquetForm} puede llevar a que la solución diverja con el tiempo, por lo que se desea entender el criterio de estabilidad para este tipo de soluciones. Antes de esto, es necesario establecer algunas definiciones y propiedades, las cuales se presentan sin demostración debido a que no son el enfoque principal de este trabajo. Si el lector se encuentra interesado, el tratamiento se encuentra con mayor detalle en las notas de las cuales surge la sección siguiente \cite{WardFT}.
 
 \subsection{Propiedades Básicas}
 
@@ -471,7 +478,7 @@ f(t)=  e^{i\omega t} + \frac{\epsilon}{16} e^{3i\omega t},
 
 Utilizaremos los resultados obtenidos en la
   sección anterior para estudiar Hamiltonianos con un parámetro con
-  una dependencia periodica en el tiempo
+  una dependencia periódica en el tiempo
 
 \begin{equation} \label{TimeH}
 H(t)=H(t+\tau).
@@ -624,7 +631,7 @@ H_{cav} =& -\hbar \delta a^\dagger a,\\
 H_{mec}(t) =& \frac{p^2}{2m} + \frac{1}{2}m \nu^2 (t) x^2,\\
 H_{rad} =& -\hbar g a^\dagger a x,\\
 H_{laser} =& \hbar\frac{\Omega}{2}(a^\dagger + a),
-\end{align} en este caso, $\delta = \omega_{laser} - \omega_{cav}$ representa la diferencia de frecuencias entre el laser de forzamiento y la cavidad y $\hbar g$ representa la fuerza de radiación que un fotón ejerce sobre el oscilador mecánico sin modulación. El término $H_{rad}$ modela una interacción simple entre los fotones y el espejo. Dado que en este caso la longitud de la cavidad no es fija, la frecuencia de la cavidad debe tener una dependencia en la coordenada $x$. Una derivación completa de este término puede encontrarse en la referencia \cite{KippenberCO}. Por \eqref{QTDHO}, se modela al oscilador mecánico utilizando operadores de Floquet
+\end{align} en este caso, $\delta = \omega_{laser} - \omega_{cav}$ representa la diferencia de frecuencias entre el láser de forzamiento y la cavidad y $\hbar g$ representa la fuerza de radiación que un fotón ejerce sobre el oscilador mecánico sin modulación. El término $H_{rad}$ modela una interacción simple entre los fotones y el espejo. Dado que en este caso la longitud de la cavidad no es fija, la frecuencia de la cavidad debe tener una dependencia en la coordenada $x$. Una derivación completa de este término puede encontrarse en la referencia \cite{KippenberCO}. Por \eqref{QTDHO}, se modela al oscilador mecánico utilizando operadores de Floquet
 
 \begin{equation}
 H_{mec}(t) = \hbar\frac{W}{|f(t)|^2}(\Gamma^\dagger \Gamma + \frac{1}{2}).
@@ -747,8 +754,7 @@ Y se puede obtener expresiones explícitas para los coeficientes $\alpha(t)$ y $
 \begin{align}
 \dot{\alpha} =& \alpha(-\frac{A}{2}+i(\delta+g'(e^{i\omega t} \beta^* + e^{-i\omega t} \beta)))-i\frac{\Omega}{2},\\
 \dot{\beta} =& \beta(-\frac{\gamma}{2}-i 2\omega)+ig'|\alpha|^2e^{i\omega t},
-\end{align}
- asumiendo que $\alpha$ y $\beta$ lleguen a su estado estacionario de manera suficientemente rápida se puede tomar $\dot{\alpha}(t)=\dot{\beta}(t)=0$ y se trabaja
+\end{align} asumiendo que $\alpha$ y $\beta$ lleguen a su estado estacionario de manera suficientemente rápida se puede tomar $\dot{\alpha}(t)=\dot{\beta}(t)=0$ y se trabaja
 en el régimen de acoplamiento débil por lo que coeficientes de orden
 mayor a cero en $g'$ se desprecian. Esto lleva a
 
@@ -795,12 +801,12 @@ de tipo oscilador armónico,una de las posibles soluciones es mediante la base d
 \sum_{n=0}^\infty C_n^l\Ket{n}\Bra{n+l},
 \end{equation}
 
-Es importante notar que $L$ no es necesariamente autoadjunto, por lo que no se puede garantizar que sus funciones propias formen una base completa del espacio ni que sus valores propios sean reales. En el caso de este tipo de operadores existen dos tipos de vectores propios\cite{BarnettSD}, izquierdos y derechos
+Es importante notar que $L$ no es necesariamente auto-adjunto, por lo que no se puede garantizar que sus funciones propias formen una base completa del espacio ni que sus valores propios sean reales. En el caso de este tipo de operadores existen dos tipos de vectores propios\cite{BarnettSD}, izquierdos y derechos
 
 \begin{align*}
 L\rho =& \lambda \rho, \\
 \check{\rho} L =& \lambda \check{\rho}.
-\end{align*} Los estados que se obtienen al aplicar el superoperador por la derecha se conocen también como estados duales, se denotan por $\check{\rho}$. También es importante notar que los vectores que se obtienen al aplicar por la izquierda y por la derecha no son simplemente complejos conjugados uno del otro, se conocen como duales y son ortogonales los unos a otros bajo un producto definido mediante la traza\cite{EnglertDB}, sin embargo sus valores propios son iguales. Los vecotres obtenidos no forman necesariamente una base del espacio de operadores. 
+\end{align*} Los estados que se obtienen al aplicar el súper-operador por la derecha se conocen también como estados duales, se denotan por $\check{\rho}$. También es importante notar que los vectores que se obtienen al aplicar por la izquierda y por la derecha no son simplemente complejos conjugados uno del otro, se conocen como duales y son ortogonales los unos a otros bajo un producto definido mediante la traza\cite{EnglertDB}, sin embargo sus valores propios son iguales. Los vectores obtenidos no forman necesariamente una base del espacio de operadores. 
 
 \begin{equation}
 Tr[\check{\rho}_\lambda \rho_{\lambda'}] = \delta_{\lambda'\lambda}.
@@ -1249,7 +1255,7 @@ H_{T} = (\alpha^*\dot{\Gamma} - \alpha\dot{\Gamma}^\dagger) +(\dot{\alpha}^*\Gam
 
 \begin{equation}
 U^\dagger [L_aU\rho U^\dagger]U + U^\dagger [L_\Gamma U\rho U^\dagger]U,
-\end{equation} se generan términos adicionales para el Hamitloniano mientras que los términos de Lindblad mantienen su forma original
+\end{equation} se generan términos adicionales para el Hamiltoniano mientras que los términos de Lindblad mantienen su forma original
 
 \begin{align}
 U^\dagger [L_bU\rho U^\dagger]U=& L_b\rho + [\beta b^\dagger - \beta^* b,\rho],\\
@@ -1317,7 +1323,7 @@ A partir del Hamiltoniano \eqref{LCHamiltonian} es posible estudiar un sistema d
 \item Estudiar el sistema cuando el parámetro $\epsilon$ debe tomarse en cuenta hasta segundo orden. Este cambio lleva a que incluso el factor global del Hamiltoniano para el campo dentro de la cavidad sea una función del tiempo, lo que lleva a estudiar el efecto sobre el oscilador de interactuar con un campo cuya frecuencia natural oscila en el tiempo. 
 \end{enumerate}
 
-Se prevee que cada uno de estos objetivos, junto con trabajo de redacción y revisión bibliográfica adicional, sea realizable dentro de un semestre de trabajo. Esto implicaría un último semestre únicamente dedicado a redacción a fin de elaborar la tesis doctoral en tiempo y forma, así como un artículo de investigación a ser publicado en una revista internacional.
+Se asume que cada uno de estos objetivos, junto con trabajo de redacción y revisión bibliográfica adicional, sea realizable dentro de un semestre de trabajo. Esto implicaría un último semestre únicamente dedicado a redacción a fin de elaborar la tesis doctoral en tiempo y forma, así como un artículo de investigación a ser publicado en una revista internacional.
 
 
 
