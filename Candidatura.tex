@@ -685,7 +685,7 @@ Esta ecuación es uno de los resultados presentados en \cite{YanesOC}. En este c
 
 
 
-\section{Transformación Mediante Operador de Desplazamiento}
+\section{Transformación Mediante Operador de Desplazamiento}\label{Desplazamiento}
 
 Para poder proceder es necesario eliminar los términos de tercer orden en operadores, ya que estos son no-lineales y causan dificultades. Esto se logra mediante una transformación unitaria. Se utiliza la transformación
 
@@ -941,7 +941,9 @@ Como se observa en la figura \ref{GraficaEnfriamiento} claramente se obtiene un 
 
 \chapter{Enfriamiento Optomecánico Dependiente del Tiempo: Modelo Mejorado de Disipación Aplicado a Cavidad}
 
-En el capítulo anterior se demostró el profundo efecto que puede tener el considerar una dependencia temporal en la frecuencia natural del oscilador armónico. Este resultado motiva investigar el efecto de dependencias temporales en otros parámetros del sistema. Usualmente, durante las derivaciones para este tipo de sistemas, se asume que la cavidad cuenta con únicamente un modo, el cual tiene  frecuencia constante $\omega_c$. La frecuencia de resonancia de una cavidad de Fabry-Perot, asumiendo que su interior se encuentre en el vacío, está dada por
+En el capítulo anterior se demostró, empleando un modelo mejorado de disipación, que si la frecuencia natural del oscilador armónico mecánico es una función periódica del tiempo, la temperatura final del oscilador es menor a la obtenida sin utilizar el modelo mejorado. Este resultado motiva a investigar cual es la predicción sobre el estado final del sistema optomecánico cuando se emplea el modelo mejorado de disipación aplicado a la disipación de fotones a traves de los espejos de la cavidad cuando se considera que esta frecuencia es una función periódica del tiempo.
+ 
+La frecuencia de resonancia de una cavidad de Fabry-Perot, asumiendo que su interior se encuentre en el vacío, está dada por
 
 \begin{equation}
 \omega_c = \frac{nc}{2L},
@@ -957,20 +959,34 @@ L(t) = l_0 + x_m(t)
 =& \frac{nc}{2l_0} - \frac{nc}{2l_0}(\frac{X_m(t)}{l_0}), \\
 =& \omega_0 + \epsilon\omega_0C(t), \\
 =& \omega_0(1+\epsilon\ C(t)).
-\end{align} donde la expresión se deja en primer orden del parámetro de perturbación $\epsilon = \frac{x_m}{l_0}$ y la dependencia temporal de la amplitud queda contenida en $C(t)$, la cual también contiene un cambio de signo por simplicidad. Claramente la frecuencia natural de la cavidad es una función del tiempo, sin embargo esto tiende a no tomarse en cuenta en la literatura. Como primera aproximación a este problema, consideramos la idea de modificar la disipación de la cavidad, dada por el término ya visto
+\end{align} donde la expresión se deja en primer orden del parámetro de perturbación $\epsilon = \frac{x_m}{l_0}$ y la dependencia temporal de la amplitud queda contenida en $C(t)$, la cual también contiene un cambio de signo por simplicidad. Claramente la frecuencia natural de la cavidad es una función del tiempo. Esta dependencia usualmente no se toma en cuenta en los términos empleados para modelar la disipación de la cavidad. Para intentar resolver esto, intentamos modificar la disipación de la cavidad dada por el término ya visto
 
 \begin{align}
 L_a \rho =& - \frac{\kappa}{2}(n_p + 1)[a^\dagger a\rho + \rho a^\dagger a -2a\rho a^\dagger]  \\
  &- \frac{\kappa}{2}(n_p)[ aa^\dagger\rho + \rho  aa^\dagger -2a^\dagger\rho a].\nonumber
-\end{align} el cual corresponde a una frecuencia natural constante. Cuando se realiza la transformación unitaria de los operadores de desplazamiento, se está tomando como estado de temperatura 0 a un estado coherente, es decir
+\end{align} 
+el cual corresponde a una frecuencia natural constante.
+
+Observemos que cuando se realiza la transformación unitaria
+dada por los operadores de desplazamiento en la sección \ref{Desplazamiento}, el estado base en el nuevo marco de referencia corresponde al siguiente estado coherente
 
 \begin{equation}
-\Ket{\beta(t)}_D = e^{(\beta(t) b^\dagger - \beta(t)^*b)} \Ket{0}.
-\end{equation} Esto quiere decir que al enfriar al oscilador armónico mecánico a una temperatura mínima el estado que se obtiene es muy cercano, en el marco de desplazamiento a $\Ket{0}_D$, lo cual es muy cercano a un estado coherente en el marco de referencia inicial. Suponemos entonces que el oscilador armónico mecánico tiende a un estado de tipo
+\Ket{\beta(t)}_D = e^{(\beta(t) b^\dagger - \beta(t)^*b)} \Ket{0},
+\end{equation}  en el marco de referencia original.Esto quiere decir que al enfriar al oscilador armónico mecánico a una temperatura mínima el estado que se obtiene es muy cercano, en el marco desplazado, a
+$\Ket{0}_D$, lo cual es muy cercano a un estado coherente en el marco
+de referencia inicial. Suponemos entonces que el oscilador armónico
+mecánico tiende, en la última etapa de enfriamiento, a un estado
+del tipo
+
 
 \begin{equation}
 \Ket{\beta} + \epsilon\Ket{T}
-\end{equation} es decir un estado coherente más una pequeña perturbación procedente de ruido térmico. Proponemos emplear la frecuencia de este estado coherente para determinar la dependencia temporal de la frecuencia de la cavidad. Si el oscilador armónico mecánico se mueve de forma
+\end{equation}
+
+
+es decir a un estado coherente más una pequeña perturbación procedente
+de ruido térmico. Proponemos emplear la frecuencia de este estado
+coherente para  para modelar la disipación del campo dentro de la cavidad. Este proceso sería análogo a lo que se hizo con el oscilador optomecánico, pero aplicado a la pérdida de fotones desde dentro de la cavidad. Esta frecuencia es constante. Si el oscilador armónico mecánico se mueve de forma
 
 \begin{equation}
 x_m(t) = l_0 - xcos(\omega_\beta t)
@@ -983,18 +999,24 @@ x_m(t) = l_0 - xcos(\omega_\beta t)
 \begin{align}
 L_\Gamma \rho =& - \frac{\kappa}{2}(n_c + 1)[\Gamma^\dagger \Gamma\rho + \rho \Gamma^\dagger \Gamma -2\Gamma\rho \Gamma^\dagger]  \\
  &- \frac{\kappa}{2}(n_c)[ \Gamma\Gamma^\dagger\rho + \rho  \Gamma\Gamma^\dagger -2\Gamma^\dagger\rho \Gamma].\nonumber
-\end{align} Este modelo de disipación debe de ser más correcto, ya que si toma en cuenta que aún cuando se logra enfriamiento del oscilador mecánico, este se continúa moviendo y el largo de la cavidad nunca es constante. Sin embargo, insertar estos operadores en el Hamiltoniano es complicado, ya que estos operadores  no son compatibles con los operadores utilizados para modelar la cavidad. Esto se debe a que los operadores de Floquet se expresan en términos de los operadores de posición y momento de un oscilador con frecuencia natural dependiente del tiempo, mientras que los operadores $b$ y $b^\dagger$ corresponden a un oscilador sin esta dependencia. Si se toma la aproximación de asumir que la frecuencia de la cavidad como su frecuencia promedio y se hace el cambio a operadores de Floquet en el Hamiltoniano, se obtiene un término de la forma
+\end{align}
+
+Este modelo de disipación es superior \cite{HanngiFM}, ya que toma en cuenta la variación periódica en la frecuencia natural del campo dentro de la cavidad, debido a que el oscilador mecánico continua su movimiento incluso cuando concluye el proceso de enfriamiento, por lo que la longitud de la cavidad nunca es constante.
+
+Para trabajar con este modelo de disipación, sin embargo, es necesario modificar el Hamiltoniano. Los términos de disipación emergen de manera natural al deducir la ecuación maestra por lo que no sería correcto introducir este modelo de disipación de manera ad-hoc.
+
+Sin embargo, insertar estos operadores  de manera directa en el
+Hamiltoniano para la cavidad presenta varias complicaciones. Esto se debe a que los operadores de Floquet se expresan en términos de los operadores de posición y momento de un oscilador con frecuencia natural dependiente del tiempo, mientras que los operadores $a$ y $a^\dagger$ usuales corresponden a un oscilador sin esta dependencia. Si se asume que la frecuencia de la cavidad es su
+frecuencia promedio y se expresan los operadores $a$ en términos de operadores de Floquet para sustituir en Hamiltoniano, se obtienen términos de la forma
 
 \begin{equation}
 a^\dagger a = C_1 (\nu_0, \omega_\beta)\Gamma^\dagger \Gamma + C_2(\nu_0, \omega_\beta) \Gamma \Gamma + C_3(\nu_0, \omega_\beta) \Gamma^\dagger \Gamma^\dagger +C_4(\nu_0, \omega_\beta) \Gamma \Gamma
-\end{equation} donde los coeficientes $C$ dependen de las dos frecuencias y de la forma específica de las soluciones $f(t)$. El tratar de esta forma la dependencia temporal de la cavidad presenta complejidad añadida. Esto señala la necesidad de intentar introducir los operadores de Floquet al Hamiltoniano en primeros principios, después de lo cual estos surgirán de manera natural en la disipación.
+\end{equation}
 
-
-
-
-\chapter{Enfriamiento Optomecánico Dependiente del Tiempo: Caso de Cavidad con Frecuencia Dependiente del Tiempo}
-
-En este capítulo se presenta una derivación tentativa para re-escribir el Hamiltoniano original presentado en \cite{LawOH}. En este caso se trabaja con el enfoque de que la frecuencia natural de la cavidad depende del tiempo. Si se pide que dicha dependencia temporal sea periódica se tiene un sistema de oscilador armónico donde la frecuencia natural es una función periódica del tiempo. Esto permite el uso de los operadores de Floquet. Primero se presenta la derivación original del Hamiltoniano a fin de aclarar el procedimiento.
+donde los coeficientes $C$ dependen de las dos frecuencias y de la
+forma específica de las soluciones $f(t)$. El tratar de esta forma la
+dependencia temporal de la cavidad presenta no solo complejidad añadida, también introduce una aproximación adicional.Esto señala la necesidad de intentar introducir los operadores de Floquet al Hamiltoniano desde primeros principios, después de lo cual
+estos surgirán de manera natural en la disipación. Para entender mejor este procedimiento conviene entender la derivación del Hamiltoniano para una cavidad optomecánica. La derivación sigue el procedimiento de \cite{LawOH}.
 
 \section{Ecuación de Onda para el Potencial Vectorial en una Cavidad con Espejo Móvil}
 
@@ -1012,9 +1034,9 @@ A(0,t) = A(q(t),t) = 0.
 m\ddot{q} = -\frac{\partial V(q)}{\partial q} + \frac{1}{2}(\frac{\partial A(x,t)}{\partial x})^2 |_{x=q(t)}.
 \end{equation} El segundo término del lado derecho es la presión de radiación que siente el espejo en su marco de referencia en reposo. La dinámica del sistema queda especificada por estas tres ecuaciones. Se define un juego de coordenadas generalizadas $Q_k$
 
-\begin{equation}
+\begin{equation} \label{QExpansion}
 Q_k \equiv  \sqrt{\frac{2}{q(t)}} \int_0^{q(t)}dx A(x,t)sin(\frac{k\pi x}{q(t)}).
-\end{equation} Esta expansión equivale a los distintos modos determinados por la posición instantánea del espejo. Uno de los principales objetivos siguientes para este trabajo es buscar otra expansión que permita integrar el formalismo de Floquet desde este punto. Como los modos son un conjunto de funciones completo, se tiene que
+\end{equation} Esta expansión equivale a los distintos modos determinados por la posición instantánea del espejo. 
 
 \begin{equation}
 A(x,t) = \sum_{k=1}^\infty Q_k(t) \sqrt{\frac{2}{q(t)}}sin(\frac{k\pi x}{q(t)}).
@@ -1043,9 +1065,13 @@ L(q,\dot{q},Q_k,\dot{Q}_k) =& \frac{1}{2} \sum_k [\dot{Q}_k^2-\omega_k^2(q)Q_k^2
 
 \begin{equation}\label{LawHamiltonian}
 H = \frac{1}{2m}(p + \frac{g}{q} PQ)^2 + V(q) + \frac{1}{2}[P^2+\nu^2 (t)Q^2].
-\end{equation} Los operadores $p$ y $q$ corresponden al oscilador mecánico y $P$ y $Q$ al campo dentro de la cavidad. $g$ es una constante. En el trabajo original la dependencia de la frecuencia es sobre la variable $q$ y no precisamente $t$. Se pide que la frecuencia $\nu(t)$ tenga una dependencia temporal periódica. El teorema de Floquet permite obtener las soluciones de la ecuación
+\end{equation} Los operadores $p$ y $q$ corresponden al oscilador mecánico y $P$ y $Q$ al campo dentro de la cavidad. $g$ es una constante. En el trabajo original la dependencia de la frecuencia es sobre la variable $q$ y no precisamente $t$. Se pide que la frecuencia $\nu(t)$ tenga una dependencia temporal periódica.
 
-\begin{equation}
+\section{Introduccion Directa de Operadores $\Gamma$ en el Hamiltoniano}
+
+Se presenta un primer intento para introducir el formalismo de Floquet al Hamiltoniano de la cavidad y por ende a la disipación.  El teorema de Floquet permite obtener las soluciones de la ecuación
+
+\begin{equation}\label{FloquetQ}
 \ddot{Q} + \nu^2(t)Q=0,
 \end{equation} y se les llama $f(t)$ y $f(t)^*$. De acuerdo con \cite{HanngiFM} los operadores de Floquet se pueden expresar como
 
@@ -1078,7 +1104,7 @@ H = \frac{1}{2m}(p + g \gamma)^2 + v(q) + \frac{1}{2}[P^2+\nu^2 (t)Q^2],
 \begin{equation}
 W= \frac{\dot{f}(t)f^*(t)-\dot{f}^*(t)f(t)}{2i}.
 \end{equation}
-Esto contrasta con la aproximación realizada en el trabajo original
+Esto contrasta con la aproximación realizada en el trabajo original \cite{LawOH}
 donde los operadores de creación y aniquilación de la cavidad se
 expanden en una serie de potencias para aproximar la dependencia de
 estos sobre el operador $q$ del oscilador mecánico. En este
@@ -1158,7 +1184,16 @@ L_\Gamma \rho =& - \frac{\kappa}{2}(n_c + 1)[\Gamma^\dagger \Gamma\rho + \rho \G
 
 $n_m$ y $n_c$ representan el número promedio de excitaciones térmicas y $\gamma$ y $\kappa$ modelan la pérdida de energía ante el ambiente. 
 
-Esta derivación lleva a un resultado interesante, sin embargo existen problemas de compatibilidad con las ecuaciones originales en \cite{LawOH}. El problema se refiere a si exigir que $q$ realice un movimiento periódico y que $Q$ por ende cumpla la ecuación de Floquet es consistente con \eqref{RegularModesEq}. De no ser así, el siguiente paso es buscar una expansión para los modos $Q$ que sí sea compatible con los operadores de Floquet.
+Esta derivación lleva a un resultado interesante, sin embargo existen problemas de compatibilidad con las ecuaciones originales en \cite{LawOH}. El problema consiste en que aplicar el formalismo de Floquet impone dos condiciones. 
+
+\begin{enumerate}
+\item Impone que el oscilador armónico mecánico realice un movimiento armónico simple. Esta es una condición que equivale a conocer la solución para el movimiento descrito por $q$ durante la derivación de las ecuaciones.
+
+\item La solución para $Q$ debe cumplir con dos ecuaciones, \eqref{RegularModesEq} y \eqref{FloquetQ}. Sería necesario encontrar una solución única que cumpliera con ambas ecuaciones. 
+\end{enumerate}
+
+Esto señala la necesidad de introducir el formalismo de Floquet en una etapa anterior de la derivación del Hamiltoniano. El candidato más evidente es la ecuación \eqref{QExpansion}. Buscaremos una expansión distinta a la utilizada en este caso, a fin de generar ecuaciones compatibles con el formalismo de Floquet. Una vez el Hamiltoniano queda expresado con estos operadores, se puede utilizar el modelo de disipación correspondiente en el caso de la cavidad.
+
 
 
 \section{Transformación al Marco de Referencia Desplazado}
@@ -1311,7 +1346,7 @@ H = \hbar \omega b^\dagger b + \hbar\omega \Gamma^\dagger \Gamma -\hbar g(t)[( \
 \chapter{Objetivos Futuros}
 
 
-A partir del Hamiltoniano \eqref{LCHamiltonian} es posible estudiar un sistema de gran importancia tomando en cuenta su dependencia temporal inherente, la cual se no se toma en cuenta en el Hamiltoniano usual\cite{CavesIF}. A partir de este punto se proponen tres objetivos para realizar un estudio más completo de este sistema bajo este nuevo enfoque. En todos los casos se espera obtener expresiones analíticas y resultados numéricos  para la temperatura final del oscilador mecánico bajo la aproximación adiabática.
+A partir del Hamiltoniano \eqref{LCHamiltonian} es posible estudiar un sistema de gran importancia tomando en cuenta su dependencia temporal inherente, la cual se no se toma en cuenta en los modelos de disipación usuales\cite{CavesIF}. A partir de este punto se proponen tres objetivos para realizar un estudio más completo de este sistema bajo este nuevo enfoque. En todos los casos se espera obtener expresiones analíticas y resultados numéricos  para la temperatura final del oscilador mecánico bajo la aproximación adiabática.
 
 \section{Objetivos y Calendarización}
 
@@ -1324,14 +1359,6 @@ A partir del Hamiltoniano \eqref{LCHamiltonian} es posible estudiar un sistema d
 \end{enumerate}
 
 Se asume que cada uno de estos objetivos, junto con trabajo de redacción y revisión bibliográfica adicional, sea realizable dentro de un semestre de trabajo. Esto implicaría un último semestre únicamente dedicado a redacción a fin de elaborar la tesis doctoral en tiempo y forma, así como un artículo de investigación a ser publicado en una revista internacional.
-
-
-
-
-
-
-
-
 
 \bibliographystyle{unsrt}
 \bibliography{Bib}

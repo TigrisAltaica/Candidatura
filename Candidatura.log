@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  9 MAR 2018 17:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  22 MAR 2018 17:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -631,20 +631,16 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Cap\'{\i }tulo 4.
 [28
 
-] [29] [30]
-Cap\'{\i }tulo 5.
-[31
-
-] [32] [33] [34] [35]
-Overfull \hbox (3.96306pt too wide) in paragraph at lines 1164--1164
+] [29] [30] [31] [32] [33] [34]
+Overfull \hbox (3.96306pt too wide) in paragraph at lines 1199--1199
 []\OT1/cmr/bx/n/14.4 Transformaci^^Son al Mar-co de Re-fe-ren-cia Des-
  []
 
-[36] [37] [38] [39] [40]
-Cap\'{\i }tulo 6.
-(./Candidatura.bbl [41
+[35] [36] [37] [38] [39]
+Cap\'{\i }tulo 5.
+(./Candidatura.bbl [40
 
-] [42
+] [41
 
 ]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 129.
@@ -661,7 +657,7 @@ Underfull \hbox (badness 1067) in paragraph at lines 169--173
 of Mar-ko-vian and Non-
  []
 
-[43])
+[42])
 
 FiXme Summary: Number of notes: 0,
 (FiXme)        Number of warnings: 0,
@@ -669,7 +665,7 @@ FiXme Summary: Number of notes: 0,
 (FiXme)        Number of fatal errors: 0,
 (FiXme)        Total: 0.
 
-[44] (./Candidatura.aux
+[43] (./Candidatura.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 )
@@ -678,13 +674,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4306 strings out of 494850
- 56525 string characters out of 6178024
- 131936 words of memory out of 5000000
- 7524 multiletter control sequences out of 15000+600000
- 8415 words of font info for 32 fonts, out of 8000000 for 9000
+ 4315 strings out of 494850
+ 56648 string characters out of 6178024
+ 131975 words of memory out of 5000000
+ 7532 multiletter control sequences out of 15000+600000
+ 9662 words of font info for 37 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 37i,12n,60p,1147b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,12n,60p,1147b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
@@ -693,18 +689,19 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm5.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Candidatura.pdf (44 pages, 334352 bytes).
+blic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm5.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on Candidatura.pdf (43 pages, 341442 bytes).
 PDF statistics:
- 224 PDF objects out of 1000 (max. 8388607)
- 156 compressed objects within 2 object streams
+ 225 PDF objects out of 1000 (max. 8388607)
+ 157 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

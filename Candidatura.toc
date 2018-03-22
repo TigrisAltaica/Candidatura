@@ -26,8 +26,8 @@
 \contentsline {section}{\numberline {3.4}Enfriamiento Laser}{24}
 \contentsline {section}{\numberline {3.5}An\IeC {\'a}lisis Num\IeC {\'e}rico}{25}
 \contentsline {chapter}{\numberline {4}Enfriamiento Optomec\IeC {\'a}nico Dependiente del Tiempo: Modelo Mejorado de Disipaci\IeC {\'o}n Aplicado a Cavidad}{28}
-\contentsline {chapter}{\numberline {5}Enfriamiento Optomec\IeC {\'a}nico Dependiente del Tiempo: Caso de Cavidad con Frecuencia Dependiente del Tiempo}{31}
-\contentsline {section}{\numberline {5.1}Ecuaci\IeC {\'o}n de Onda para el Potencial Vectorial en una Cavidad con Espejo M\IeC {\'o}vil}{31}
-\contentsline {section}{\numberline {5.2}Transformaci\IeC {\'o}n al Marco de Referencia Desplazado}{36}
-\contentsline {chapter}{\numberline {6}Objetivos Futuros}{41}
-\contentsline {section}{\numberline {6.1}Objetivos y Calendarizaci\IeC {\'o}n}{41}
+\contentsline {section}{\numberline {4.1}Ecuaci\IeC {\'o}n de Onda para el Potencial Vectorial en una Cavidad con Espejo M\IeC {\'o}vil}{30}
+\contentsline {section}{\numberline {4.2}Introduccion Directa de Operadores $\Gamma $ en el Hamiltoniano}{32}
+\contentsline {section}{\numberline {4.3}Transformaci\IeC {\'o}n al Marco de Referencia Desplazado}{35}
+\contentsline {chapter}{\numberline {5}Objetivos Futuros}{40}
+\contentsline {section}{\numberline {5.1}Objetivos y Calendarizaci\IeC {\'o}n}{40}
