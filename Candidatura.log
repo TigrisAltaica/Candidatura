@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  22 MAR 2018 17:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  23 MAR 2018 17:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -632,7 +632,7 @@ Cap\'{\i }tulo 4.
 [28
 
 ] [29] [30] [31] [32] [33] [34]
-Overfull \hbox (3.96306pt too wide) in paragraph at lines 1199--1199
+Overfull \hbox (3.96306pt too wide) in paragraph at lines 1198--1198
 []\OT1/cmr/bx/n/14.4 Transformaci^^Son al Mar-co de Re-fe-ren-cia Des-
  []
 
@@ -676,7 +676,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  4315 strings out of 494850
  56648 string characters out of 6178024
- 131975 words of memory out of 5000000
+ 130975 words of memory out of 5000000
  7532 multiletter control sequences out of 15000+600000
  9662 words of font info for 37 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
@@ -698,7 +698,7 @@ re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm5.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Candidatura.pdf (43 pages, 341442 bytes).
+Output written on Candidatura.pdf (43 pages, 341823 bytes).
 PDF statistics:
  225 PDF objects out of 1000 (max. 8388607)
  157 compressed objects within 2 object streams
