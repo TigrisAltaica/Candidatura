@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  1 APR 2018 16:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  4 APR 2018 10:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -631,12 +631,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Cap\'{\i }tulo 4.
 [28
 
-] [29] <OptomechanicalCooling.png, id=119, 373.395pt x 193.47281pt>
-File: OptomechanicalCooling.png Graphic file (type png)
+] [29] <OptomechanicalCooling.pdf, id=119, 794.97pt x 614.295pt>
+File: OptomechanicalCooling.pdf Graphic file (type pdf)
 
-<use OptomechanicalCooling.png>
-Package pdftex.def Info: OptomechanicalCooling.png used on input line 1060.
-(pdftex.def)             Requested size: 280.04556pt x 145.10425pt.
+<use OptomechanicalCooling.pdf>
+Package pdftex.def Info: OptomechanicalCooling.pdf used on input line 1060.
+(pdftex.def)             Requested size: 278.24367pt x 215.00647pt.
  [30]
 Overfull \hbox (4.97249pt too wide) in paragraph at lines 1086--1087
 \OT1/cmr/m/n/10 tant^^Sanea del es-pe-jo. Se pue-de sus-ti-tuir es-ta ex-pre-si
@@ -644,16 +644,16 @@ Overfull \hbox (4.97249pt too wide) in paragraph at lines 1086--1087
 /n/10 )$ en [],[],
  []
 
-[31 <./OptomechanicalCooling.png (PNG copy)>] [32] [33] [34]
+[31 <./OptomechanicalCooling.pdf>] [32] [33] [34] [35]
 Overfull \hbox (3.96306pt too wide) in paragraph at lines 1250--1250
 []\OT1/cmr/bx/n/14.4 Transformaci^^Son al Mar-co de Re-fe-ren-cia Des-
  []
 
-[35] [36] [37] [38] [39]
+[36] [37] [38] [39] [40]
 Cap\'{\i }tulo 5.
-[40
+[41
 
-] (./Candidatura.bbl [41] [42
+] (./Candidatura.bbl [42] [43
 
 ]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 129.
@@ -670,7 +670,7 @@ Underfull \hbox (badness 1067) in paragraph at lines 169--173
 of Mar-ko-vian and Non-
  []
 
-[43])
+[44])
 
 FiXme Summary: Number of notes: 0,
 (FiXme)        Number of warnings: 0,
@@ -678,7 +678,7 @@ FiXme Summary: Number of notes: 0,
 (FiXme)        Number of fatal errors: 0,
 (FiXme)        Total: 0.
 
-[44] (./Candidatura.aux
+[45] (./Candidatura.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 )
@@ -687,9 +687,9 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4340 strings out of 494850
- 56983 string characters out of 6178024
- 132975 words of memory out of 5000000
+ 4339 strings out of 494850
+ 56979 string characters out of 6178024
+ 131975 words of memory out of 5000000
  7548 multiletter control sequences out of 15000+600000
  12762 words of font info for 49 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
@@ -713,10 +713,10 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf
 fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/symbols/msbm5.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Candidatura.pdf (44 pages, 378066 bytes).
+Output written on Candidatura.pdf (45 pages, 1195326 bytes).
 PDF statistics:
- 237 PDF objects out of 1000 (max. 8388607)
- 165 compressed objects within 2 object streams
+ 302 PDF objects out of 1000 (max. 8388607)
+ 200 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
