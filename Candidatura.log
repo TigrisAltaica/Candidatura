@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  4 APR 2018 10:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  10 APR 2018 13:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -591,7 +591,7 @@ Cap\'{\i }tulo 1.
 [4
 
 ] [5] [6] [7]
-Overfull \hbox (5.03125pt too wide) in paragraph at lines 223--223
+Overfull \hbox (5.03125pt too wide) in paragraph at lines 225--225
 []\OT1/cmr/bx/n/14.4 Enfriamiento Op-to-mec^^Sani-co con Par^^Same-tros
  []
 
@@ -600,13 +600,16 @@ Cap\'{\i }tulo 2.
 [10
 
 ] [11] [12] [13]
-
-LaTeX Warning: Citation `PiatekME' on page 14 undefined on input line 473.
+Overfull \hbox (2.6138pt too wide) in paragraph at lines 478--479
+\OT1/cmr/m/n/10 con $\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 Z[]$ \
+OT1/cmr/m/n/10 ya que co-mo se vio es-to es ne-ce-sa-rio pa-ra te-ner so-lu-cio
+-nes estables[[]].
+ []
 
 [14] [15] [16] [17]
 Cap\'{\i }tulo 3.
 
-Overfull \hbox (16.83282pt too wide) in paragraph at lines 631--631
+Overfull \hbox (16.83282pt too wide) in paragraph at lines 629--629
 []\OT1/cmr/bx/n/14.4 Hamiltoniano pa-ra En-fria-mien-to Op-to-mec^^Sani-
  []
 
@@ -621,7 +624,7 @@ Overfull \hbox (2.02132pt too wide) in paragraph at lines 698--698
 File: GraficaTemp.pdf Graphic file (type pdf)
 
 <use GraficaTemp.pdf>
-Package pdftex.def Info: GraficaTemp.pdf used on input line 945.
+Package pdftex.def Info: GraficaTemp.pdf used on input line 931.
 (pdftex.def)             Requested size: 334.75577pt x 268.26714pt.
 
 
@@ -635,17 +638,17 @@ Cap\'{\i }tulo 4.
 File: OptomechanicalCooling.pdf Graphic file (type pdf)
 
 <use OptomechanicalCooling.pdf>
-Package pdftex.def Info: OptomechanicalCooling.pdf used on input line 1060.
+Package pdftex.def Info: OptomechanicalCooling.pdf used on input line 1046.
 (pdftex.def)             Requested size: 278.24367pt x 215.00647pt.
  [30]
-Overfull \hbox (4.97249pt too wide) in paragraph at lines 1086--1087
+Overfull \hbox (4.97249pt too wide) in paragraph at lines 1072--1073
 \OT1/cmr/m/n/10 tant^^Sanea del es-pe-jo. Se pue-de sus-ti-tuir es-ta ex-pre-si
 ^^Son pa-ra $\OML/cmm/m/it/10 A\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; t\OT1/cmr/m
 /n/10 )$ en [],[],
  []
 
 [31 <./OptomechanicalCooling.pdf>] [32] [33] [34] [35]
-Overfull \hbox (3.96306pt too wide) in paragraph at lines 1250--1250
+Overfull \hbox (3.96306pt too wide) in paragraph at lines 1236--1236
 []\OT1/cmr/bx/n/14.4 Transformaci^^Son al Mar-co de Re-fe-ren-cia Des-
  []
 
@@ -665,7 +668,13 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 129.
 
-Underfull \hbox (badness 1067) in paragraph at lines 169--173
+Underfull \hbox (badness 1838) in paragraph at lines 144--147
+[]\OT1/cmr/m/n/10 Dimitri Yer-chuck.  Analy-ti-cal so-lu-tion of mat-hieu equa-
+tion.  \OT1/cmr/m/it/10 ar-
+ []
+
+
+Underfull \hbox (badness 1067) in paragraph at lines 174--178
 []\OT1/cmr/m/n/10 Peter Zo-ller.  \OT1/cmr/m/it/10 Quan-tum Noi-se:A Hand-book 
 of Mar-ko-vian and Non-
  []
@@ -681,39 +690,35 @@ FiXme Summary: Number of notes: 0,
 [45] (./Candidatura.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
-)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+) ) 
 Here is how much of TeX's memory you used:
- 4339 strings out of 494850
- 56979 string characters out of 6178024
- 131975 words of memory out of 5000000
- 7548 multiletter control sequences out of 15000+600000
+ 4342 strings out of 494850
+ 57046 string characters out of 6178024
+ 132004 words of memory out of 5000000
+ 7551 multiletter control sequences out of 15000+600000
  12762 words of font info for 49 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 37i,12n,60p,1147b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/symbols/msbm5.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Candidatura.pdf (45 pages, 1195326 bytes).
+ 37i,12n,60p,859b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/symbols/msbm5.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on Candidatura.pdf (45 pages, 1196216 bytes).
 PDF statistics:
  302 PDF objects out of 1000 (max. 8388607)
  200 compressed objects within 2 object streams

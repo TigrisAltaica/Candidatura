@@ -3,49 +3,48 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Candidatura.aux
 The style file: unsrt.bst
 Database file #1: Bib.bib
-Warning--I didn't find a database entry for "PiatekME"
 Warning--empty publisher in WardFT
 Warning--empty year in WardFT
 Warning--can't use both author and editor fields in HanngiDQS
-You've used 36 entries,
+You've used 37 entries,
             1791 wiz_defined-function locations,
-            639 strings with 7655 characters,
-and the built_in function-call counts, 4760 in all, are:
-= -- 400
-> -- 144
+            643 strings with 7761 characters,
+and the built_in function-call counts, 4889 in all, are:
+= -- 411
+> -- 148
 < -- 0
-+ -- 72
-- -- 36
-* -- 117
-:= -- 867
-add.period$ -- 107
-call.type$ -- 36
-change.case$ -- 30
++ -- 74
+- -- 37
+* -- 120
+:= -- 891
+add.period$ -- 110
+call.type$ -- 37
+change.case$ -- 31
 chr.to.int$ -- 0
-cite$ -- 39
-duplicate$ -- 298
-empty$ -- 532
-format.name$ -- 36
-if$ -- 1045
+cite$ -- 40
+duplicate$ -- 306
+empty$ -- 546
+format.name$ -- 37
+if$ -- 1073
 int.to.chr$ -- 0
-int.to.str$ -- 36
-missing$ -- 41
-newline$ -- 182
-num.names$ -- 36
-pop$ -- 132
+int.to.str$ -- 37
+missing$ -- 42
+newline$ -- 187
+num.names$ -- 37
+pop$ -- 135
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 100
+skip$ -- 103
 stack$ -- 0
 substring$ -- 0
-swap$ -- 36
+swap$ -- 37
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 36
-width$ -- 38
-write$ -- 360
-(There were 4 warnings)
+while$ -- 37
+width$ -- 39
+write$ -- 370
+(There were 3 warnings)
