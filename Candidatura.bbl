@@ -76,11 +76,6 @@ A.~Dorsel.
   pressure.
 \newblock {\em Physical Review Letters}, 1983.
 
-\bibitem{WarwickQO}
-Warwick P. Bowen {,} Gerard~G. Milburn.
-\newblock {\em Quantum Optomechanics}.
-\newblock CRC Press, 2016.
-
 \bibitem{MayerZC}
 Thiago P.~Mayer Alegre.
 \newblock Optomechanical zipper cavity lasers: theoretical analysis of tuning
@@ -120,6 +115,11 @@ V.~Salari et~al.
   vibrations.
 \newblock {\em Physical Review E}, 2017.
 
+\bibitem{WarwickQO}
+Warwick P. Bowen {,} Gerard~G. Milburn.
+\newblock {\em Quantum Optomechanics}.
+\newblock CRC Press, 2016.
+
 \bibitem{BarberisLC}
 Marc Bienert{,}~Pablo Barberis-Blostein.
 \newblock Optomechanical laser cooling with mechanical modulation.
@@ -135,6 +135,11 @@ Sigmund Kohler{,} Thomas Dittrich† {,}~Peter H\"{a}nggi.
 Pablo Yanes-Thomas {,}~Pablo Barberis-Blostein.
 \newblock Optomechanical cooling with time dependent parameters.
 \newblock {\em TBD}, 2017.
+
+\bibitem{TesisMaestria}
+Pablo Enrique~Yanes Thomas.
+\newblock Enfriamiento optomecánico dependiente del tiempo.
+\newblock Master's thesis, UNAM, 2015.
 
 \bibitem{WardFT}
 M.~Ward.
@@ -164,11 +169,6 @@ Lowell~S. Brown.
 J.~J. Sakurai{,}~Jim Napolitano.
 \newblock {\em Modern Quantum Mechanics}.
 \newblock Pearson, 2013.
-
-\bibitem{TesisMaestria}
-Pablo Enrique~Yanes Thomas.
-\newblock Enfriamiento optomecánico dependiente del tiempo.
-\newblock Master's thesis, UNAM, 2015.
 
 \bibitem{ZollerQN}
 Peter Zoller.
